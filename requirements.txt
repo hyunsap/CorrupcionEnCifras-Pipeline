@@ -1,0 +1,11 @@
+# Para los scrapers
+playwright>=1.40.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Para ETL y carga
+pandas>=2.0.0
+psycopg2-binary>=2.9.0
+
+# Utilidades generales
+python-dotenv>=1.0.0

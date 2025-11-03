@@ -1,0 +1,125 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: corrupcion_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: corrupcion_db
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: td8corrupcion
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8 --lc-collate=es_AR.UTF-8 --lc-ctype=es_AR.UTF-8"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./initdb:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d corrupcion_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - corrupcion_network
+
+  # Scraper service - runs all 3 scrapers sequentially
+  scraper:
+    build:
+      context: .
+      dockerfile: Dockerfile.scraper
+    container_name: corrupcion_scraper
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=corrupcion_db
+      - DB_USER=admin
+      - DB_PASSWORD=td8corrupcion
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    networks:
+      - corrupcion_network
+    restart: "no"
+    command: python run_scrapers.py
+
+  # ETL service - processes the CSVs
+  etl:
+    build:
+      context: .
+      dockerfile: Dockerfile.etl
+    container_name: corrupcion_etl
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=corrupcion_db
+      - DB_USER=admin
+      - DB_PASSWORD=td8corrupcion
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    networks:
+      - corrupcion_network
+    restart: "no"
+    command: python transform_expedientes.py
+
+  # Loader service - loads data into DB
+  loader:
+    build:
+      context: .
+      dockerfile: Dockerfile.loader
+    container_name: corrupcion_loader
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=corrupcion_db
+      - DB_USER=admin
+      - DB_PASSWORD=td8corrupcion
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    networks:
+      - corrupcion_network
+    restart: "no"
+    command: python cargar_etl.py
+
+  # Scheduler - runs the pipeline weekly
+  scheduler:
+    image: mcuadros/ofelia:latest
+    container_name: corrupcion_scheduler
+    depends_on:
+      - postgres
+    command: daemon --docker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    labels:
+      # Run every Sunday at 2 AM
+      ofelia.job-run.scraper.schedule: "0 0 2 * * 0"
+      ofelia.job-run.scraper.container: "corrupcion_scraper"
+      
+      # Run ETL 2 hours after scraper (4 AM)
+      ofelia.job-run.etl.schedule: "0 0 4 * * 0"
+      ofelia.job-run.etl.container: "corrupcion_etl"
+      
+      # Run loader 15 minutes after ETL (4:15 AM)
+      ofelia.job-run.loader.schedule: "0 15 4 * * 0"
+      ofelia.job-run.loader.container: "corrupcion_loader"
+    networks:
+      - corrupcion_network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  corrupcion_network:
+    driver: bridge
