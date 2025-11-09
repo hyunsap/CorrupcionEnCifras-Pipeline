@@ -7,7 +7,6 @@ import pandas as pd
 
 os.chdir('/app/data')
 
-
 # =========================
 # Diccionarios de normalización
 # =========================

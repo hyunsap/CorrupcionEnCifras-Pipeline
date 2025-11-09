@@ -8,7 +8,9 @@ EXCLUIR = ["SECRETARÍA GENERAL", "SECRETARÍA ELECTORAL DE LA CAPITAL FEDERAL",
            "Dirección de Informática Jurídica".upper(), "Oficina Judicial".upper(), "Oficina de Sorteos".upper(),
            "Equipo Interdisciplinario de Ejecución Penal".upper(),
            "Dirección de Control y Asistencia de Ejecución Penal".upper(),
-           "Justicia Federal de la Seguridad Social".upper()]
+           "Justicia Federal de la Seguridad Social".upper(), "Justicia Nacional en lo Comercial".upper(),
+           "Justicia Nacional del Trabajo".upper(), "Justicia Nacional en lo Civil".upper(), "TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL NRO. 6 DE LA CAP.FEDERAL", "Tribunal Oral en lo Criminal y Correccional Nro. 6 de la Cap.Federal".upper(), "Tribunal Oral en lo Criminal y Correccional Nro. 6 de la Cap.Federal", "SECRETARÍA DE SUPERINTENDENCIA", 
+           "COMISIÓN INST. DETENCIÓN", "SECRETARÍA DE SUPERINTENDENCIA Y RECURSOS HUMANOS", "OFICINA JUDICIAL Y DE GESTIÓN", "SECRETARÍA DE JURISPRUDENCIA Y BIBLIOTECA", "SECRETARÍA ESPECIAL", "JUZGADOS DE MENORES", "JUZGADO NACIONAL DE ROGATORIAS", "MESA DE ENTRADAS", "OFICINA JUDICIAL", "SECRETARIA DE JURISPRUDENCIA", "TRIBUNALES ORALES DE MENORES", "JUZGADOS NACIONALES DE EJECUCIÓN PENAL", "Tribunal Oral en lo Penal Económico Nro. 4".upper()]
 
 async def scrape_cards(page, nivel=0, path="", filtro_primer_nivel=None):
     try:
@@ -47,7 +49,7 @@ async def scrape_cards(page, nivel=0, path="", filtro_primer_nivel=None):
             # --- FILTRO ADICIONAL PARA NIVEL 1 ---
             if nivel == 1:
                 if not ("JUSTICIA NACIONAL EN LO CRIMINAL Y CORRECCIONAL FEDERAL" in titulo_upper or
-                        "JUSTICIA FEDERAL DE CASACIÓN PENAL" in titulo_upper):
+                        "JUSTICIA FEDERAL DE CASACIÓN PENAL" in titulo_upper or "Justicia Nacional en lo Penal Económico".upper() in titulo_upper or "JUSTICIA NACIONAL EN LO CRIMINAL Y CORRECCIONAL".upper() in titulo_upper):
                     continue
 
             # --- intentar entrar en la card ---
@@ -145,7 +147,7 @@ async def run():
         page = await browser.new_page()
         await page.goto(url)
 
-        filtro = ["FUEROS FEDERALES", "FUEROS CON COMPETENCIA EN TODO EL PAÍS"]
+        filtro = ["FUEROS FEDERALES", "FUEROS NACIONALES", "FUEROS CON COMPETENCIA EN TODO EL PAÍS"]
 
         await scrape_cards(page, filtro_primer_nivel=filtro)
 
