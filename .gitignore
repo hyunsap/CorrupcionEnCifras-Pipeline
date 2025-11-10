@@ -10,9 +10,7 @@ ENV/
 .venv
 
 # Data and logs
-data/
 logs/
-*.csv
 *.log
 
 # Docker
