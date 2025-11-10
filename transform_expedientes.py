@@ -7,6 +7,7 @@ import pandas as pd
 
 os.chdir('/app/data')
 
+
 # =========================
 # Diccionarios de normalización
 # =========================
@@ -131,8 +132,7 @@ def desarmar_radicacion(radicacion):
 
 def procesar_expedientes():
     print("Procesando expedientes...")
-    # CAMBIO: agregar "tramite_" al inicio
-    f_tramite = safe_open("tramite_expedientes.csv", "r", newline="", encoding="utf-8")  # ✅
+    f_tramite = safe_open("tramite_expedientes.csv", "r", newline="", encoding="utf-8")
     f_term = safe_open("terminadas_expedientes.csv", "r", newline="", encoding="utf-8")
 
     rows = []
@@ -150,11 +150,15 @@ def procesar_expedientes():
             camara, ano_inicio = extraer_camara_y_ano(numero)
             fuero = inferir_fuero_por_camara(numero)
             jurisdiccion = inferir_jurisdiccion_por_radicacion(radicacion)
+            
+            # ✨ NORMALIZAR NOMBRE DEL TRIBUNAL
+            tribunal_normalizado = normalizar_nombre_tribunal(limpiar_texto(tribunal))
+            
             rows.append({
                 "numero_expediente": numero,
                 "caratula": caratula,
                 "jurisdiccion": jurisdiccion,
-                "tribunal": limpiar_texto(tribunal),
+                "tribunal": tribunal_normalizado,  # ✨ Usar nombre normalizado
                 "estado_procesal": "En trámite" if estado_id == 1 else "Terminada",
                 "fecha_inicio": parse_date(fecha_inicio),
                 "fecha_ultimo_movimiento": parse_date(ultima_act),
@@ -253,6 +257,11 @@ def procesar_radicaciones():
         if k in df.columns: df.rename(columns={k:v},inplace=True)
     for c in ["numero_expediente","tribunal","fiscal_nombre","fiscalia"]:
         if c in df.columns: df[c]=df[c].map(limpiar_texto)
+    
+    # ✨ NORMALIZAR NOMBRES DE TRIBUNALES EN RADICACIONES
+    if "tribunal" in df.columns:
+        df["tribunal"] = df["tribunal"].map(normalizar_nombre_tribunal)
+    
     if "fecha_radicacion" in df.columns:
         df["fecha_radicacion"]=df["fecha_radicacion"].map(parse_date)
     keep=["numero_expediente","orden","fecha_radicacion","tribunal","fiscal_nombre","fiscalia"]
@@ -283,7 +292,7 @@ def generar_dim_jurisdicciones(df):
     print(f"Jurisdicciones únicas: {len(vals)}")
 
 # =========================
-# 6) Dimensión Tribunales + Jueces (nueva versión)
+# 6) NORMALIZACIÓN DE TRIBUNALES ✨ MEJORADA
 # =========================
 
 def _strip_accents(s):
@@ -299,33 +308,115 @@ def _norm(s):
     return re.sub(r'\s+',' ',s).strip() or None
 
 def _es_dependencia(t):
-    return t and (t.startswith('sala ') or t.startswith('secretaria') or 'jurisprudencia' in t)
+    """
+    Detecta si un título es una dependencia (sala/secretaría) que debe usar el nombre del tribunal padre.
+    """
+    if not t:
+        return False
+    t_lower = t.lower()
+    # Detectar: "sala i", "sala a", "sala 1", "secretaría nro. 116", "salas" (plural), etc.
+    return (
+        t_lower.startswith('sala ') or 
+        t_lower == 'salas' or  # ✨ Agregar detección de "SALAS" (plural)
+        'secretaria' in t_lower or 
+        'jurisprudencia' in t_lower or
+        'sala i - ' in t_lower or
+        'sala a - ' in t_lower or
+        'sala b - ' in t_lower
+    )
 
 def _tribunal_desde_path(path):
-    if not path: return None
-    parts=[p.strip() for p in str(path).split('>') if p.strip()]
-    if not parts: return None
-    last=parts[-1]
-    if 'sala' in _norm(last) or 'secretaria' in _norm(last):
-        return parts[-2] if len(parts)>1 else last
-    return last
+    """
+    Extrae el nombre del tribunal desde el path, ignorando dependencias (salas/secretarías).
+    
+    Ejemplos:
+    - "FUEROS FEDERALES > CÁMARA PENAL ECONÓMICO > SALA A" → "CÁMARA PENAL ECONÓMICO"
+    - "FUEROS NACIONALES > CÁMARA CRIMINAL > JUZGADO 5 > SECRETARÍA 116" → "JUZGADO 5"
+    """
+    if not path:
+        return None
+    parts = [p.strip() for p in str(path).split('>') if p.strip()]
+    if not parts:
+        return None
+    
+    # Recorrer desde el final hacia atrás hasta encontrar un tribunal (no dependencia)
+    for i in range(len(parts) - 1, -1, -1):
+        parte = parts[i]
+        parte_norm = _norm(parte)
+        
+        # Si NO es una dependencia, es el tribunal
+        if not _es_dependencia(parte_norm):
+            return parte
+    
+    # Si todo son dependencias, retornar el último
+    return parts[-1]
+
+def normalizar_nombre_tribunal(nombre):
+    """
+    ✨ Normaliza nombres de tribunales para unificar nomenclaturas entre scraper y expedientes.
+    
+    Reglas de normalización:
+    1. Elimina acentos (ECONÓMICO → ECONOMICO)
+    2. Elimina "NRO.", "Nº", "N°" dejando solo el número
+    3. Elimina "NACIONAL" cuando está solo (no "CÁMARA NACIONAL")
+    4. Elimina "DE LA CAPITAL FEDERAL", "DE LA CAP.FEDERAL"
+    5. Normaliza espacios
+    
+    Ejemplos de transformación:
+    Scraper → Normalizado:
+    - "JUZGADO CRIMINAL Y CORRECCIONAL NRO. 23" → "JUZGADO CRIMINAL Y CORRECCIONAL 23"
+    - "JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL NRO. 12" → "JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 12"
+    - "JUZGADO PENAL ECONÓMICO NRO. 8" → "JUZGADO PENAL ECONOMICO 8"
+    
+    Expedientes → Normalizado:
+    - "JUZGADO NACIONAL EN LO CRIMINAL Y CORRECCIONAL NRO. 23" → "JUZGADO CRIMINAL Y CORRECCIONAL 23"
+    - "JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 3" → "JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 3"
+    - "TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 3" → "TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 3"
+    """
+    if not nombre:
+        return None
+    
+    # 1. Eliminar acentos
+    nfd = unicodedata.normalize('NFD', str(nombre))
+    sin_acentos = ''.join(ch for ch in nfd if unicodedata.category(ch) != 'Mn')
+    
+    # 2. Mayúsculas
+    s = sin_acentos.upper()
+    
+    # 3. Quitar variaciones de número (NRO., Nº, N°)
+    s = re.sub(r'\bNRO\.\s*', '', s)   # NRO.
+    s = re.sub(r'\bNRO\s+', '', s)     # NRO
+    s = re.sub(r'\bNº\s*', '', s)      # Nº
+    s = re.sub(r'\bN°\s*', '', s)      # N°
+    
+    # 4. Mapeo de variantes específicas
+    
+    # PROTEGER "CÁMARA NACIONAL" temporalmente
+    s = s.replace('CAMARA NACIONAL', '##CAMARA_NACIONAL##')
+    
+    # Eliminar "NACIONAL EN LO" (viene en expedientes, no en scraper)
+    s = re.sub(r'\bNACIONAL EN LO\b', '', s)
+    
+    # RESTAURAR "CÁMARA NACIONAL"
+    s = s.replace('##CAMARA_NACIONAL##', 'CAMARA NACIONAL')
+    
+    # Eliminar "DE LA CAPITAL FEDERAL" y variantes
+    s = re.sub(r'\bDE LA CAP\.\s*FEDERAL\b', '', s)
+    s = re.sub(r'\bDE LA CAPITAL FEDERAL\b', '', s)
+    
+    # 5. Reemplazar guiones con espacios
+    s = s.replace('-', ' ')
+    
+    # 6. Normalizar espacios múltiples
+    s = re.sub(r'\s+', ' ', s).strip()
+    
+    return s
 
 def generar_dim_tribunales(df, path="tribunales_full.csv"):
-    print("Extrayendo tribunales (con jerarquía)...")
+    print("Extrayendo tribunales con normalización para JOIN simple...")
     tribunales = {}
 
-    # --- Desde los expedientes ---
-    for _, r in df.iterrows():
-        n = limpiar_texto(r.get("tribunal"))
-        if n:
-            tribunales[_norm(n)] = {
-                "nombre": n,
-                "instancia": "Primera Instancia",
-                "fuero": r.get("fuero"),
-                "jurisdiccion": r.get("jurisdiccion")
-            }
-
-    # --- Desde tribunales_full.csv ---
+    # --- PRIMERO: Desde tribunales_full.csv (PRIORIDAD: info completa) ---
     df_tr = safe_read_csv_pd(path)
     if not df_tr.empty:
         def pick(*cands):
@@ -345,11 +436,17 @@ def generar_dim_tribunales(df, path="tribunales_full.csv"):
             titulo = str(r[col_t]).strip()
             pathv = str(r[col_p]).strip() if col_p in r and pd.notna(r[col_p]) else None
             nombre = titulo
+            
+            # Si es una dependencia (SALA A, SECRETARÍA 116, etc.), usar el tribunal padre
             if _es_dependencia(_norm(titulo)):
                 padre = _tribunal_desde_path(pathv)
                 if padre:
                     nombre = padre
-            key = _norm(nombre)
+            
+            # ✨ NORMALIZAR NOMBRE AQUÍ
+            nombre = normalizar_nombre_tribunal(nombre)
+            
+            key = _norm(nombre) if nombre else None
             if not key:
                 continue
 
@@ -364,8 +461,24 @@ def generar_dim_tribunales(df, path="tribunales_full.csv"):
                     "instancia": "N/D",
                     "domicilio_sede": r.get(col_det),
                     "contacto": contacto or None,
-                    "fuero": None,  # ⚠️ este valor a veces queda en None
+                    "fuero": None,
                     "jurisdiccion": "Federal"
+                }
+
+    # --- SEGUNDO: Desde los expedientes (solo si NO existen en scraper) ---
+    for _, r in df.iterrows():
+        n = r.get("tribunal")  # Ya viene normalizado
+        if n:
+            key = _norm(n)
+            # ✨ SOLO agregar si NO existe en tribunales_full.csv
+            if key not in tribunales:
+                tribunales[key] = {
+                    "nombre": n,
+                    "instancia": "Primera Instancia",
+                    "fuero": r.get("fuero"),
+                    "jurisdiccion": r.get("jurisdiccion"),
+                    "domicilio_sede": None,
+                    "contacto": None
                 }
 
     # --- Asignar IDs ---
@@ -385,7 +498,6 @@ def generar_dim_tribunales(df, path="tribunales_full.csv"):
         for k in keys:
             t = tribunales[k]
 
-            # 🩵 Agregá esta línea justo acá:
             if not t.get("fuero"):
                 t["fuero"] = "Desconocido"
 
@@ -399,7 +511,7 @@ def generar_dim_tribunales(df, path="tribunales_full.csv"):
                 "fuero": t.get("fuero")
             })
 
-    print(f"Tribunales únicos: {len(keys)}")
+    print(f"✓ Tribunales únicos (nombres normalizados para JOIN): {len(keys)}")
     return nombre_to_id
 
 
@@ -492,7 +604,10 @@ def procesar_jueces_y_relaciones(nombre_to_id, path="tribunales_full.csv"):
             if padre:
                 nombre_tribunal = padre
 
-        tid = nombre_to_id.get(_norm(nombre_tribunal))
+        # ✨ NORMALIZAR antes de buscar en el diccionario
+        nombre_tribunal_normalizado = normalizar_nombre_tribunal(nombre_tribunal)
+        tid = nombre_to_id.get(_norm(nombre_tribunal_normalizado))
+        
         if not tid:
             skip += 1
             continue
@@ -552,7 +667,7 @@ def procesar_jueces_y_relaciones(nombre_to_id, path="tribunales_full.csv"):
 # =========================
 
 def main():
-    print("=== Iniciando ETL completo ===")
+    print("=== Iniciando ETL con normalización completa de tribunales ===\n")
     df_exp=procesar_expedientes()
     procesar_intervinientes()
     procesar_resoluciones()
@@ -561,7 +676,13 @@ def main():
     generar_dim_jurisdicciones(df_exp)
     nombre_to_id=generar_dim_tribunales(df_exp)
     procesar_jueces_y_relaciones(nombre_to_id)
-    print("=== ETL finalizado correctamente ===")
+    print("\n=== ETL finalizado correctamente ===")
+    print("\n✨ NORMALIZACIÓN COMPLETA APLICADA:")
+    print("   Scraper: JUZGADO CRIMINAL Y CORRECCIONAL NRO. 23 → JUZGADO CRIMINAL Y CORRECCIONAL 23")
+    print("   Expediente: JUZGADO NACIONAL EN LO CRIMINAL Y CORRECCIONAL NRO. 23 → JUZGADO CRIMINAL Y CORRECCIONAL 23")
+    print("   Scraper: JUZGADO PENAL ECONÓMICO NRO. 8 → JUZGADO PENAL ECONOMICO 8")
+    print("   Expediente: JUZGADO PENAL ECONOMICO 8 → JUZGADO PENAL ECONOMICO 8")
+    print("   ✅ JOIN habilitado: SELECT * FROM expediente e JOIN tribunal t ON e.tribunal = t.nombre")
 
 if __name__=="__main__":
     main()
