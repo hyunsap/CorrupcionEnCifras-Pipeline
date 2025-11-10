@@ -115,475 +115,475 @@ tribunal_id,juez_id,cargo,situacion
 33,346,Prosecretario de Cámara,Contratado
 33,351,Prosecretario de Cámara,Contratado
 33,447,Vocal,Efectivo
-41,297,Juez Subrogante,Efectivo
-42,65,Juez,Efectivo
-43,438,Juez,Efectivo
-44,429,Juez,Efectivo
-45,268,Juez Subrogante,Efectivo
-46,229,Juez Subrogante,Efectivo
-47,485,Juez,Efectivo
-48,140,Juez,Efectivo
-49,86,Juez Subrogante,Efectivo
-50,118,Juez Subrogante,Efectivo
-51,268,Juez,Efectivo
-52,286,Juez Subrogante,Efectivo
-53,84,Juez,Efectivo
-54,100,Juez,Efectivo
-55,254,Juez,Efectivo
-56,236,Juez Subrogante,Efectivo
-57,118,Juez,Efectivo
-58,431,Juez,Efectivo
-59,144,Juez,Efectivo
-60,317,Juez Subrogante,Efectivo
-61,86,Juez,Efectivo
-62,453,Juez,Efectivo
-63,100,Juez Subrogante,Efectivo
-64,217,Juez Subrogante,Subrogante
-65,65,Juez Subrogante,Efectivo
-66,227,Juez,Efectivo
-67,37,Juez,Efectivo
-68,317,Juez,Efectivo
-69,236,Juez,Efectivo
-70,103,Juez,Efectivo
-71,369,Juez Subrogante,Efectivo
-72,144,Juez Subrogante,Efectivo
-73,33,Juez,Efectivo
-74,286,Juez,Efectivo
-75,382,Juez,Efectivo
-76,80,Juez Subrogante,Efectivo
-77,386,Juez Subrogante,Efectivo
-78,292,Juez Subrogante,Interino
-79,103,Juez Subrogante,Efectivo
-80,441,Juez Subrogante,Efectivo
-81,80,Juez,Efectivo
-81,156,Secretario,Efectivo
-81,493,Prosecretario Administrativo,Interino
-81,494,Secretario,Contratado
-82,260,Juez Subrogante,Efectivo
-83,260,Juez,Efectivo
-84,386,Juez,Efectivo
-85,78,Juez,Efectivo
-86,43,Juez,Efectivo
-87,298,Juez,Efectivo
-88,115,Juez,Efectivo
-89,479,Juez,Efectivo
-90,382,Juez Subrogante,Efectivo
-91,297,Juez,Efectivo
-92,154,Juez,Efectivo
-93,369,Juez,Efectivo
-94,43,Juez Subrogante,Efectivo
-95,140,Juez Subrogante,Efectivo
-96,441,Juez,Efectivo
-97,33,Juez Subrogante,Efectivo
-98,229,Juez,Efectivo
-99,37,Juez Subrogante,Efectivo
-100,434,Juez,Efectivo
-101,434,Juez Subrogante,Efectivo
-102,310,Juez,Efectivo
-103,210,Juez,Efectivo
-104,465,Juez,Efectivo
-105,95,Juez,Efectivo
-106,58,Juez Subrogante,Efectivo
-107,95,Juez Subrogante,Efectivo
-108,235,Juez,Efectivo
-109,230,Juez,Efectivo
-110,153,Juez,Efectivo
-111,327,Juez,Efectivo
-113,58,Juez,Efectivo
-114,175,Juez,Efectivo
-115,234,Juez Subrogante,Efectivo
-141,31,Juez,Efectivo
-143,472,Juez,Interino
-144,287,Juez,Efectivo
-145,53,Juez,Efectivo
-146,64,Juez,Interino
-147,8,Juez,Efectivo
-148,2,Juez,Efectivo
-149,108,Juez,Efectivo
-150,181,Juez,Efectivo
-151,163,Juez,Efectivo
-152,57,Secretario,Efectivo
-152,372,Secretario,Interino
-153,148,Secretario,Interino
-153,201,Secretario,Contratado
-153,348,Secretario,Interino
-154,409,Secretario,Efectivo
-155,56,Secretario,Efectivo
-155,76,Secretario,Efectivo
-157,282,Secretario,Efectivo
-158,421,Secretario,Efectivo
-159,9,Secretario,Efectivo
-159,145,Secretario,Efectivo
-159,460,Secretario,Efectivo
-160,246,Secretario,Interino
-160,437,Secretario,Efectivo
-161,477,Secretario,Contratado
-162,291,Secretario,Interino
-163,301,Secretario,Contratado
-163,316,Secretario,Efectivo
-163,393,Secretario,Efectivo
-164,225,Secretario,Efectivo
-165,274,Secretario,Efectivo
-165,381,Secretario,Efectivo
-166,188,Secretario,Efectivo
-166,373,Secretario,Efectivo
-167,85,Secretario,Adscripto
-167,352,Secretario,Efectivo
-168,114,Secretario,Adscripto
-168,332,Secretario,Efectivo
-168,467,Secretario,Contratado
-169,295,Secretario,Efectivo
-169,356,Secretario,Efectivo
-169,397,Secretario,Efectivo
-170,42,Secretario,Efectivo
-170,94,Secretario,Efectivo
-171,34,Secretario,Efectivo
-171,176,Secretario,Efectivo
-172,418,Secretario,Efectivo
-172,435,Secretario,Interino
-173,72,Secretario,Efectivo
-173,247,Secretario,Efectivo
-174,166,Secretario,Interino
-174,464,Secretario,Efectivo
-175,410,Secretario,Efectivo
-176,220,Secretario,Efectivo
-176,473,Secretario,Efectivo
-177,6,Secretario,Efectivo
-178,269,Secretario,Efectivo
-178,484,Secretario,Efectivo
-179,5,Secretario,Efectivo
-179,448,Secretario,Efectivo
-180,132,Secretario,Efectivo
-180,290,Secretario,Efectivo
-181,253,Secretario,Efectivo
-181,359,Secretario,Efectivo
-182,432,Secretario,Efectivo
-182,478,Secretario,Efectivo
-183,156,Secretario,Efectivo
-183,494,Secretario,Contratado
-184,194,Secretario,Efectivo
-185,272,Secretario,Efectivo
-186,133,Secretario,Efectivo
-186,387,Secretario,Efectivo
-187,82,Secretario,Efectivo
-187,162,Secretario,Interino
-188,203,Secretario,Efectivo
-188,329,Secretario,Efectivo
-189,81,Secretario,Efectivo
-190,1,Secretario,Interino
-191,112,Secretario,Efectivo
-192,83,Secretario,Efectivo
-192,92,Secretario,Interino
-193,18,Secretario,Efectivo
-194,452,Secretario,Efectivo
-195,374,Secretario,Efectivo
-195,394,Secretario,Efectivo
-196,147,Secretario,Efectivo
-196,370,Secretario,Efectivo
-197,67,Secretario,Efectivo
-197,167,Secretario,Interino
-198,46,Secretario,Efectivo
-199,241,Secretario,Efectivo
-200,476,Secretario,Interino
-201,483,Secretario,Efectivo
-202,204,Secretario,Efectivo
-202,388,Secretario,Interino
-203,245,Secretario,Efectivo
-203,364,Secretario,Efectivo
-204,26,Secretario,Interino
-204,205,Secretario,-
-205,27,Secretario,Efectivo
-205,63,Secretario,Interino
-206,242,Secretario,Efectivo
-206,337,Secretario,Efectivo
-207,311,Secretario,Efectivo
-208,232,Secretario,Efectivo
-208,335,Secretario,Contratado
-208,363,Secretario,Efectivo
-209,376,Secretario,Contratado
-210,90,Secretario,Contratado
-210,98,Secretario,Efectivo
-210,126,Secretario,Efectivo
-211,142,Secretario,Interino
-211,375,Secretario,Contratado
-211,471,Secretario,Efectivo
-212,216,Secretario,Efectivo
-212,457,Secretario,Efectivo
-213,105,Secretario,Efectivo
-213,455,Secretario,Interino
-214,284,Secretario,Efectivo
-215,305,Secretario,Contratado
-215,402,Secretario,Efectivo
-216,336,Secretario,Contratado
-216,400,Secretario,Contratado
-217,392,Secretario,Efectivo
-218,334,Secretario,Efectivo
-219,77,Secretario,Efectivo
-219,179,Secretario,Efectivo
-220,195,Secretario,Efectivo
-220,208,Secretario,Efectivo
-221,309,Secretario,Efectivo
-221,330,Secretario,Efectivo
-222,321,Secretario,Efectivo
-222,365,Secretario,Efectivo
-223,29,Secretario,Efectivo
-223,345,Secretario,Efectivo
-224,250,Secretario,Efectivo
-224,273,Secretario,Interino
-225,20,Secretario,Efectivo
-225,318,Secretario,Efectivo
-226,121,Secretario,Efectivo
-226,244,Secretario,Efectivo
-227,75,Secretario,Efectivo
-227,299,Secretario,Efectivo
-227,411,Secretario,Efectivo
-228,279,Secretario,Efectivo
-228,427,Secretario,Efectivo
-229,289,Secretario,Efectivo
-229,419,Secretario,Interino
-230,209,Secretario,Efectivo
-230,449,Secretario,Efectivo
-231,15,Secretario,Efectivo
-231,207,Secretario,Efectivo
-232,12,Secretario,Efectivo
-232,384,Secretario,Efectivo
-233,222,Secretario,Efectivo
-233,333,Secretario,Efectivo
-234,482,Secretario,Efectivo
-235,416,Secretario,Efectivo
-236,214,Secretario,Efectivo
-236,239,Secretario,Efectivo
-237,51,Secretario,Efectivo
-237,99,Secretario,Efectivo
-238,224,Secretario,Efectivo
-238,360,Secretario,Efectivo
-239,45,Secretario,Efectivo
-239,353,Secretario,Efectivo
-239,420,Secretario,Efectivo
-240,389,Coordinador,Efectivo
-241,10,Vocal,Efectivo
-241,25,Vicepresidente,Efectivo
-241,52,Secretario,Efectivo
-241,127,Vocal,Efectivo
-241,146,Secretario,Efectivo
-241,186,Presidente,Efectivo
-241,339,Secretario,Efectivo
-241,408,Secretario,Efectivo
-243,70,Secretario,Efectivo
-243,116,Presidente,Efectivo
-243,125,Vicepresidente,Subrogante
-244,11,Secretario,Efectivo
-244,24,Presidente,Efectivo
-244,30,Secretario,Contratado
-244,243,Vicepresidente,Efectivo
-244,265,Secretario,Contratado
-244,312,Secretario,Contratado
-244,379,Secretario,Efectivo
-245,25,Vocal,Efectivo
-245,50,Vicepresidente,Efectivo
-245,73,Presidente,Efectivo
-245,101,Secretario,Efectivo
-245,143,Secretario de Cámara,Efectivo
-245,463,Secretario,Efectivo
-246,55,Secretario,Efectivo
-246,96,Secretario de Derechos Humanos,Efectivo
-246,122,Secretario,Efectivo
-246,129,Secretario,Efectivo
-246,131,Secretario,Contratado
-246,182,Secretario,Contratado
-246,202,Vicepresidente,Efectivo
-246,219,Secretario,Efectivo
-246,264,Secretario,Efectivo
-246,276,Juez Subrogante,Subrogante
-246,349,Secretario,Efectivo
-246,425,Secretario,Efectivo
-246,430,Presidenta,Efectivo
-248,104,Vocal,Subrogante
-248,127,Vocal,Efectivo
-248,155,Secretario,Efectivo
-248,192,Secretario,Efectivo
-248,197,Secretario,Efectivo
-248,202,Presidente,Efectivo
-248,223,Secretario,Contratado
-248,256,Secretario,Subrogante
-248,446,Secretario,Efectivo
-248,462,Secretario,Efectivo
-249,50,Vicepresidente 1ro.,Efectivo
-249,61,Presidente,Efectivo
-249,183,Vicepresidente 2do.,Efectivo
-249,189,Secretario,Contratado
-249,255,Secretario,Interino
-249,338,Secretario,Contratado
-249,342,Secretario,Efectivo
-249,357,Secretario,Efectivo
-250,275,Vocal,Efectivo
-250,304,Secretario,Efectivo
-250,385,Secretario,Efectivo
-250,405,Presidente,Subrogante
-250,417,Vocal,Efectivo
-252,161,Presidente,Efectivo
-252,231,Vocal,Efectivo
-252,340,Secretario,Efectivo
-252,366,Secretario,Efectivo
-254,45,Juez Subrogante,Efectivo
-254,59,Juez,Efectivo
-254,107,Secretario,Efectivo
-254,228,Juez,Efectivo
-254,404,Secretario,Efectivo
-255,180,Vocal,Efectivo
-255,196,Presidente,Efectivo
-255,212,Vocal,Efectivo
-255,261,Secretario,Efectivo
-255,294,Secretario,Efectivo
-256,14,Secretario,Efectivo
-256,47,Vocal,Efectivo
-256,109,Presidente,Efectivo
-256,128,Vocal,Efectivo
-256,238,Secretario,Interino
-256,277,Secretario,Efectivo
-256,403,Secretario,Efectivo
-257,4,Juez Subrogante,Efectivo
-257,280,Juez Subrogante,Efectivo
-257,296,Secretario,Efectivo
-257,302,Prosecretario Administrativo,-
-257,470,Secretario,Interino
-258,111,Secretario,Efectivo
-258,178,Presidente,Efectivo
-258,280,Juez Subrogante,Efectivo
-258,459,Juez,Efectivo
-258,461,Secretario,Efectivo
-259,120,Vocal,Efectivo
-259,306,Juez Subrogante,Efectivo
-259,323,Secretario de Cámara,Contratado
-259,326,Presidenta,Efectivo
-259,440,Secretario,Efectivo
-260,74,Secretario,Contratado
-260,117,Presidente,Efectivo
-260,281,Vocal,Efectivo
-260,343,Secretario,Interino
-260,385,Vocal,Efectivo
-260,433,Secretario,-
-261,4,Presidente,Efectivo
-261,60,Secretario,Contratado
-261,180,Juez Subrogante,Efectivo
-261,344,Juez Subrogante,Efectivo
-261,391,Secretario,Efectivo
-262,193,Secretario,Contratado
-262,198,Vocal,Efectivo
-262,206,Vocal,Efectivo
-262,281,Juez Subrogante,Efectivo
-262,306,Presidente,Efectivo
-262,406,Juez Subrogante,Efectivo
-262,412,Secretario,Efectivo
-263,124,Secretario,Efectivo
-263,126,Juez,Efectivo
-263,130,Secretario,Efectivo
-263,151,Juez Subrogante,Efectivo
-263,190,Secretario,Efectivo
-263,414,Presidenta,Efectivo
-264,66,Secretario,Efectivo
-264,406,Presidente,Efectivo
-264,417,Vocal,Efectivo
-265,45,Presidente,Efectivo
-265,49,Vocal,Efectivo
-265,171,Secretario,Efectivo
-265,212,Vocal,Efectivo
-265,401,Secretario,Contratado
-265,458,Secretario,Efectivo
-265,459,Juez Subrogante,Efectivo
-266,198,Presidente,Efectivo
-266,206,Vocal,Efectivo
-266,344,Vocal,Efectivo
-266,428,Secretario,Efectivo
-267,7,Vocal,Subrogante
-267,40,Secretario,Efectivo
-267,88,Presidente,-
-267,354,Secretario,Efectivo
-268,23,Juez,Efectivo
-268,177,Secretario,Contratado
-268,199,Juez Subrogante,Efectivo
-268,308,Secretario,Efectivo
-268,319,Secretario,Efectivo
-268,358,Presidente,Efectivo
-269,7,Juez Subrogante,Subrogante
-269,36,Secretario,Efectivo
-269,88,Juez Subrogante,-
-269,172,Secretario,Contratado
-269,237,Juez Subrogante,Efectivo
-269,442,Secretario,Contratado
-270,79,Vocal 1°,Efectivo
-270,252,Presidente,Efectivo
-270,258,Vocal 2°,Efectivo
-270,320,Secretario,Efectivo
-270,488,Secretario,Efectivo
-271,68,Presidente,Efectivo
-271,152,Secretario,Efectivo
-271,237,Vocal,Efectivo
-271,258,Vocal,Efectivo
-271,303,Secretario,Efectivo
-272,119,Presidente,Subrogante
-272,199,Vocal,Efectivo
-272,233,Vocal,Subrogante
-272,395,Secretario,Efectivo
-272,413,Secretario,Efectivo
-272,487,Secretario,Contratado
-273,174,Secretario de Cámara,Efectivo
-273,249,Presidente,Efectivo
-273,278,Vocal,Efectivo
-274,16,Secretario,Contratado
-274,106,Presidente,Efectivo
-274,119,Juez Subrogante,Subrogante
-274,185,Secretario,Efectivo
-274,206,Juez Subrogante,Efectivo
-275,19,Vocal,Efectivo
-275,87,Secretario,Efectivo
-275,138,Secretario,Efectivo
-275,151,Presidente,Efectivo
-275,314,Vocal,Efectivo
-276,126,Vocal,Efectivo
-276,213,Vocal,Efectivo
-276,378,Secretario,Efectivo
-276,422,Presidenta,Efectivo
-276,450,Secretario,Ad honorem
-276,492,Secretario,Efectivo
-277,3,Presidente,Efectivo
-277,249,Vocal,Efectivo
-277,280,Vocal,Efectivo
-277,331,Secretario,Contratado
-278,13,Vocal,Efectivo
-278,187,Secretario,Efectivo
-278,249,Juez Subrogante,Efectivo
-278,263,Presidente,Efectivo
-278,325,Secretario,Efectivo
-279,71,Secretario,Interino
-279,161,Juez Subrogante,Efectivo
-279,231,Presidente,Efectivo
-279,257,Vocal,Efectivo
-279,358,Vocal,Efectivo
-279,377,Secretario,Interino
-279,481,Secretario,Contratado
-280,200,Presidente,Efectivo
-280,390,Secretario,Interino
-281,28,Secretario,Efectivo
-281,104,Presidente,Subrogante
-281,110,Vocal,Subrogante
-281,150,Secretario,Efectivo
-281,288,Juez Subrogante,Efectivo
-281,322,Secretario,Efectivo
-281,380,Secretario,Efectivo
-281,451,Secretario,Ad honorem
-281,489,Secretario,Efectivo
-282,110,Juez Subrogante,Subrogante
-282,149,Secretario,Efectivo
-282,158,Presidente,Efectivo
-282,362,Secretario,Efectivo
-282,436,Juez Subrogante,Efectivo
-282,454,Secretario,Efectivo
-282,469,Secretario,Efectivo
-283,39,Secretario,Efectivo
-283,137,Prosecretario Letrado,Efectivo
-283,184,Secretario,Efectivo
-283,288,Vicepresidente,Efectivo
-283,300,Secretario,Efectivo
-283,436,Presidente,Efectivo
-283,486,Secretario,Efectivo
+39,297,Juez Subrogante,Efectivo
+40,65,Juez,Efectivo
+41,438,Juez,Efectivo
+42,429,Juez,Efectivo
+43,268,Juez Subrogante,Efectivo
+44,229,Juez Subrogante,Efectivo
+45,485,Juez,Efectivo
+46,140,Juez,Efectivo
+47,86,Juez Subrogante,Efectivo
+48,118,Juez Subrogante,Efectivo
+49,268,Juez,Efectivo
+50,286,Juez Subrogante,Efectivo
+51,84,Juez,Efectivo
+52,100,Juez,Efectivo
+53,254,Juez,Efectivo
+54,236,Juez Subrogante,Efectivo
+55,118,Juez,Efectivo
+56,431,Juez,Efectivo
+57,144,Juez,Efectivo
+58,317,Juez Subrogante,Efectivo
+59,86,Juez,Efectivo
+60,453,Juez,Efectivo
+61,100,Juez Subrogante,Efectivo
+62,217,Juez Subrogante,Subrogante
+63,65,Juez Subrogante,Efectivo
+64,227,Juez,Efectivo
+65,37,Juez,Efectivo
+66,317,Juez,Efectivo
+67,236,Juez,Efectivo
+68,103,Juez,Efectivo
+69,369,Juez Subrogante,Efectivo
+70,144,Juez Subrogante,Efectivo
+71,33,Juez,Efectivo
+72,286,Juez,Efectivo
+73,382,Juez,Efectivo
+74,80,Juez Subrogante,Efectivo
+75,386,Juez Subrogante,Efectivo
+76,292,Juez Subrogante,Interino
+77,103,Juez Subrogante,Efectivo
+78,441,Juez Subrogante,Efectivo
+79,80,Juez,Efectivo
+79,156,Secretario,Efectivo
+79,493,Prosecretario Administrativo,Interino
+79,494,Secretario,Contratado
+80,260,Juez Subrogante,Efectivo
+81,260,Juez,Efectivo
+82,386,Juez,Efectivo
+83,78,Juez,Efectivo
+84,43,Juez,Efectivo
+85,298,Juez,Efectivo
+86,115,Juez,Efectivo
+87,479,Juez,Efectivo
+88,382,Juez Subrogante,Efectivo
+89,297,Juez,Efectivo
+90,154,Juez,Efectivo
+91,369,Juez,Efectivo
+92,43,Juez Subrogante,Efectivo
+93,140,Juez Subrogante,Efectivo
+94,441,Juez,Efectivo
+95,33,Juez Subrogante,Efectivo
+96,229,Juez,Efectivo
+97,37,Juez Subrogante,Efectivo
+98,434,Juez,Efectivo
+99,434,Juez Subrogante,Efectivo
+100,310,Juez,Efectivo
+101,210,Juez,Efectivo
+102,465,Juez,Efectivo
+103,95,Juez,Efectivo
+104,58,Juez Subrogante,Efectivo
+105,95,Juez Subrogante,Efectivo
+106,235,Juez,Efectivo
+107,230,Juez,Efectivo
+108,153,Juez,Efectivo
+109,327,Juez,Efectivo
+111,58,Juez,Efectivo
+112,175,Juez,Efectivo
+113,234,Juez Subrogante,Efectivo
+139,31,Juez,Efectivo
+141,472,Juez,Interino
+142,287,Juez,Efectivo
+143,53,Juez,Efectivo
+144,64,Juez,Interino
+145,8,Juez,Efectivo
+146,2,Juez,Efectivo
+147,108,Juez,Efectivo
+148,181,Juez,Efectivo
+149,163,Juez,Efectivo
+150,57,Secretario,Efectivo
+150,372,Secretario,Interino
+151,148,Secretario,Interino
+151,201,Secretario,Contratado
+151,348,Secretario,Interino
+152,409,Secretario,Efectivo
+153,56,Secretario,Efectivo
+153,76,Secretario,Efectivo
+155,282,Secretario,Efectivo
+156,421,Secretario,Efectivo
+157,9,Secretario,Efectivo
+157,145,Secretario,Efectivo
+157,460,Secretario,Efectivo
+158,246,Secretario,Interino
+158,437,Secretario,Efectivo
+159,477,Secretario,Contratado
+160,291,Secretario,Interino
+161,301,Secretario,Contratado
+161,316,Secretario,Efectivo
+161,393,Secretario,Efectivo
+162,225,Secretario,Efectivo
+163,274,Secretario,Efectivo
+163,381,Secretario,Efectivo
+164,188,Secretario,Efectivo
+164,373,Secretario,Efectivo
+165,85,Secretario,Adscripto
+165,352,Secretario,Efectivo
+166,114,Secretario,Adscripto
+166,332,Secretario,Efectivo
+166,467,Secretario,Contratado
+167,295,Secretario,Efectivo
+167,356,Secretario,Efectivo
+167,397,Secretario,Efectivo
+168,42,Secretario,Efectivo
+168,94,Secretario,Efectivo
+169,34,Secretario,Efectivo
+169,176,Secretario,Efectivo
+170,418,Secretario,Efectivo
+170,435,Secretario,Interino
+171,72,Secretario,Efectivo
+171,247,Secretario,Efectivo
+172,166,Secretario,Interino
+172,464,Secretario,Efectivo
+173,410,Secretario,Efectivo
+174,220,Secretario,Efectivo
+174,473,Secretario,Efectivo
+175,6,Secretario,Efectivo
+176,269,Secretario,Efectivo
+176,484,Secretario,Efectivo
+177,5,Secretario,Efectivo
+177,448,Secretario,Efectivo
+178,132,Secretario,Efectivo
+178,290,Secretario,Efectivo
+179,253,Secretario,Efectivo
+179,359,Secretario,Efectivo
+180,432,Secretario,Efectivo
+180,478,Secretario,Efectivo
+181,156,Secretario,Efectivo
+181,494,Secretario,Contratado
+182,194,Secretario,Efectivo
+183,272,Secretario,Efectivo
+184,133,Secretario,Efectivo
+184,387,Secretario,Efectivo
+185,82,Secretario,Efectivo
+185,162,Secretario,Interino
+186,203,Secretario,Efectivo
+186,329,Secretario,Efectivo
+187,81,Secretario,Efectivo
+188,1,Secretario,Interino
+189,112,Secretario,Efectivo
+190,83,Secretario,Efectivo
+190,92,Secretario,Interino
+191,18,Secretario,Efectivo
+192,452,Secretario,Efectivo
+193,374,Secretario,Efectivo
+193,394,Secretario,Efectivo
+194,147,Secretario,Efectivo
+194,370,Secretario,Efectivo
+195,67,Secretario,Efectivo
+195,167,Secretario,Interino
+196,46,Secretario,Efectivo
+197,241,Secretario,Efectivo
+198,476,Secretario,Interino
+199,483,Secretario,Efectivo
+200,204,Secretario,Efectivo
+200,388,Secretario,Interino
+201,245,Secretario,Efectivo
+201,364,Secretario,Efectivo
+202,26,Secretario,Interino
+202,205,Secretario,-
+203,27,Secretario,Efectivo
+203,63,Secretario,Interino
+204,242,Secretario,Efectivo
+204,337,Secretario,Efectivo
+205,311,Secretario,Efectivo
+206,232,Secretario,Efectivo
+206,335,Secretario,Contratado
+206,363,Secretario,Efectivo
+207,376,Secretario,Contratado
+208,90,Secretario,Contratado
+208,98,Secretario,Efectivo
+208,126,Secretario,Efectivo
+209,142,Secretario,Interino
+209,375,Secretario,Contratado
+209,471,Secretario,Efectivo
+210,216,Secretario,Efectivo
+210,457,Secretario,Efectivo
+211,105,Secretario,Efectivo
+211,455,Secretario,Interino
+212,284,Secretario,Efectivo
+213,305,Secretario,Contratado
+213,402,Secretario,Efectivo
+214,336,Secretario,Contratado
+214,400,Secretario,Contratado
+215,392,Secretario,Efectivo
+216,334,Secretario,Efectivo
+217,77,Secretario,Efectivo
+217,179,Secretario,Efectivo
+218,195,Secretario,Efectivo
+218,208,Secretario,Efectivo
+219,309,Secretario,Efectivo
+219,330,Secretario,Efectivo
+220,321,Secretario,Efectivo
+220,365,Secretario,Efectivo
+221,29,Secretario,Efectivo
+221,345,Secretario,Efectivo
+222,250,Secretario,Efectivo
+222,273,Secretario,Interino
+223,20,Secretario,Efectivo
+223,318,Secretario,Efectivo
+224,121,Secretario,Efectivo
+224,244,Secretario,Efectivo
+225,75,Secretario,Efectivo
+225,299,Secretario,Efectivo
+225,411,Secretario,Efectivo
+226,279,Secretario,Efectivo
+226,427,Secretario,Efectivo
+227,289,Secretario,Efectivo
+227,419,Secretario,Interino
+228,209,Secretario,Efectivo
+228,449,Secretario,Efectivo
+229,15,Secretario,Efectivo
+229,207,Secretario,Efectivo
+230,12,Secretario,Efectivo
+230,384,Secretario,Efectivo
+231,222,Secretario,Efectivo
+231,333,Secretario,Efectivo
+232,482,Secretario,Efectivo
+233,416,Secretario,Efectivo
+234,214,Secretario,Efectivo
+234,239,Secretario,Efectivo
+235,51,Secretario,Efectivo
+235,99,Secretario,Efectivo
+236,224,Secretario,Efectivo
+236,360,Secretario,Efectivo
+237,45,Secretario,Efectivo
+237,353,Secretario,Efectivo
+237,420,Secretario,Efectivo
+238,389,Coordinador,Efectivo
+239,10,Vocal,Efectivo
+239,25,Vicepresidente,Efectivo
+239,52,Secretario,Efectivo
+239,127,Vocal,Efectivo
+239,146,Secretario,Efectivo
+239,186,Presidente,Efectivo
+239,339,Secretario,Efectivo
+239,408,Secretario,Efectivo
+241,70,Secretario,Efectivo
+241,116,Presidente,Efectivo
+241,125,Vicepresidente,Subrogante
+242,11,Secretario,Efectivo
+242,24,Presidente,Efectivo
+242,30,Secretario,Contratado
+242,243,Vicepresidente,Efectivo
+242,265,Secretario,Contratado
+242,312,Secretario,Contratado
+242,379,Secretario,Efectivo
+243,25,Vocal,Efectivo
+243,50,Vicepresidente,Efectivo
+243,73,Presidente,Efectivo
+243,101,Secretario,Efectivo
+243,143,Secretario de Cámara,Efectivo
+243,463,Secretario,Efectivo
+244,55,Secretario,Efectivo
+244,96,Secretario de Derechos Humanos,Efectivo
+244,122,Secretario,Efectivo
+244,129,Secretario,Efectivo
+244,131,Secretario,Contratado
+244,182,Secretario,Contratado
+244,202,Vicepresidente,Efectivo
+244,219,Secretario,Efectivo
+244,264,Secretario,Efectivo
+244,276,Juez Subrogante,Subrogante
+244,349,Secretario,Efectivo
+244,425,Secretario,Efectivo
+244,430,Presidenta,Efectivo
+246,104,Vocal,Subrogante
+246,127,Vocal,Efectivo
+246,155,Secretario,Efectivo
+246,192,Secretario,Efectivo
+246,197,Secretario,Efectivo
+246,202,Presidente,Efectivo
+246,223,Secretario,Contratado
+246,256,Secretario,Subrogante
+246,446,Secretario,Efectivo
+246,462,Secretario,Efectivo
+247,50,Vicepresidente 1ro.,Efectivo
+247,61,Presidente,Efectivo
+247,183,Vicepresidente 2do.,Efectivo
+247,189,Secretario,Contratado
+247,255,Secretario,Interino
+247,338,Secretario,Contratado
+247,342,Secretario,Efectivo
+247,357,Secretario,Efectivo
+248,275,Vocal,Efectivo
+248,304,Secretario,Efectivo
+248,385,Secretario,Efectivo
+248,405,Presidente,Subrogante
+248,417,Vocal,Efectivo
+250,161,Presidente,Efectivo
+250,231,Vocal,Efectivo
+250,340,Secretario,Efectivo
+250,366,Secretario,Efectivo
+252,45,Juez Subrogante,Efectivo
+252,59,Juez,Efectivo
+252,107,Secretario,Efectivo
+252,228,Juez,Efectivo
+252,404,Secretario,Efectivo
+253,180,Vocal,Efectivo
+253,196,Presidente,Efectivo
+253,212,Vocal,Efectivo
+253,261,Secretario,Efectivo
+253,294,Secretario,Efectivo
+254,14,Secretario,Efectivo
+254,47,Vocal,Efectivo
+254,109,Presidente,Efectivo
+254,128,Vocal,Efectivo
+254,238,Secretario,Interino
+254,277,Secretario,Efectivo
+254,403,Secretario,Efectivo
+255,4,Juez Subrogante,Efectivo
+255,280,Juez Subrogante,Efectivo
+255,296,Secretario,Efectivo
+255,302,Prosecretario Administrativo,-
+255,470,Secretario,Interino
+256,111,Secretario,Efectivo
+256,178,Presidente,Efectivo
+256,280,Juez Subrogante,Efectivo
+256,459,Juez,Efectivo
+256,461,Secretario,Efectivo
+257,120,Vocal,Efectivo
+257,306,Juez Subrogante,Efectivo
+257,323,Secretario de Cámara,Contratado
+257,326,Presidenta,Efectivo
+257,440,Secretario,Efectivo
+258,74,Secretario,Contratado
+258,117,Presidente,Efectivo
+258,281,Vocal,Efectivo
+258,343,Secretario,Interino
+258,385,Vocal,Efectivo
+258,433,Secretario,-
+259,4,Presidente,Efectivo
+259,60,Secretario,Contratado
+259,180,Juez Subrogante,Efectivo
+259,344,Juez Subrogante,Efectivo
+259,391,Secretario,Efectivo
+260,193,Secretario,Contratado
+260,198,Vocal,Efectivo
+260,206,Vocal,Efectivo
+260,281,Juez Subrogante,Efectivo
+260,306,Presidente,Efectivo
+260,406,Juez Subrogante,Efectivo
+260,412,Secretario,Efectivo
+261,124,Secretario,Efectivo
+261,126,Juez,Efectivo
+261,130,Secretario,Efectivo
+261,151,Juez Subrogante,Efectivo
+261,190,Secretario,Efectivo
+261,414,Presidenta,Efectivo
+262,66,Secretario,Efectivo
+262,406,Presidente,Efectivo
+262,417,Vocal,Efectivo
+263,45,Presidente,Efectivo
+263,49,Vocal,Efectivo
+263,171,Secretario,Efectivo
+263,212,Vocal,Efectivo
+263,401,Secretario,Contratado
+263,458,Secretario,Efectivo
+263,459,Juez Subrogante,Efectivo
+264,198,Presidente,Efectivo
+264,206,Vocal,Efectivo
+264,344,Vocal,Efectivo
+264,428,Secretario,Efectivo
+265,7,Vocal,Subrogante
+265,40,Secretario,Efectivo
+265,88,Presidente,-
+265,354,Secretario,Efectivo
+266,23,Juez,Efectivo
+266,177,Secretario,Contratado
+266,199,Juez Subrogante,Efectivo
+266,308,Secretario,Efectivo
+266,319,Secretario,Efectivo
+266,358,Presidente,Efectivo
+267,7,Juez Subrogante,Subrogante
+267,36,Secretario,Efectivo
+267,88,Juez Subrogante,-
+267,172,Secretario,Contratado
+267,237,Juez Subrogante,Efectivo
+267,442,Secretario,Contratado
+268,79,Vocal 1°,Efectivo
+268,252,Presidente,Efectivo
+268,258,Vocal 2°,Efectivo
+268,320,Secretario,Efectivo
+268,488,Secretario,Efectivo
+269,68,Presidente,Efectivo
+269,152,Secretario,Efectivo
+269,237,Vocal,Efectivo
+269,258,Vocal,Efectivo
+269,303,Secretario,Efectivo
+270,119,Presidente,Subrogante
+270,199,Vocal,Efectivo
+270,233,Vocal,Subrogante
+270,395,Secretario,Efectivo
+270,413,Secretario,Efectivo
+270,487,Secretario,Contratado
+271,174,Secretario de Cámara,Efectivo
+271,249,Presidente,Efectivo
+271,278,Vocal,Efectivo
+272,16,Secretario,Contratado
+272,106,Presidente,Efectivo
+272,119,Juez Subrogante,Subrogante
+272,185,Secretario,Efectivo
+272,206,Juez Subrogante,Efectivo
+273,19,Vocal,Efectivo
+273,87,Secretario,Efectivo
+273,138,Secretario,Efectivo
+273,151,Presidente,Efectivo
+273,314,Vocal,Efectivo
+274,126,Vocal,Efectivo
+274,213,Vocal,Efectivo
+274,378,Secretario,Efectivo
+274,422,Presidenta,Efectivo
+274,450,Secretario,Ad honorem
+274,492,Secretario,Efectivo
+275,3,Presidente,Efectivo
+275,249,Vocal,Efectivo
+275,280,Vocal,Efectivo
+275,331,Secretario,Contratado
+276,13,Vocal,Efectivo
+276,187,Secretario,Efectivo
+276,249,Juez Subrogante,Efectivo
+276,263,Presidente,Efectivo
+276,325,Secretario,Efectivo
+277,71,Secretario,Interino
+277,161,Juez Subrogante,Efectivo
+277,231,Presidente,Efectivo
+277,257,Vocal,Efectivo
+277,358,Vocal,Efectivo
+277,377,Secretario,Interino
+277,481,Secretario,Contratado
+278,200,Presidente,Efectivo
+278,390,Secretario,Interino
+279,28,Secretario,Efectivo
+279,104,Presidente,Subrogante
+279,110,Vocal,Subrogante
+279,150,Secretario,Efectivo
+279,288,Juez Subrogante,Efectivo
+279,322,Secretario,Efectivo
+279,380,Secretario,Efectivo
+279,451,Secretario,Ad honorem
+279,489,Secretario,Efectivo
+280,110,Juez Subrogante,Subrogante
+280,149,Secretario,Efectivo
+280,158,Presidente,Efectivo
+280,362,Secretario,Efectivo
+280,436,Juez Subrogante,Efectivo
+280,454,Secretario,Efectivo
+280,469,Secretario,Efectivo
+281,39,Secretario,Efectivo
+281,137,Prosecretario Letrado,Efectivo
+281,184,Secretario,Efectivo
+281,288,Vicepresidente,Efectivo
+281,300,Secretario,Efectivo
+281,436,Presidente,Efectivo
+281,486,Secretario,Efectivo

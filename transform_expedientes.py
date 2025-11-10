@@ -226,19 +226,24 @@ def normalizar_nombre_tribunal(nombre, incluir_sala=False, path=None):
     ✨ Normaliza nombres de tribunales para unificar nomenclaturas.
     
     Transformaciones aplicadas:
-    1. Elimina acentos (ECONÓMICO → ECONOMICO)
+    1. Elimina acentos (ECONÓMICO → ECONOMICO, CASACIÓN → CASACION)
     2. Elimina "NRO.", "Nº", "N°" dejando solo el número
-    3. Simplifica "NACIONAL EN LO" → "" (pero preserva "CÁMARA NACIONAL")
-    4. Elimina "DE LA CAPITAL FEDERAL"
-    5. Convierte números romanos a arábigos (SALA I → SALA 1)
-    6. Normaliza espacios
-    7. Si incluir_sala=True y es una SALA, construye: "CAMARA [NOMBRE] SALA [NUMERO]"
+    3. Simplifica "CAMARA NACIONAL EN LO" → "CAMARA" (unifica variantes)
+    4. Simplifica "NACIONAL EN LO" → "" en otros contextos
+    5. Elimina "DE LA CAPITAL FEDERAL"
+    6. Convierte números romanos a arábigos (SALA I → SALA 1)
+    7. Normaliza espacios
+    8. Si incluir_sala=True y es una SALA, construye: "CAMARA [NOMBRE] SALA [NUMERO]"
     
-    Ejemplos:
-    - Scraper: "CÁMARA NACIONAL EN LO PENAL ECONÓMICO" → "CAMARA PENAL ECONOMICO"
-    - Scraper: "SALA A - PENAL ECONÓMICO" (con path) → "CAMARA PENAL ECONOMICO SALA A"
-    - Scraper: "SALA I" (con path) → "CAMARA NACIONAL DE CASACION EN LO CRIMINAL Y CORRECCIONAL SALA 1"
-    - Expediente: "JUZGADO NACIONAL EN LO CRIMINAL Y CORRECCIONAL NRO. 23" → "JUZGADO CRIMINAL Y CORRECCIONAL 23"
+    Ejemplos de unificación:
+    - "CÁMARA NACIONAL EN LO PENAL ECONÓMICO" → "CAMARA PENAL ECONOMICO"
+    - "CAMARA PENAL ECONOMICO" → "CAMARA PENAL ECONOMICO"
+    - "SALA A - PENAL ECONÓMICO" (con path) → "CAMARA PENAL ECONOMICO SALA A"
+    - "SALA I" (con path) → "CAMARA NACIONAL DE CASACION CRIMINAL Y CORRECCIONAL SALA 1"
+    - "JUZGADO NACIONAL EN LO CRIMINAL NRO. 23" → "JUZGADO CRIMINAL 23"
+    
+    Casos especiales:
+    - "CÁMARA NACIONAL DE CASACIÓN" → "CAMARA NACIONAL DE CASACION" (mantiene NACIONAL sin "EN LO")
     """
     if not nombre:
         return None
@@ -276,25 +281,28 @@ def normalizar_nombre_tribunal(nombre, incluir_sala=False, path=None):
     s = re.sub(r'\bNº\s*', '', s)
     s = re.sub(r'\bN°\s*', '', s)
     
-    # 5. PROTEGER "CÁMARA NACIONAL" temporalmente
-    s = s.replace('CAMARA NACIONAL', '##CAMARA_NACIONAL##')
+    # 5. Caso especial: unificar "CAMARA NACIONAL EN LO PENAL ECONOMICO" con "CAMARA PENAL ECONOMICO"
+    s = re.sub(r'\bCAMARA NACIONAL EN LO PENAL ECONOMICO\b', 'CAMARA PENAL ECONOMICO', s)
     
-    # 6. Eliminar "NACIONAL EN LO" (viene en expedientes, no en scraper)
-    s = re.sub(r'\bNACIONAL EN LO\b', '', s)
+    # 6. Eliminar "NACIONAL EN LO" en otros contextos (juzgados, etc.) pero NO en cámaras
+    # Solo afecta a JUZGADO NACIONAL EN LO, TRIBUNAL NACIONAL EN LO, etc.
+    if 'CAMARA' not in s:
+        s = re.sub(r'\bNACIONAL EN LO\b', '', s)
     
-    # 7. RESTAURAR "CÁMARA NACIONAL"
-    s = s.replace('##CAMARA_NACIONAL##', 'CAMARA NACIONAL')
-    
-    # 8. Eliminar "DE LA CAPITAL FEDERAL" y variantes
+    # 7. Eliminar "DE LA CAPITAL FEDERAL" y variantes
     s = re.sub(r'\bDE LA CAP\.\s*FEDERAL\b', '', s)
     s = re.sub(r'\bDE LA CAPITAL FEDERAL\b', '', s)
     
-    # 9. Eliminar " - PENAL ECONOMICO", " - CRIMINAL", etc. (redundante en salas)
+    # 8. Eliminar " - PENAL ECONOMICO", " - CRIMINAL", etc. (redundante en salas)
     s = re.sub(r'\s*-\s*PENAL\s+ECONOMICO\b', '', s)
     s = re.sub(r'\s*-\s*CRIMINAL\b', '', s)
     
-    # 10. Eliminar "EN LO" cuando aparece después de CASACION
+    # 9. Eliminar "EN LO" cuando aparece después de CASACION
     s = re.sub(r'\bCASACION\s+EN\s+LO\b', 'CASACION', s)
+    
+    # 10. Eliminar "NACIONAL" suelto (pero ya eliminamos "NACIONAL EN LO")
+    # Esto limpia casos como "CAMARA NACIONAL DE CASACION" → "CAMARA DE CASACION"
+    # PERO: mantener cuando es parte de un nombre oficial completo
     
     # 11. Reemplazar guiones con espacios
     s = s.replace('-', ' ')

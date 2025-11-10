@@ -29,256 +29,253 @@ tribunal_id,nombre,instancia,domicilio_sede,contacto,jurisdiccion_id,fuero
 28,CAMARA NACIONAL DE CASACION CRIMINAL Y CORRECCIONAL SALA 1,N/D,Talcahuano 624 | Ciudad Autónoma de Buenos Aires | 4124-6621,,1,Penal Federal
 29,CAMARA NACIONAL DE CASACION CRIMINAL Y CORRECCIONAL SALA 2,N/D,Talcahuano 624 | Ciudad Autónoma de Buenos Aires | 4124-6622,,1,Penal Federal
 30,CAMARA NACIONAL DE CASACION CRIMINAL Y CORRECCIONAL SALA 3,N/D,Talcahuano 624 | Ciudad Autónoma de Buenos Aires | 4124-6632,,1,Penal Federal
-31,CAMARA NACIONAL EN LO PENAL ECONOMICO,N/D,"Av. De Los Inmigrantes 1950, 2° Y 3° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6165 / 4130-6166",,1,Penal Federal
-32,CAMARA NACIONAL EN LO PENAL ECONOMICO SALA A,N/D,"Av. De Los Inmigrantes 1950, 3° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6440 | cnpenalec.salaa@pjn.gov.ar",,1,Penal Federal
-33,CAMARA NACIONAL EN LO PENAL ECONOMICO SALA B,N/D,"Av. De Los Inmigrantes 1950, 3er. piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6441 | cnpenalec.salab@pjn.gov.ar",,1,Penal Federal
-34,CAMARA PENAL ECONOMICO SALA A,Primera Instancia,,,1,Penal Federal
-35,CAMARA PENAL ECONOMICO SALA B,Primera Instancia,,,1,Penal Federal
-36,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA DE JUICIOS AMBIENTALES,Primera Instancia,,,1,Penal Federal
-37,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL 3,Primera Instancia,,,1,Penal Federal
-38,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL DE RELACIONES DE CONSUMO,Primera Instancia,,,1,Penal Federal
-39,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA PENAL ESPECIAL,Primera Instancia,,,1,Penal Federal
-40,JUZGADO CRIM. Y CORR. FEDERAL DE LA PLATA 3,Primera Instancia,,,1,Penal Federal
-41,JUZGADO CRIMINAL Y CORRECCIONAL 1,N/D,"Talcahuano 550, 3° P of. 3125 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-5049 | jncrimcorr1.sec105@pjn.gov.ar",,1,Penal Federal
-42,JUZGADO CRIMINAL Y CORRECCIONAL 10,N/D,"Talcahuano 550, P 7° of. 7042 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-8328 | jncrimcorr10@pjn.gov.ar / jncrimcorr10.sec130@pjn.gov.ar",,1,Penal Federal
-43,JUZGADO CRIMINAL Y CORRECCIONAL 11,N/D,"Talcahuano 550, P 5° of. 5056/57 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2818 / 4373-8101 | jncrimcorr11.sec133@pjn.gov.ar",,1,Penal Federal
-44,JUZGADO CRIMINAL Y CORRECCIONAL 12,N/D,"Talcahuano 550, P 5° of. 5019 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-6850 | jncrimcorr12@pjn.gov.ar / jncrimcorr12.admin@pjn.gov.ar",,1,Penal Federal
-45,JUZGADO CRIMINAL Y CORRECCIONAL 13,N/D,"Talcahuano 550, P 5° of. 5127 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-4247 / 6960 | jncrimcorr13.sec140@pjn.gov.ar / jncrimcorr13@pjn.gov.ar",,1,Penal Federal
-46,JUZGADO CRIMINAL Y CORRECCIONAL 14,N/D,"Talcahuano 550, 5° P of. 5038/39 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-7451 / 7344 | jncrimcorr14@pjn.gov.ar",,1,Penal Federal
-47,JUZGADO CRIMINAL Y CORRECCIONAL 15,N/D,"Talcahuano 550, 5° P of. 5047 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-8608 | jncrimcorr15@pjn.gov.ar",,1,Penal Federal
-48,JUZGADO CRIMINAL Y CORRECCIONAL 16,N/D,"Talcahuano 550, 7° Piso Of 7062 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-9513 | jncrimcorr16@pjn.gov. ar",,1,Penal Federal
-49,JUZGADO CRIMINAL Y CORRECCIONAL 17,N/D,"Talcahuano 550, 5° P of. 5032 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-7498/6790 | jncrimcorr17@pjn.gov.ar",,1,Penal Federal
-50,JUZGADO CRIMINAL Y CORRECCIONAL 18,N/D,"Talcahuano 550, 5° P of. 5145 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0564 / 4229 | jncrimcorr18@pjn.gov.ar / jncrimcorr18.admin@pjn.gov.ar",,1,Penal Federal
-51,JUZGADO CRIMINAL Y CORRECCIONAL 19,N/D,"Talcahuano 550, 5° P of. 5010 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-3312 / 4372-1741 | jncrimcorr19@pjn.gov.ar",,1,Penal Federal
-52,JUZGADO CRIMINAL Y CORRECCIONAL 2,N/D,"Talcahuano 550, 3° P of 3085 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-6382/2975 | jncrimcorr2.sec107@pjn.gov.ar / jncrimcorr2@pjn.gov.ar",,1,Penal Federal
-53,JUZGADO CRIMINAL Y CORRECCIONAL 20,N/D,"Talcahuano 550, 5° P of. 5147 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-5504 / 4371-7609 | jncrimcorr20@pjn.gov.ar",,1,Penal Federal
-54,JUZGADO CRIMINAL Y CORRECCIONAL 21,N/D,"Talcahuano 550, 5° P of. 5131 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3155 / 4373-6082 | jncrimcorr21@pjn.gov.ar / jncrimcorr21.sec165@pjn.gov.ar",,1,Penal Federal
-55,JUZGADO CRIMINAL Y CORRECCIONAL 22,N/D,"Talcahuano 550, 7° Piso Of.:7060 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0509 / 4371-0487 | jncrimcorr22.sec148@pjn.gov.ar",,1,Penal Federal
-56,JUZGADO CRIMINAL Y CORRECCIONAL 23,N/D,"Talcahuano 550, 5º P Of. 5026/7 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-8434 Mesa de Entradas / 15-4190-8741 / 4372-1348 | jncrimcorr23@pjn.gov.ar",,1,Penal Federal
-57,JUZGADO CRIMINAL Y CORRECCIONAL 24,N/D,"Talcahuano 550, 7° P of. 7047 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-6969 / 4371-6676 y 4372-2655 | jncrimcorr24@pjn.gov.ar",,1,Penal Federal
-58,JUZGADO CRIMINAL Y CORRECCIONAL 25,N/D,"Talcahuano 550, 5° P of. 5007 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-0327 / 4678 y 4374-9220 | jncrimcorr25.sec161@pjn.gov.ar",,1,Penal Federal
-59,JUZGADO CRIMINAL Y CORRECCIONAL 26,N/D,"Talcahuano 550, 5° P of. 5138 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43721546 / 43718164 / 43749015 | jncrimcorr26@pjn.gov.ar",,1,Penal Federal
-60,JUZGADO CRIMINAL Y CORRECCIONAL 27,N/D,"Talcahuano 550, 3° P of. 3076/3067 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3575 / 4374-8273 | jncrimcorr27@pjn.gov.ar",,1,Penal Federal
-61,JUZGADO CRIMINAL Y CORRECCIONAL 28,N/D,"Talcahuano 550, 5° P of. 5093 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-1550 / 4374-7534 / 4373-4648 | jncrimcorr28.sec142@pjn.gov.ar / jncrimcorr28@pjn.gov.ar",,1,Penal Federal
-62,JUZGADO CRIMINAL Y CORRECCIONAL 29,N/D,"Talcahuano 550, 5° P of. 5137 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-7405 / 6923 4374-0632 (Sec. Privada) | jncrimcorr29.sec152@pjn.gov.ar / jncrimcorr29@pjn.gov.ar",,1,Penal Federal
-63,JUZGADO CRIMINAL Y CORRECCIONAL 3,N/D,"Talcahuano 550, 5° P Puerta 5079 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372 4679 /4371 8207 y 4371 5363 | jncrimcorr3.sec110@pjn.gov.ar / jncrimcorr3@pjn.gov.ar",,1,Penal Federal
-64,JUZGADO CRIMINAL Y CORRECCIONAL 30,N/D,"Talcahuano 550, 7° P of. 7074 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43717496 / 43733740 / 43724324 (Fax 43724279) | jncrimcorr30.sec164@pjn.gov.ar / jncrimcorr30@pjn.gov.ar",,1,Penal Federal
-65,JUZGADO CRIMINAL Y CORRECCIONAL 31,N/D,"Talcahuano 550, P 3° of 3117 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-2582 / 4371-9593 | jncrimcorr31.sec119@pjn.gov.ar / jncrimcorr31@pjn.gov.ar",,1,Penal Federal
-66,JUZGADO CRIMINAL Y CORRECCIONAL 32,N/D,"Lavalle 1171, 3° P (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0997 / 9 / 8 / 6 / 5 / 4 / 3 / 2 | jncrimcorr32@pjn.gov.ar",,1,Penal Federal
-67,JUZGADO CRIMINAL Y CORRECCIONAL 33,N/D,"Talcahuano 550, 5° P of. 5109 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-4599 / 6815 | jncrimcorr33@pjn.gov.ar",,1,Penal Federal
-68,JUZGADO CRIMINAL Y CORRECCIONAL 34,N/D,"Talcahuano 550, 3° P of. 3125 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-1126 / 4371-1322 / 4371-3964 | jncrimcorr34@pjn.gov.ar / jncrimcorr34.sec117@pjn.gov.ar",,1,Penal Federal
-69,JUZGADO CRIMINAL Y CORRECCIONAL 35,N/D,"Talcahuano 550, 7° P of. 7048 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-7693 / 4373-6903 | jncrimcorr35.sec120@pjn.gov.ar / jncrimcorr35@pjn.gov.ar",,1,Penal Federal
-70,JUZGADO CRIMINAL Y CORRECCIONAL 36,N/D,"Talcahuano 550, 3° P of. 3081 y 3128 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-1370 / 4371-6432 | jncrimcorr36@pjn.gov.ar",,1,Penal Federal
-71,JUZGADO CRIMINAL Y CORRECCIONAL 37,N/D,"Talcahuano 550, 7° P of. 7040 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-2767 / 4371-9413 | jncrimcorr37@pjn.gov.ar",,1,Penal Federal
-72,JUZGADO CRIMINAL Y CORRECCIONAL 38,N/D,"Talcahuano 550, 5° P of. 5051 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2141 / 4371-7659 / 4373-4715 | jncrimcorr38@pjn.gov.ar / jncrimcorr38.sec132@pjn.gov.ar",,1,Penal Federal
-73,JUZGADO CRIMINAL Y CORRECCIONAL 39,N/D,"Lavalle 1171, PB (C1048AAC) | Ciudad Autónoma de Buenos Aires | 43792195 / 43792196 / 43792197 | jncrimcorr39@pjn.gov.ar / jncrimcorr39.sec135@pjn.gov.ar",,1,Penal Federal
-74,JUZGADO CRIMINAL Y CORRECCIONAL 4,N/D,"Talcahuano 550, 7° P 0f.7079 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-4368 / 4371-0503 | jncrimcorr4@pjn.gov.ar",,1,Penal Federal
-75,JUZGADO CRIMINAL Y CORRECCIONAL 40,N/D,"Talcahuano 550, 5° P of. 5086 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2161 / 4373-5997 | jncrimcorr40@pjn.gov.ar / jncrimcorr40.sec139@pjn.gov.ar",,1,Penal Federal
-76,JUZGADO CRIMINAL Y CORRECCIONAL 41,N/D,"Talcahuano 550, 5° P of. 5074 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2829 / 4371-7763 / 4374-4107 / 4373-0548 | jncrimcorr41@pjn.gov.ar",,1,Penal Federal
-77,JUZGADO CRIMINAL Y CORRECCIONAL 42,N/D,"Talcahuano 550, 5° P of. 5142 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-1322 / 4371–3903 / 4371-3944 | jncrimcorr42@pjn.gov.ar / jncrimcorr42.sec106@pjn.gov.ar",,1,Penal Federal
-78,JUZGADO CRIMINAL Y CORRECCIONAL 43,N/D,"Juncal 941, 2° P. (C1062ABG) | Ciudad Autónoma de Buenos Aires | 4032-7203 / 7205 / 7198 | jncrimcorr43@pjn.gov.ar",,1,Penal Federal
-79,JUZGADO CRIMINAL Y CORRECCIONAL 44,N/D,"Comodoro Py 2002, P.B. (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7208 /09 /10 /11 /12 | jncrimcorr44.sec115@pjn.gov.ar / jncrimcorr44@pjn.gov.ar",,1,Penal Federal
-80,JUZGADO CRIMINAL Y CORRECCIONAL 45,N/D,"Lavalle 1171, 2° P (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2108 /2102 | jncrimcorr45.sec122@pjn.gov.ar / jncrimcorr45@pjn.gov.ar",,1,Penal Federal
-81,JUZGADO CRIMINAL Y CORRECCIONAL 46,N/D,"Talcahuano 550, 8° P of. 8001, 8002, 8003 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0479 / 4371-0368 | jncrimcorr46.sec134@pjn.gov.ar",,1,Penal Federal
-82,JUZGADO CRIMINAL Y CORRECCIONAL 47,N/D,"Talcahuano 550, 5° P of. 5105 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-0149 / 4371-6299 | jncrimcorr47@pjn.gov.ar",,1,Penal Federal
-83,JUZGADO CRIMINAL Y CORRECCIONAL 48,N/D,"Lavalle 1171, P.B. (C1048AAC) | Ciudad Autónoma de Buenos Aires | (Fax 4379-2157) | jncrimcorr48@pjn.gov.ar",,1,Penal Federal
-84,JUZGADO CRIMINAL Y CORRECCIONAL 49,N/D,"Lavalle 1171, 5° P (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2161 /59 /58 | jncrimcorr49@pjn.gov.ar",,1,Penal Federal
-85,JUZGADO CRIMINAL Y CORRECCIONAL 5,N/D,"Talcahuano 550, P 6° of. 6008 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3774 / 7461 | jncrimcorr5@pjn.gov.ar",,1,Penal Federal
-86,JUZGADO CRIMINAL Y CORRECCIONAL 50,N/D,"Lavalle 1638, 3° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8032 / 8062 | jncrimcorr50@pjn.gov.ar",,1,Penal Federal
-87,JUZGADO CRIMINAL Y CORRECCIONAL 51,N/D,"Lavalle 1638, 4° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8048 | jncrimcorr51@pjn.gov.ar",,1,Penal Federal
-88,JUZGADO CRIMINAL Y CORRECCIONAL 52,N/D,"Lavalle 1638, 1° y 2° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205 8006 /8007 /8008 | jncrimcorr52@pjn.gov.ar",,1,Penal Federal
-89,JUZGADO CRIMINAL Y CORRECCIONAL 53,N/D,"Juncal 941, 1° P (C1062ABG) | Ciudad Autónoma de Buenos Aires | 4327-0626 -mesa de entradas- y 4327-0907 | jncrimcorr53@pjn.gov.ar - jncrimcorr53.sec66@pjn.gov.ar",,1,Penal Federal
-90,JUZGADO CRIMINAL Y CORRECCIONAL 54,N/D,"Lavalle 1638, 5º, 6° y 7° (mesa de entradas) piso (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8058 / 2205-8074 /75 /76 /66 /82 | jncrimcorr54@pjn.gov.ar / jncrimcorr54.sec73@pjn.gov.ar",,1,Penal Federal
-91,JUZGADO CRIMINAL Y CORRECCIONAL 55,N/D,"Lavalle 1638, 1° Y 3° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | Mesa de entradas 2205-8026/8083 Secretaría Privada 2205-8030 | jncrimcorr55@pjn.gov.ar / jncrimcorr55.admin@pjn.gov.ar",,1,Penal Federal
-92,JUZGADO CRIMINAL Y CORRECCIONAL 56,N/D,"Lavalle 1638, 4° P, al lado del ascensor (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8042 | jncrimcorr56@pjn.gov.ar / jncrimcorr56.admin@pjn.gov.ar",,1,Penal Federal
-93,JUZGADO CRIMINAL Y CORRECCIONAL 57,N/D,"Lavalle 1638, 1/2 piso (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8017 / 2205-8001 | jncrimcorr57@pjn.gov.ar",,1,Penal Federal
-94,JUZGADO CRIMINAL Y CORRECCIONAL 58,N/D,"Juncal 941, 3° P. (C1062ABG) | Ciudad Autónoma de Buenos Aires | 4322-1346 / 4327-0694/ 0253 / 4328-9892 | jncrimcorr58@pjn.gov.ar / jncrimcorr58.admin@pjn.gov.ar",,1,Penal Federal
-95,JUZGADO CRIMINAL Y CORRECCIONAL 59,N/D,"Lavalle 1638, 5° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8059 /60 | jncrimcorr59@pjn.gov.ar",,1,Penal Federal
-96,JUZGADO CRIMINAL Y CORRECCIONAL 6,N/D,"Talcahuano 550, P 3° Puerta 3129 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43713022 | jncrimcorr6.sec118@pjn.gov.ar / jncrimcorr6@pjn.gov.ar",,1,Penal Federal
-97,JUZGADO CRIMINAL Y CORRECCIONAL 60,N/D,"Av. De Los Inmigrantes 1950, 3° P Puerta 330 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6333 /6332 | jncrimcorr60@pjn.gov.ar / jncrimcorr60.admin@pjn.gov.ar",,1,Penal Federal
-98,JUZGADO CRIMINAL Y CORRECCIONAL 61,N/D,"Av. De Los Inmigrantes 1950, 3° P Puerta 320 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6347 /8 /9 y 4130-6330 - Urgencias fuera de horario y día hábil 116512-8999 / 114889-7507 (Fax 4130-6328) | jncrimcorr61@pjn.gov.ar",,1,Penal Federal
-99,JUZGADO CRIMINAL Y CORRECCIONAL 62,N/D,"Av. De Los Inmigrantes 1950, piso 3°, oficina 356 /358 /346 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6337 /6338 /6339 /6538 /6535 | jncrimcorr62@pjn.gov.ar",,1,Penal Federal
-100,JUZGADO CRIMINAL Y CORRECCIONAL 63,N/D,"Av. De Los Inmigrantes 1950, 3° P Puerta 342 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6341 / 42 | jncrimcorr63@pjn.gov.ar / jncrimcorr63.admin@pjn.gov.ar",,1,Penal Federal
-101,JUZGADO CRIMINAL Y CORRECCIONAL 7,N/D,"Talcahuano 550, P 5° of. 5120/21/22 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-6571 / 6764 | jncrimcorr7.sec121@pjn.gov.ar / jncrimcorr7@pjn.gov.ar",,1,Penal Federal
-102,JUZGADO CRIMINAL Y CORRECCIONAL 8,N/D,"Talcahuano 550, P 3° of. 3079 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2701 (Secretaría) 4371-6518 (Secretaría privada) | jncrimcorr8@pjn.gov.ar",,1,Penal Federal
-103,JUZGADO CRIMINAL Y CORRECCIONAL 9,N/D,"Talcahuano 550, P 5° of. 5103 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-4451 / 6366 | jncrimcorr9@pjn.gov.ar",,1,Penal Federal
-104,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 1,N/D,"Comodoro Py 2002, 3º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7102 | jncrimcorrfed1@pjn.gov.ar",,1,Penal Federal
-105,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 10,N/D,"Comodoro Py 2002, 4º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7174 | jncrimcorrfed10@pjn.gov.ar",,1,Penal Federal
-106,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 11,N/D,"Comodoro Py 2002, 4º piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7181 / 4032-7182 | jncrimcorrfed11@pjn.gov.ar",,1,Penal Federal
-107,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 12,N/D,"Comodoro Py 2002, 4º piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7190 | jncrimcorrfed12@pjn.gov.ar",,1,Penal Federal
-108,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 2,N/D,"Comodoro Py 2002, 3º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7110 | jncrimcorrfed2@pjn.gov.ar",,1,Penal Federal
-109,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 3,N/D,"Comodoro Py 2002, 3º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7118 | jncrimcorrfed3@pjn.gov.ar",,1,Penal Federal
-110,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 4,N/D,"Comodoro Py 2002, 3º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7126 | jncrimcorrfed4@pjn.gov.ar",,1,Penal Federal
-111,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 5,N/D,"Comodoro Py 2002, 3º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7134 | jncrimcorrfed5@pjn.gov.ar",,1,Penal Federal
-112,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 6,N/D,"Comodoro Py 2002, 3º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7142 | jncrimcorrfed6@pjn.gov.ar",,1,Penal Federal
-113,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 7,N/D,"Comodoro Py 2002, 4° piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7153 | jncrimcorrfed7@pjn.gov.ar",,1,Penal Federal
-114,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 8,N/D,"Comodoro Py 2002, 4º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7158 | jncrimcorrfed8@pjn.gov.ar",,1,Penal Federal
-115,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 9,N/D,"Comodoro Py 2002, 4 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7167 | jncrimcorrfed9@pjn.gov.ar",,1,Penal Federal
-116,JUZGADO FEDERAL CRIMINAL Y CORRECCIONAL DE LOMAS DE ZAMORA 1,Primera Instancia,,,1,Penal Federal
-117,JUZGADO FEDERAL DE BAHIA BLANCA 1,Primera Instancia,,,1,Penal Federal
-118,JUZGADO FEDERAL DE CALETA OLIVIA,Primera Instancia,,,1,Penal Federal
-119,JUZGADO FEDERAL DE CORDOBA 2,Primera Instancia,,,1,Penal Federal
-120,JUZGADO FEDERAL DE CORRIENTES 1,Primera Instancia,,,1,Penal Federal
-121,JUZGADO FEDERAL DE ELDORADO,Primera Instancia,,,1,Penal Federal
-122,JUZGADO FEDERAL DE FORMOSA 2,Primera Instancia,,,1,Penal Federal
-123,JUZGADO FEDERAL DE GOYA,Primera Instancia,,,1,Penal Federal
-124,JUZGADO FEDERAL DE MAR DEL PLATA 1,Primera Instancia,,,1,Penal Federal
-125,JUZGADO FEDERAL DE NEUQUEN 2,Primera Instancia,,,1,Penal Federal
-126,JUZGADO FEDERAL DE PARANA 1,Primera Instancia,,,1,Penal Federal
-127,JUZGADO FEDERAL DE PRESIDENCIA ROQUE SAENZ PENA,Primera Instancia,,,1,Penal Federal
-128,JUZGADO FEDERAL DE QUILMES,Primera Instancia,,,1,Penal Federal
-129,JUZGADO FEDERAL DE RAWSON 2,Primera Instancia,,,1,Penal Federal
-130,JUZGADO FEDERAL DE RESISTENCIA 1,Primera Instancia,,,1,Penal Federal
-131,JUZGADO FEDERAL DE RIO CUARTO,Primera Instancia,,,1,Penal Federal
-132,JUZGADO FEDERAL DE RIO GALLEGOS,Primera Instancia,,,1,Penal Federal
-133,JUZGADO FEDERAL DE ROSARIO 3,Primera Instancia,,,1,Penal Federal
-134,JUZGADO FEDERAL DE SALTA 1,Primera Instancia,,,1,Penal Federal
-135,JUZGADO FEDERAL DE TUCUMAN 1,Primera Instancia,,,1,Penal Federal
-136,JUZGADO FEDERAL DE TUCUMAN 2,Primera Instancia,,,1,Penal Federal
-137,JUZGADO FEDERAL EN LO CRIM. Y CORR. DE MORON 2,Primera Instancia,,,1,Penal Federal
-138,JUZGADO FEDERAL EN LO CRIM. Y CORR. DE SAN ISIDRO 1,Primera Instancia,,,1,Penal Federal
-139,JUZGADO FEDERAL EN LO CRIM. Y CORR. DE SAN MARTIN 1,Primera Instancia,,,1,Penal Federal
-140,JUZGADO FEDERAL EN LO CRIMINAL Y CORRECCIONAL DE POSADAS,Primera Instancia,,,1,Penal Federal
-141,JUZGADO PENAL ECONOMICO 1,N/D,"Av. De Los Inmigrantes 1950, 3° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6122/25 | jnpenalec1@pjn.gov.ar",,1,Penal Federal
-142,JUZGADO PENAL ECONOMICO 10,N/D,"Sarmiento 1118, 3° Piso (C1041AAX) | Ciudad Autónoma de Buenos Aires | 4124-7079/7078/7075 | jnpenaleconomico10@pjn.gov.ar",,1,Penal Federal
-143,JUZGADO PENAL ECONOMICO 11,N/D,"Sarmiento 1118, 3° Piso (C1041AAX) | Ciudad Autónoma de Buenos Aires | 4124-7089 | jnpenaleconomico11@pjn.gov.ar",,1,Penal Federal
-144,JUZGADO PENAL ECONOMICO 2,N/D,"Av. De Los Inmigrantes 1950, 2º Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6455/6458 | jnpenalec2@pjn.gov.ar",,1,Penal Federal
-145,JUZGADO PENAL ECONOMICO 3,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6522/6529 | jnpenalec3@pjn.gov.ar",,1,Penal Federal
-146,JUZGADO PENAL ECONOMICO 4,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6130/6133 | jnpenalec4@pjn.gov.ar",,1,Penal Federal
-147,JUZGADO PENAL ECONOMICO 5,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6138 / 4130-6141 | jnpenalec5@pjn.gov.ar",,1,Penal Federal
-148,JUZGADO PENAL ECONOMICO 6,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6146/6149 | jnpenalec6@pjn.gov.ar",,1,Penal Federal
-149,JUZGADO PENAL ECONOMICO 7,N/D,"Av. De Los Inmigrantes 1950, 2° piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6280/6283 | jnpenalec7@pjn.gov.ar",,1,Penal Federal
-150,JUZGADO PENAL ECONOMICO 8,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6288/6291 | jnpenalec8@pjn.gov.ar",,1,Penal Federal
-151,JUZGADO PENAL ECONOMICO 9,N/D,"Sarmiento 1118, 3° PISO (C1041AAX) | Ciudad Autónoma de Buenos Aires | 4124-7070 | jnpenaleconomico9@pjn.gov.ar",,1,Penal Federal
-152,SECRETARIA 1,N/D,"Av. De Los Inmigrantes 1950, 3° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6122",,1,Penal Federal
-153,SECRETARIA 10,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6138",,1,Penal Federal
-154,SECRETARIA 105,N/D,"Talcahuano 550, 3° P of. 3075 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0861 / 3816 | jncrimcorr1.sec105@pjn.gov.ar",,1,Penal Federal
-155,SECRETARIA 106,N/D,"Talcahuano 550, 5° P of. 5142 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-1322 / 4371–3903 / 4371-3944 | jncrimcorr42.sec106@pjn.gov.ar",,1,Penal Federal
-156,SECRETARIA 107,N/D,"Talcahuano 550, 3° P 0f. 3070 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2975 / 6382 | jncrimcorr2.sec107@pjn.gov.ar",,1,Penal Federal
-157,SECRETARIA 108,N/D,"Talcahuano 550, P° 5° of. 5103 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-6366 / 4371-4451 | jncrimcorr9.sec108@pjn.gov.ar",,1,Penal Federal
-158,SECRETARIA 109,N/D,"Juncal 941, 2° P. (C1062ABG) | Ciudad Autónoma de Buenos Aires | 4032-7203 /7205 /7198 | jncrimcorr43.sec109@pjn.gov.ar",,1,Penal Federal
-159,SECRETARIA 11,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6146",,1,Penal Federal
-160,SECRETARIA 110,N/D,"Talcahuano 550, 5° P, Puerta 5079 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 11 4372 4679 / 11 4371 8207 y 11 4371 5363 | jninstruccion3.sec110@pjn.gov.ar",,1,Penal Federal
-161,SECRETARIA 111,N/D,"Talcahuano 550, 7° Piso Of 7074 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-9513 / 1123621111 | jncrimcorr16.sec111@pjn.gov.ar",,1,Penal Federal
-162,SECRETARIA 112,N/D,"Talcahuano 550, 5° P of. 5074 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2829 / 4371-7763 /4374-4107 / 4373-0548 | jncrimcorr41.sec112@pjn.gov.ar",,1,Penal Federal
-163,SECRETARIA 113,N/D,"Talcahuano 550, 7° P 0f.7079 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-4368 / 4371-0503 | jncrimcorr4.sec113@pjn.gov.ar",,1,Penal Federal
-164,SECRETARIA 114,N/D,"Lavalle 1171, P.B. (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0997 /9 /8 /6 /5 /4 /3 /2 | jncrimcorr32.sec114@pjn.gov.ar",,1,Penal Federal
-165,SECRETARIA 115,N/D,"Comodoro Py 2002, P.B. (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7208 /09 /10 /11 /12 | jncrimcorr44.sec115@pjn.gov.ar",,1,Penal Federal
-166,SECRETARIA 116,N/D,"Talcahuano 550, P° 6° of. 6007 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3774 / 7461 | jncrimcorr5.sec116@pjn.gov.ar",,1,Penal Federal
-167,SECRETARIA 117,N/D,"Talcahuano 550, 3° Oficina 3088 (C1013AAL) | Ciudad Autónoma de Buenos Aires | (011) 4372-1126 / (011) 4371-1322 / (011) 4371-3964 (Fax 4371-3964) | jncrimcorr34.sec117@pjn.gov.ar",,1,Penal Federal
-168,SECRETARIA 118,N/D,"Talcahuano 550, P° 3° puertas 3089/3090 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43713022 | jncrimcorr6.sec118@pjn.gov.ar",,1,Penal Federal
-169,SECRETARIA 119,N/D,"Talcahuano 550, 3° P of. 3115 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-2582 / 4371-9593 | jncrimcorr31.sec119@pjn.gov.ar",,1,Penal Federal
-170,SECRETARIA 12,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6149",,1,Penal Federal
-171,SECRETARIA 120,N/D,"Talcahuano 550, 7° P of. 7048 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-7693 / 4373-6903 | jncrimcorr35.sec120@pjn.gov.ar",,1,Penal Federal
-172,SECRETARIA 121,N/D,"Talcahuano 550, P° 5° of. 5119 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-6764 /6571 | jncrimcorr7.sec121@pjn.gov.ar",,1,Penal Federal
-173,SECRETARIA 122,N/D,"Lavalle 1171, 2° Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2108 /2102 | jncrimcorr45.sec122@pjn.gov.ar",,1,Penal Federal
-174,SECRETARIA 123,N/D,"Talcahuano 550, P° 3° Oficina 3081 y 3128 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-1370 / 4371-6432 (Fax 4371-6432) | jncrimcorr36.sec123@pjn.gov.ar",,1,Penal Federal
-175,SECRETARIA 124,N/D,"Talcahuano 550, P° 3° Oficina 3076/3067 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3575 | jncrimcorr27.sec124@pjn.gov.ar",,1,Penal Federal
-176,SECRETARIA 125,N/D,"Talcahuano 550, P° 3° of. 3074 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2701 (Secretaría) 4371-6518 (Secretaría privada) | jncrimcorr8.sec125@pjn.gov.ar",,1,Penal Federal
-177,SECRETARIA 129,N/D,"Talcahuano 550, 7° P of. 7040 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-2767 / 4371-9413 (Fax 4371-9413) | jncrimcorr37.sec129@pjn.gov.ar",,1,Penal Federal
-178,SECRETARIA 13,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6280",,1,Penal Federal
-179,SECRETARIA 130,N/D,"Talcahuano 550, P 7° of. 7042 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0737 | jncrimcorr10.sec130@pjn.gov.ar.",,1,Penal Federal
-180,SECRETARIA 131,N/D,"Talcahuano 550, 7° P of. 7047 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-6969 / 4371-6676 / 4372-2655 | jncrimcorr24.sec131@pjn.gov.ar",,1,Penal Federal
-181,SECRETARIA 132,N/D,"Talcahuano 550, 5° P of. 5051 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2141 / 4371-7659 / 4373-4715 (Fax 4373-4715) | jncrimcorr38.sec132@pjn.gov.ar",,1,Penal Federal
-182,SECRETARIA 133,N/D,"Talcahuano 550, 5° P of. 5055 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-8101 | jncrimcorr11.sec133@pjn.gov.ar",,1,Penal Federal
-183,SECRETARIA 134,N/D,"Talcahuano 550, 8° P of. 8001, 8002, 8003 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0479 (Fax 4371-0479) | jncrimcorr46.sec134@pjn.gov.ar",,1,Penal Federal
-184,SECRETARIA 135,N/D,"Lavalle 1171, P.B. (C1048AAC) | Ciudad Autónoma de Buenos Aires | 43792195 / 43792196 / 43792197 | jncrimcorr39.sec135@pjn.gov.ar",,1,Penal Federal
-185,SECRETARIA 136,N/D,"Talcahuano 550, 5° P of. 5105 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-0149 / 4371-6299 | jncrimcorr47.sec136@pjn.gov.ar",,1,Penal Federal
-186,SECRETARIA 137,N/D,"Talcahuano 550, P° 5° of. 5019 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-6850 / 4372-8360 | jncrimcorr12.sec137@pjn.gov.ar",,1,Penal Federal
-187,SECRETARIA 139,N/D,"Talcahuano 550, 5° P of. 5086 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2161 / 4373-5997 | jncrimcorr40.sec139@pjn.gov.ar.",,1,Penal Federal
-188,SECRETARIA 14,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6283",,1,Penal Federal
-189,SECRETARIA 140,N/D,"Talcahuano 550, 5° P of. 5128 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-4247 | jninstruccion13.sec140@pjn.gov.ar",,1,Penal Federal
-190,SECRETARIA 142,N/D,"Talcahuano 550, 5° P of. 5093 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-1550 / 4374-7534/ 4373-4648 | jncrimcorr28.sec142@pjn.gov.ar",,1,Penal Federal
-191,SECRETARIA 143,N/D,"Talcahuano 550, 5° P of. 5050 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-7344/ 7451 | jncrimcorr14.sec143@pjn.gov.ar",,1,Penal Federal
-192,SECRETARIA 145,N/D,"Lavalle 1171, P.B. (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2154 (Fax 4379-2157) | jncrimcorr48.sec145@pjn.gov.ar",,1,Penal Federal
-193,SECRETARIA 146,N/D,"Talcahuano 550, 5° P of. 5044 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-9970 | jncrimcorr15.sec146@pjn.gov.ar",,1,Penal Federal
-194,SECRETARIA 148,N/D,"Talcahuano 550, 7° P of. 7060 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43745452 | jncrimcorr22.sec148@pjn.gov.ar",,1,Penal Federal
-195,SECRETARIA 15,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6287",,1,Penal Federal
-196,SECRETARIA 152,N/D,"Talcahuano 550, 5° P of. 5125 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-7405 / 6923 | jncrimcorr29.sec152@pjn.gov.ar",,1,Penal Federal
-197,SECRETARIA 153,N/D,"Talcahuano 550, 5° P of. 5029 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-7498 /6790 /7520 | jncrimcorr17.sec153@pjn.gov.ar",,1,Penal Federal
-198,SECRETARIA 155,N/D,"Talcahuano 550, 5° P of. 5138 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43721546 / 43718164 / 43749015 | jncrimcorr26.sec155@pjn.gov.ar",,1,Penal Federal
-199,SECRETARIA 156,N/D,"Talcahuano 550, 5° P of. 5145 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0564 / 4371-4229 | jncrimcorr18.sec156@pjn.gov.ar",,1,Penal Federal
-200,SECRETARIA 158,N/D,"Talcahuano 550, 5º P Of. 5023 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-8434 Mesa de Entradas / 15-4190-8741 | jncrimcorr23.sec158@pjn.gov.ar",,1,Penal Federal
-201,SECRETARIA 159,N/D,"Talcahuano 550, 5° P of. 5004 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43721741 / 43733312 | jncrimcorr19.sec159@pjn.gov.ar",,1,Penal Federal
-202,SECRETARIA 16,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6291",,1,Penal Federal
-203,SECRETARIA 161,N/D,"Talcahuano 550, 5° P of. 5006 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-0327 / 4678 / 4374-9220 | jncrimcorr25.sec161@pjn.gov.ar",,1,Penal Federal
-204,SECRETARIA 162,N/D,"Talcahuano 550, 5° P of. 5148 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 11-4372-2229 | jncrimcorr20.sec162@pjn.gov.ar",,1,Penal Federal
-205,SECRETARIA 164,N/D,"Talcahuano 550, P 7° of. 7074 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43717496 / 43733740 / 43724324 (Fax 43724279) | jncrimcorr30.sec164@pjn.gov.ar",,1,Penal Federal
-206,SECRETARIA 165,N/D,"Talcahuano 550, 5° P of. 5131 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3155 / 4373-6082 | jncrimcorr21.sec165@pjn.gov.ar",,1,Penal Federal
-207,SECRETARIA 169,N/D,"Lavalle 1171, 5° P (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2160 / 02 | jncrimcorr49.sec169@pjn.gov.ar",,1,Penal Federal
-208,SECRETARIA 17,N/D,nan,,1,Penal Federal
-209,SECRETARIA 170,N/D,"Talcahuano 550, 5° P of. 5108 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43714599 /6815 | jncrimcorr33.sec170@pjn.gov.ar",,1,Penal Federal
-210,SECRETARIA 18,N/D,nan,,1,Penal Federal
-211,SECRETARIA 19,N/D,nan,,1,Penal Federal
-212,SECRETARIA 2,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6123",,1,Penal Federal
-213,SECRETARIA 20,N/D,jnpenaleconomico10.sec20@pjn.gov.ar,,1,Penal Federal
-214,SECRETARIA 207,N/D,"Lavalle 1171, 7° P contrafrente (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2142 / 4124-0978 / 4124-0913 | jncrimcorr49.sec207@pjn.gov.ar",,1,Penal Federal
-215,SECRETARIA 21,N/D,nan,,1,Penal Federal
-216,SECRETARIA 22,N/D,nan,,1,Penal Federal
-217,SECRETARIA 23,N/D,"Comodoro Py 2002, 4 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7191/2/3 | jncrimcorrfed12.sec23@pjn.gov.ar",,1,Penal Federal
-218,SECRETARIA 24,N/D,"Comodoro Py 2002, 4 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7194/7196 | jncrimcorrfed12.sec24@pjn.gov.ar",,1,Penal Federal
-219,SECRETARIA 3,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6455",,1,Penal Federal
-220,SECRETARIA 4,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6458",,1,Penal Federal
-221,SECRETARIA 5,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6526/6529",,1,Penal Federal
-222,SECRETARIA 51,N/D,"Lavalle 1638, 3° P. (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8062 / 2205 8032 (Fax 4374-4755) | jncrimcorr50.sec51@pjn.gov.ar",,1,Penal Federal
-223,SECRETARIA 55,N/D,"Lavalle 1638, 3° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8026/8083 | jncrimcorr55.sec55@pjn.gov.ar",,1,Penal Federal
-224,SECRETARIA 56,N/D,"Lavalle 1638, 5° P., mitad de pasillo (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8050 /8052 /8039 / 4374-8920 /8905 | jncrimcorr56.sec56@pjn.gov.ar",,1,Penal Federal
-225,SECRETARIA 58,N/D,"Lavalle 1638, 4° P. (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8044 / 8046 (mesa de entradas) 2205-8054 /8055 /56 (secretaria) (Fax 4374-8695) | jncrimcorr51.sec58@pjn.gov.ar",,1,Penal Federal
-226,SECRETARIA 6,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6526/6529",,1,Penal Federal
-227,SECRETARIA 60,N/D,"Lavalle 1638, 1° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8006 / 8007 / 8008 (Fax 4374-1672) | jncrimcorr52.sec60@pjn.gov.ar",,1,Penal Federal
-228,SECRETARIA 61,N/D,"Lavalle 1638, 2° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8017 int. 58017 - 2205-8001 int. 58001 (ex Sec. 63) | jncrimcorr57.sec61@pjn.gov.ar",,1,Penal Federal
-229,SECRETARIA 64,N/D,"Juncal 941, 3° P. (C1062ABG) | Ciudad Autónoma de Buenos Aires | 4322-1346 / 4327-0694 /0253 / 4328-9892 (Fax 4327-0694) | jncrimcorr58.sec64@pjn.gov.ar",,1,Penal Federal
-230,SECRETARIA 66,N/D,"Juncal 941, 1° P. (C1062ABG) | Ciudad Autónoma de Buenos Aires | 4327-0626 -mesa de entradas- y 4327-0907 | jncrimcorr53.sec66@pjn.gov.ar",,1,Penal Federal
-231,SECRETARIA 7,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6130/6133",,1,Penal Federal
-232,SECRETARIA 71,N/D,"Av. De Los Inmigrantes 1950, 3° P Puerta 330 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6332 /33 /23 /25 /6211 Cel: 117020-2460 | jncrimcorr60.sec71@pjn.gov.ar",,1,Penal Federal
-233,SECRETARIA 73,N/D,"Lavalle 1638, 7° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8058 y 2205-8074 /75 /76 /66 /82 | jncrimcorr54.sec73@pjn.gov.ar / jncrimcorr54@pjn.gov.ar",,1,Penal Federal
-234,SECRETARIA 74,N/D,"Lavalle 1638, 6° y 7° P. (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8069 /70 /71 /72 /77 /78 /79 /80 | jncrimcorr59.sec74@pjn.gov.ar",,1,Penal Federal
-235,SECRETARIA 77,N/D,"Av. De Los Inmigrantes 1950, 3° P Puerta 311 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6329 /6330 /6331 /6349 / 6346 | jncrimcorr61.sec77@pjn.gov.ar",,1,Penal Federal
-236,SECRETARIA 79,N/D,"Av. De Los Inmigrantes 1950, 3° P oficina 356/358/346 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6337 /6338 /6339 /6538 /6535 | jncrimcorr62.sec79@pjn.gov.ar",,1,Penal Federal
-237,SECRETARIA 8,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6130/6133",,1,Penal Federal
-238,SECRETARIA 81,N/D,"Av. De Los Inmigrantes 1950, 3° P Puerta 336 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6343 / 6351 | jncrimcorr63.sec81@pjn.gov.ar",,1,Penal Federal
-239,SECRETARIA 9,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6141",,1,Penal Federal
-240,SECRETARIA DE JURISPRUDENCIA,N/D,"Comodoro Py 2002, 9º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7379/80 (Fax 4032-7384) | cfcasacionpenal.jurisprudencia@pjn.gov.ar",,1,Penal Federal
-241,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 1,N/D,"Comodoro Py 2002, 1º piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7244/7245 | tocrimfed1@pjn.gov.ar",,1,Penal Federal
-242,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 1 DE SAN MARTIN,Primera Instancia,,,1,Penal Federal
-243,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 2,N/D,"Comodoro Py 2002, 1º piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7254/7255 | tocrimfed2@pjn.gov.ar",,1,Penal Federal
-244,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 3,N/D,"Comodoro Py 2002, 7º Piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7264/7464/7263 | tocrimfed3@pjn.gov.ar",,1,Penal Federal
-245,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 4,N/D,"Comodoro Py 2002, 6º Piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7272 / 7273 | tocrimfed4@pjn.gov.ar",,1,Penal Federal
-246,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 5,N/D,"Comodoro Py 2002, piso 6 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7282/7831 | tocrimfed5@pjn.gov.ar",,1,Penal Federal
-247,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 5 DE SAN MARTIN,Primera Instancia,,,1,Penal Federal
-248,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 6,N/D,"Comodoro Py 2002, 6º Piso, Ala Rio (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7290/7291 | tocrimfed6@pjn.gov.ar",,1,Penal Federal
-249,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 7,N/D,"Talcahuano 550, 6º Piso of. 6118 (C1013AAL) | Ciudad Autónoma de Buenos Aires | (011) 4371-3955 / 4372-2705 | tocrimfed7@pjn.gov.ar",,1,Penal Federal
-250,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 8,N/D,Comodoro Py 2002 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7308/7309 | tocrimfed8@pjn.gov.ar,,1,Penal Federal
-251,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL DE LA PLATA 1,Primera Instancia,,,1,Penal Federal
-252,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 1,N/D,"Talcahuano 550, 6º Piso Of. 6113 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0664/9966 | tocriminal1@pjn.gov.ar",,1,Penal Federal
-253,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 10,Primera Instancia,,,1,Penal Federal
-254,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 11,N/D,"Lavalle 1171, 2º piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-0107 | tocriminal11@pjn.gov.ar",,1,Penal Federal
-255,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 12,N/D,"Lavalle 1171, 4º piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0961 al 65 | tocriminal12@pjn.gov.ar",,1,Penal Federal
-256,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 13,N/D,"Lavalle 1171, 4º piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0949/53 | tocriminal13@pjn.gov.ar",,1,Penal Federal
-257,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 14,N/D,"Lavalle 1171, 1º piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2194/2094/2137 | tocriminal14@pjn.gov.ar",,1,Penal Federal
-258,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 15,N/D,"Lavalle 1171, 8º Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124 0966 al 74 | tocriminal15@pjn.gov.ar",,1,Penal Federal
-259,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 16,N/D,"Lavalle 1171, 8º Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0938 al 45 | tocriminal16@pjn.gov.ar",,1,Penal Federal
-260,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 17,N/D,"Lavalle 1171, 7º Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0976 4124-0986 al 91 | tocriminal17@pjn.gov.ar",,1,Penal Federal
-261,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 18,N/D,"Lavalle 1171, 6º Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-0120 al 0124 | tocriminal18@pjn.gov.ar",,1,Penal Federal
-262,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 19,N/D,"Lavalle 1171, 9º Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2182/2184 | tocriminal19@pjn.gov.ar",,1,Penal Federal
-263,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 2,N/D,"Talcahuano 550, 6º Piso (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-5234 | tocriminal2@pjn.gov.ar",,1,Penal Federal
-264,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 20,N/D,"Lavalle 1171, 9º Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0929/36 | tocriminal20@pjn.gov.ar",,1,Penal Federal
-265,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 21,N/D,"Lavalle 1171, 4º Piso Contrafrente (C1048AAC) | Ciudad Autónoma de Buenos Aires | tel: 39888255 cel: 1157031187 ó 1123706166 | tocriminal21@pjn.gov.ar",,1,Penal Federal
-266,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 22,N/D,"Comodoro Py 2002, 6º Piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7299/7300 | tocriminal22@pjn.gov.ar",,1,Penal Federal
-267,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 24,N/D,"Paraguay 1536, 9º Piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4811-6164/ 4813-7739 / 4811-6473 | tocriminal24@pjn.gov.ar",,1,Penal Federal
-268,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 25,N/D,"Paraguay 1536, 3º Piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4813-4663 / 4813-6291 / 4812-1006 | tocriminal25@pjn.gov.ar",,1,Penal Federal
-269,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 26,N/D,"Paraguay 1536, 4º Piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4812-3575/5020 | tocriminal26@pjn.gov.ar",,1,Penal Federal
-270,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 27,N/D,"Paraguay 1536, 4° Piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4812-0344/4531 | tocriminal27@pjn.gov.ar",,1,Penal Federal
-271,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 28,N/D,"Paraguay 1536, 3º Piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4812-0525/0883 | tocriminal28@pjn.gov.ar",,1,Penal Federal
-272,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 29,N/D,"Paraguay 1536, 2º piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4811-9356/4813-7312 | tocriminal29@pjn.gov.ar",,1,Penal Federal
-273,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 3,N/D,"Talcahuano 550, 6º Piso of. 6073 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-1582/4843 | tocriminal3@pjn.gov.ar",,1,Penal Federal
-274,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 30,N/D,"Paraguay 1536, 2º piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4813-0956 4811-4672/7163 | tocriminal30@pjn.gov.ar",,1,Penal Federal
-275,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 4,N/D,"Talcahuano 550, 6º Piso oficina 6115 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2119/2123 | tocriminal4@pjn.gov.ar",,1,Penal Federal
-276,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 5,N/D,"Talcahuano 550, 6º Piso Of. 6130 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3665/4372-9266 | tocriminal5@pjn.gov.ar",,1,Penal Federal
-277,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 7,N/D,"Talcahuano 550, 6º Piso of. 6134 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-2594/4-371-4795 | tocriminal7@pjn.gov.ar",,1,Penal Federal
-278,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 8,N/D,"Talcahuano 550, 6º Piso (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-0125 / 4371-8748 | tocriminal8@pjn.gov.ar",,1,Penal Federal
-279,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 9,N/D,"Talcahuano 550, 6º Piso of 6116 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2165/9174 | tocriminal9@pjn.gov.ar",,1,Penal Federal
-280,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONALL 10,N/D,"Talcahuano 550, 6º Piso Puerta 6084 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4375-0883/4371-0705/4371-0750/4372-2256 | tocriminal10@pjn.gov.ar",,1,Penal Federal
-281,TRIBUNAL ORAL EN LO PENAL ECONOMICO 1,N/D,"Comodoro Py 2002, 3 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7345 | topenalec1@pjn.gov.ar",,1,Penal Federal
-282,TRIBUNAL ORAL EN LO PENAL ECONOMICO 2,N/D,Comodoro Py 2002 (C1104BEN) | Ciudad Autónoma de Buenos Aires | Secretaria de juicio - 4032-7354 Secretaría de Ejecución - 4032-7589 | topenalec2@pjn.gov.ar,,1,Penal Federal
-283,TRIBUNAL ORAL EN LO PENAL ECONOMICO 3,N/D,"Comodoro Py 2002, 7° piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7363 / 7362 | topenalec3@pjn.gov.ar",,1,Penal Federal
+31,CAMARA PENAL ECONOMICO,N/D,"Av. De Los Inmigrantes 1950, 2° Y 3° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6165 / 4130-6166",,1,Penal Federal
+32,CAMARA PENAL ECONOMICO SALA A,N/D,"Av. De Los Inmigrantes 1950, 3° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6440 | cnpenalec.salaa@pjn.gov.ar",,1,Penal Federal
+33,CAMARA PENAL ECONOMICO SALA B,N/D,"Av. De Los Inmigrantes 1950, 3er. piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6441 | cnpenalec.salab@pjn.gov.ar",,1,Penal Federal
+34,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA DE JUICIOS AMBIENTALES,Primera Instancia,,,1,Penal Federal
+35,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL 3,Primera Instancia,,,1,Penal Federal
+36,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL DE RELACIONES DE CONSUMO,Primera Instancia,,,1,Penal Federal
+37,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA PENAL ESPECIAL,Primera Instancia,,,1,Penal Federal
+38,JUZGADO CRIM. Y CORR. FEDERAL DE LA PLATA 3,Primera Instancia,,,1,Penal Federal
+39,JUZGADO CRIMINAL Y CORRECCIONAL 1,N/D,"Talcahuano 550, 3° P of. 3125 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-5049 | jncrimcorr1.sec105@pjn.gov.ar",,1,Penal Federal
+40,JUZGADO CRIMINAL Y CORRECCIONAL 10,N/D,"Talcahuano 550, P 7° of. 7042 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-8328 | jncrimcorr10@pjn.gov.ar / jncrimcorr10.sec130@pjn.gov.ar",,1,Penal Federal
+41,JUZGADO CRIMINAL Y CORRECCIONAL 11,N/D,"Talcahuano 550, P 5° of. 5056/57 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2818 / 4373-8101 | jncrimcorr11.sec133@pjn.gov.ar",,1,Penal Federal
+42,JUZGADO CRIMINAL Y CORRECCIONAL 12,N/D,"Talcahuano 550, P 5° of. 5019 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-6850 | jncrimcorr12@pjn.gov.ar / jncrimcorr12.admin@pjn.gov.ar",,1,Penal Federal
+43,JUZGADO CRIMINAL Y CORRECCIONAL 13,N/D,"Talcahuano 550, P 5° of. 5127 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-4247 / 6960 | jncrimcorr13.sec140@pjn.gov.ar / jncrimcorr13@pjn.gov.ar",,1,Penal Federal
+44,JUZGADO CRIMINAL Y CORRECCIONAL 14,N/D,"Talcahuano 550, 5° P of. 5038/39 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-7451 / 7344 | jncrimcorr14@pjn.gov.ar",,1,Penal Federal
+45,JUZGADO CRIMINAL Y CORRECCIONAL 15,N/D,"Talcahuano 550, 5° P of. 5047 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-8608 | jncrimcorr15@pjn.gov.ar",,1,Penal Federal
+46,JUZGADO CRIMINAL Y CORRECCIONAL 16,N/D,"Talcahuano 550, 7° Piso Of 7062 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-9513 | jncrimcorr16@pjn.gov. ar",,1,Penal Federal
+47,JUZGADO CRIMINAL Y CORRECCIONAL 17,N/D,"Talcahuano 550, 5° P of. 5032 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-7498/6790 | jncrimcorr17@pjn.gov.ar",,1,Penal Federal
+48,JUZGADO CRIMINAL Y CORRECCIONAL 18,N/D,"Talcahuano 550, 5° P of. 5145 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0564 / 4229 | jncrimcorr18@pjn.gov.ar / jncrimcorr18.admin@pjn.gov.ar",,1,Penal Federal
+49,JUZGADO CRIMINAL Y CORRECCIONAL 19,N/D,"Talcahuano 550, 5° P of. 5010 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-3312 / 4372-1741 | jncrimcorr19@pjn.gov.ar",,1,Penal Federal
+50,JUZGADO CRIMINAL Y CORRECCIONAL 2,N/D,"Talcahuano 550, 3° P of 3085 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-6382/2975 | jncrimcorr2.sec107@pjn.gov.ar / jncrimcorr2@pjn.gov.ar",,1,Penal Federal
+51,JUZGADO CRIMINAL Y CORRECCIONAL 20,N/D,"Talcahuano 550, 5° P of. 5147 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-5504 / 4371-7609 | jncrimcorr20@pjn.gov.ar",,1,Penal Federal
+52,JUZGADO CRIMINAL Y CORRECCIONAL 21,N/D,"Talcahuano 550, 5° P of. 5131 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3155 / 4373-6082 | jncrimcorr21@pjn.gov.ar / jncrimcorr21.sec165@pjn.gov.ar",,1,Penal Federal
+53,JUZGADO CRIMINAL Y CORRECCIONAL 22,N/D,"Talcahuano 550, 7° Piso Of.:7060 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0509 / 4371-0487 | jncrimcorr22.sec148@pjn.gov.ar",,1,Penal Federal
+54,JUZGADO CRIMINAL Y CORRECCIONAL 23,N/D,"Talcahuano 550, 5º P Of. 5026/7 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-8434 Mesa de Entradas / 15-4190-8741 / 4372-1348 | jncrimcorr23@pjn.gov.ar",,1,Penal Federal
+55,JUZGADO CRIMINAL Y CORRECCIONAL 24,N/D,"Talcahuano 550, 7° P of. 7047 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-6969 / 4371-6676 y 4372-2655 | jncrimcorr24@pjn.gov.ar",,1,Penal Federal
+56,JUZGADO CRIMINAL Y CORRECCIONAL 25,N/D,"Talcahuano 550, 5° P of. 5007 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-0327 / 4678 y 4374-9220 | jncrimcorr25.sec161@pjn.gov.ar",,1,Penal Federal
+57,JUZGADO CRIMINAL Y CORRECCIONAL 26,N/D,"Talcahuano 550, 5° P of. 5138 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43721546 / 43718164 / 43749015 | jncrimcorr26@pjn.gov.ar",,1,Penal Federal
+58,JUZGADO CRIMINAL Y CORRECCIONAL 27,N/D,"Talcahuano 550, 3° P of. 3076/3067 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3575 / 4374-8273 | jncrimcorr27@pjn.gov.ar",,1,Penal Federal
+59,JUZGADO CRIMINAL Y CORRECCIONAL 28,N/D,"Talcahuano 550, 5° P of. 5093 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-1550 / 4374-7534 / 4373-4648 | jncrimcorr28.sec142@pjn.gov.ar / jncrimcorr28@pjn.gov.ar",,1,Penal Federal
+60,JUZGADO CRIMINAL Y CORRECCIONAL 29,N/D,"Talcahuano 550, 5° P of. 5137 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-7405 / 6923 4374-0632 (Sec. Privada) | jncrimcorr29.sec152@pjn.gov.ar / jncrimcorr29@pjn.gov.ar",,1,Penal Federal
+61,JUZGADO CRIMINAL Y CORRECCIONAL 3,N/D,"Talcahuano 550, 5° P Puerta 5079 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372 4679 /4371 8207 y 4371 5363 | jncrimcorr3.sec110@pjn.gov.ar / jncrimcorr3@pjn.gov.ar",,1,Penal Federal
+62,JUZGADO CRIMINAL Y CORRECCIONAL 30,N/D,"Talcahuano 550, 7° P of. 7074 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43717496 / 43733740 / 43724324 (Fax 43724279) | jncrimcorr30.sec164@pjn.gov.ar / jncrimcorr30@pjn.gov.ar",,1,Penal Federal
+63,JUZGADO CRIMINAL Y CORRECCIONAL 31,N/D,"Talcahuano 550, P 3° of 3117 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-2582 / 4371-9593 | jncrimcorr31.sec119@pjn.gov.ar / jncrimcorr31@pjn.gov.ar",,1,Penal Federal
+64,JUZGADO CRIMINAL Y CORRECCIONAL 32,N/D,"Lavalle 1171, 3° P (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0997 / 9 / 8 / 6 / 5 / 4 / 3 / 2 | jncrimcorr32@pjn.gov.ar",,1,Penal Federal
+65,JUZGADO CRIMINAL Y CORRECCIONAL 33,N/D,"Talcahuano 550, 5° P of. 5109 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-4599 / 6815 | jncrimcorr33@pjn.gov.ar",,1,Penal Federal
+66,JUZGADO CRIMINAL Y CORRECCIONAL 34,N/D,"Talcahuano 550, 3° P of. 3125 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-1126 / 4371-1322 / 4371-3964 | jncrimcorr34@pjn.gov.ar / jncrimcorr34.sec117@pjn.gov.ar",,1,Penal Federal
+67,JUZGADO CRIMINAL Y CORRECCIONAL 35,N/D,"Talcahuano 550, 7° P of. 7048 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-7693 / 4373-6903 | jncrimcorr35.sec120@pjn.gov.ar / jncrimcorr35@pjn.gov.ar",,1,Penal Federal
+68,JUZGADO CRIMINAL Y CORRECCIONAL 36,N/D,"Talcahuano 550, 3° P of. 3081 y 3128 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-1370 / 4371-6432 | jncrimcorr36@pjn.gov.ar",,1,Penal Federal
+69,JUZGADO CRIMINAL Y CORRECCIONAL 37,N/D,"Talcahuano 550, 7° P of. 7040 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-2767 / 4371-9413 | jncrimcorr37@pjn.gov.ar",,1,Penal Federal
+70,JUZGADO CRIMINAL Y CORRECCIONAL 38,N/D,"Talcahuano 550, 5° P of. 5051 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2141 / 4371-7659 / 4373-4715 | jncrimcorr38@pjn.gov.ar / jncrimcorr38.sec132@pjn.gov.ar",,1,Penal Federal
+71,JUZGADO CRIMINAL Y CORRECCIONAL 39,N/D,"Lavalle 1171, PB (C1048AAC) | Ciudad Autónoma de Buenos Aires | 43792195 / 43792196 / 43792197 | jncrimcorr39@pjn.gov.ar / jncrimcorr39.sec135@pjn.gov.ar",,1,Penal Federal
+72,JUZGADO CRIMINAL Y CORRECCIONAL 4,N/D,"Talcahuano 550, 7° P 0f.7079 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-4368 / 4371-0503 | jncrimcorr4@pjn.gov.ar",,1,Penal Federal
+73,JUZGADO CRIMINAL Y CORRECCIONAL 40,N/D,"Talcahuano 550, 5° P of. 5086 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2161 / 4373-5997 | jncrimcorr40@pjn.gov.ar / jncrimcorr40.sec139@pjn.gov.ar",,1,Penal Federal
+74,JUZGADO CRIMINAL Y CORRECCIONAL 41,N/D,"Talcahuano 550, 5° P of. 5074 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2829 / 4371-7763 / 4374-4107 / 4373-0548 | jncrimcorr41@pjn.gov.ar",,1,Penal Federal
+75,JUZGADO CRIMINAL Y CORRECCIONAL 42,N/D,"Talcahuano 550, 5° P of. 5142 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-1322 / 4371–3903 / 4371-3944 | jncrimcorr42@pjn.gov.ar / jncrimcorr42.sec106@pjn.gov.ar",,1,Penal Federal
+76,JUZGADO CRIMINAL Y CORRECCIONAL 43,N/D,"Juncal 941, 2° P. (C1062ABG) | Ciudad Autónoma de Buenos Aires | 4032-7203 / 7205 / 7198 | jncrimcorr43@pjn.gov.ar",,1,Penal Federal
+77,JUZGADO CRIMINAL Y CORRECCIONAL 44,N/D,"Comodoro Py 2002, P.B. (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7208 /09 /10 /11 /12 | jncrimcorr44.sec115@pjn.gov.ar / jncrimcorr44@pjn.gov.ar",,1,Penal Federal
+78,JUZGADO CRIMINAL Y CORRECCIONAL 45,N/D,"Lavalle 1171, 2° P (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2108 /2102 | jncrimcorr45.sec122@pjn.gov.ar / jncrimcorr45@pjn.gov.ar",,1,Penal Federal
+79,JUZGADO CRIMINAL Y CORRECCIONAL 46,N/D,"Talcahuano 550, 8° P of. 8001, 8002, 8003 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0479 / 4371-0368 | jncrimcorr46.sec134@pjn.gov.ar",,1,Penal Federal
+80,JUZGADO CRIMINAL Y CORRECCIONAL 47,N/D,"Talcahuano 550, 5° P of. 5105 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-0149 / 4371-6299 | jncrimcorr47@pjn.gov.ar",,1,Penal Federal
+81,JUZGADO CRIMINAL Y CORRECCIONAL 48,N/D,"Lavalle 1171, P.B. (C1048AAC) | Ciudad Autónoma de Buenos Aires | (Fax 4379-2157) | jncrimcorr48@pjn.gov.ar",,1,Penal Federal
+82,JUZGADO CRIMINAL Y CORRECCIONAL 49,N/D,"Lavalle 1171, 5° P (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2161 /59 /58 | jncrimcorr49@pjn.gov.ar",,1,Penal Federal
+83,JUZGADO CRIMINAL Y CORRECCIONAL 5,N/D,"Talcahuano 550, P 6° of. 6008 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3774 / 7461 | jncrimcorr5@pjn.gov.ar",,1,Penal Federal
+84,JUZGADO CRIMINAL Y CORRECCIONAL 50,N/D,"Lavalle 1638, 3° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8032 / 8062 | jncrimcorr50@pjn.gov.ar",,1,Penal Federal
+85,JUZGADO CRIMINAL Y CORRECCIONAL 51,N/D,"Lavalle 1638, 4° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8048 | jncrimcorr51@pjn.gov.ar",,1,Penal Federal
+86,JUZGADO CRIMINAL Y CORRECCIONAL 52,N/D,"Lavalle 1638, 1° y 2° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205 8006 /8007 /8008 | jncrimcorr52@pjn.gov.ar",,1,Penal Federal
+87,JUZGADO CRIMINAL Y CORRECCIONAL 53,N/D,"Juncal 941, 1° P (C1062ABG) | Ciudad Autónoma de Buenos Aires | 4327-0626 -mesa de entradas- y 4327-0907 | jncrimcorr53@pjn.gov.ar - jncrimcorr53.sec66@pjn.gov.ar",,1,Penal Federal
+88,JUZGADO CRIMINAL Y CORRECCIONAL 54,N/D,"Lavalle 1638, 5º, 6° y 7° (mesa de entradas) piso (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8058 / 2205-8074 /75 /76 /66 /82 | jncrimcorr54@pjn.gov.ar / jncrimcorr54.sec73@pjn.gov.ar",,1,Penal Federal
+89,JUZGADO CRIMINAL Y CORRECCIONAL 55,N/D,"Lavalle 1638, 1° Y 3° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | Mesa de entradas 2205-8026/8083 Secretaría Privada 2205-8030 | jncrimcorr55@pjn.gov.ar / jncrimcorr55.admin@pjn.gov.ar",,1,Penal Federal
+90,JUZGADO CRIMINAL Y CORRECCIONAL 56,N/D,"Lavalle 1638, 4° P, al lado del ascensor (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8042 | jncrimcorr56@pjn.gov.ar / jncrimcorr56.admin@pjn.gov.ar",,1,Penal Federal
+91,JUZGADO CRIMINAL Y CORRECCIONAL 57,N/D,"Lavalle 1638, 1/2 piso (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8017 / 2205-8001 | jncrimcorr57@pjn.gov.ar",,1,Penal Federal
+92,JUZGADO CRIMINAL Y CORRECCIONAL 58,N/D,"Juncal 941, 3° P. (C1062ABG) | Ciudad Autónoma de Buenos Aires | 4322-1346 / 4327-0694/ 0253 / 4328-9892 | jncrimcorr58@pjn.gov.ar / jncrimcorr58.admin@pjn.gov.ar",,1,Penal Federal
+93,JUZGADO CRIMINAL Y CORRECCIONAL 59,N/D,"Lavalle 1638, 5° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8059 /60 | jncrimcorr59@pjn.gov.ar",,1,Penal Federal
+94,JUZGADO CRIMINAL Y CORRECCIONAL 6,N/D,"Talcahuano 550, P 3° Puerta 3129 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43713022 | jncrimcorr6.sec118@pjn.gov.ar / jncrimcorr6@pjn.gov.ar",,1,Penal Federal
+95,JUZGADO CRIMINAL Y CORRECCIONAL 60,N/D,"Av. De Los Inmigrantes 1950, 3° P Puerta 330 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6333 /6332 | jncrimcorr60@pjn.gov.ar / jncrimcorr60.admin@pjn.gov.ar",,1,Penal Federal
+96,JUZGADO CRIMINAL Y CORRECCIONAL 61,N/D,"Av. De Los Inmigrantes 1950, 3° P Puerta 320 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6347 /8 /9 y 4130-6330 - Urgencias fuera de horario y día hábil 116512-8999 / 114889-7507 (Fax 4130-6328) | jncrimcorr61@pjn.gov.ar",,1,Penal Federal
+97,JUZGADO CRIMINAL Y CORRECCIONAL 62,N/D,"Av. De Los Inmigrantes 1950, piso 3°, oficina 356 /358 /346 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6337 /6338 /6339 /6538 /6535 | jncrimcorr62@pjn.gov.ar",,1,Penal Federal
+98,JUZGADO CRIMINAL Y CORRECCIONAL 63,N/D,"Av. De Los Inmigrantes 1950, 3° P Puerta 342 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6341 / 42 | jncrimcorr63@pjn.gov.ar / jncrimcorr63.admin@pjn.gov.ar",,1,Penal Federal
+99,JUZGADO CRIMINAL Y CORRECCIONAL 7,N/D,"Talcahuano 550, P 5° of. 5120/21/22 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-6571 / 6764 | jncrimcorr7.sec121@pjn.gov.ar / jncrimcorr7@pjn.gov.ar",,1,Penal Federal
+100,JUZGADO CRIMINAL Y CORRECCIONAL 8,N/D,"Talcahuano 550, P 3° of. 3079 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2701 (Secretaría) 4371-6518 (Secretaría privada) | jncrimcorr8@pjn.gov.ar",,1,Penal Federal
+101,JUZGADO CRIMINAL Y CORRECCIONAL 9,N/D,"Talcahuano 550, P 5° of. 5103 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-4451 / 6366 | jncrimcorr9@pjn.gov.ar",,1,Penal Federal
+102,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 1,N/D,"Comodoro Py 2002, 3º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7102 | jncrimcorrfed1@pjn.gov.ar",,1,Penal Federal
+103,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 10,N/D,"Comodoro Py 2002, 4º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7174 | jncrimcorrfed10@pjn.gov.ar",,1,Penal Federal
+104,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 11,N/D,"Comodoro Py 2002, 4º piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7181 / 4032-7182 | jncrimcorrfed11@pjn.gov.ar",,1,Penal Federal
+105,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 12,N/D,"Comodoro Py 2002, 4º piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7190 | jncrimcorrfed12@pjn.gov.ar",,1,Penal Federal
+106,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 2,N/D,"Comodoro Py 2002, 3º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7110 | jncrimcorrfed2@pjn.gov.ar",,1,Penal Federal
+107,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 3,N/D,"Comodoro Py 2002, 3º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7118 | jncrimcorrfed3@pjn.gov.ar",,1,Penal Federal
+108,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 4,N/D,"Comodoro Py 2002, 3º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7126 | jncrimcorrfed4@pjn.gov.ar",,1,Penal Federal
+109,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 5,N/D,"Comodoro Py 2002, 3º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7134 | jncrimcorrfed5@pjn.gov.ar",,1,Penal Federal
+110,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 6,N/D,"Comodoro Py 2002, 3º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7142 | jncrimcorrfed6@pjn.gov.ar",,1,Penal Federal
+111,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 7,N/D,"Comodoro Py 2002, 4° piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7153 | jncrimcorrfed7@pjn.gov.ar",,1,Penal Federal
+112,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 8,N/D,"Comodoro Py 2002, 4º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7158 | jncrimcorrfed8@pjn.gov.ar",,1,Penal Federal
+113,JUZGADO CRIMINAL Y CORRECCIONAL FEDERAL 9,N/D,"Comodoro Py 2002, 4 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7167 | jncrimcorrfed9@pjn.gov.ar",,1,Penal Federal
+114,JUZGADO FEDERAL CRIMINAL Y CORRECCIONAL DE LOMAS DE ZAMORA 1,Primera Instancia,,,1,Penal Federal
+115,JUZGADO FEDERAL DE BAHIA BLANCA 1,Primera Instancia,,,1,Penal Federal
+116,JUZGADO FEDERAL DE CALETA OLIVIA,Primera Instancia,,,1,Penal Federal
+117,JUZGADO FEDERAL DE CORDOBA 2,Primera Instancia,,,1,Penal Federal
+118,JUZGADO FEDERAL DE CORRIENTES 1,Primera Instancia,,,1,Penal Federal
+119,JUZGADO FEDERAL DE ELDORADO,Primera Instancia,,,1,Penal Federal
+120,JUZGADO FEDERAL DE FORMOSA 2,Primera Instancia,,,1,Penal Federal
+121,JUZGADO FEDERAL DE GOYA,Primera Instancia,,,1,Penal Federal
+122,JUZGADO FEDERAL DE MAR DEL PLATA 1,Primera Instancia,,,1,Penal Federal
+123,JUZGADO FEDERAL DE NEUQUEN 2,Primera Instancia,,,1,Penal Federal
+124,JUZGADO FEDERAL DE PARANA 1,Primera Instancia,,,1,Penal Federal
+125,JUZGADO FEDERAL DE PRESIDENCIA ROQUE SAENZ PENA,Primera Instancia,,,1,Penal Federal
+126,JUZGADO FEDERAL DE QUILMES,Primera Instancia,,,1,Penal Federal
+127,JUZGADO FEDERAL DE RAWSON 2,Primera Instancia,,,1,Penal Federal
+128,JUZGADO FEDERAL DE RESISTENCIA 1,Primera Instancia,,,1,Penal Federal
+129,JUZGADO FEDERAL DE RIO CUARTO,Primera Instancia,,,1,Penal Federal
+130,JUZGADO FEDERAL DE RIO GALLEGOS,Primera Instancia,,,1,Penal Federal
+131,JUZGADO FEDERAL DE ROSARIO 3,Primera Instancia,,,1,Penal Federal
+132,JUZGADO FEDERAL DE SALTA 1,Primera Instancia,,,1,Penal Federal
+133,JUZGADO FEDERAL DE TUCUMAN 1,Primera Instancia,,,1,Penal Federal
+134,JUZGADO FEDERAL DE TUCUMAN 2,Primera Instancia,,,1,Penal Federal
+135,JUZGADO FEDERAL EN LO CRIM. Y CORR. DE MORON 2,Primera Instancia,,,1,Penal Federal
+136,JUZGADO FEDERAL EN LO CRIM. Y CORR. DE SAN ISIDRO 1,Primera Instancia,,,1,Penal Federal
+137,JUZGADO FEDERAL EN LO CRIM. Y CORR. DE SAN MARTIN 1,Primera Instancia,,,1,Penal Federal
+138,JUZGADO FEDERAL EN LO CRIMINAL Y CORRECCIONAL DE POSADAS,Primera Instancia,,,1,Penal Federal
+139,JUZGADO PENAL ECONOMICO 1,N/D,"Av. De Los Inmigrantes 1950, 3° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6122/25 | jnpenalec1@pjn.gov.ar",,1,Penal Federal
+140,JUZGADO PENAL ECONOMICO 10,N/D,"Sarmiento 1118, 3° Piso (C1041AAX) | Ciudad Autónoma de Buenos Aires | 4124-7079/7078/7075 | jnpenaleconomico10@pjn.gov.ar",,1,Penal Federal
+141,JUZGADO PENAL ECONOMICO 11,N/D,"Sarmiento 1118, 3° Piso (C1041AAX) | Ciudad Autónoma de Buenos Aires | 4124-7089 | jnpenaleconomico11@pjn.gov.ar",,1,Penal Federal
+142,JUZGADO PENAL ECONOMICO 2,N/D,"Av. De Los Inmigrantes 1950, 2º Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6455/6458 | jnpenalec2@pjn.gov.ar",,1,Penal Federal
+143,JUZGADO PENAL ECONOMICO 3,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6522/6529 | jnpenalec3@pjn.gov.ar",,1,Penal Federal
+144,JUZGADO PENAL ECONOMICO 4,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6130/6133 | jnpenalec4@pjn.gov.ar",,1,Penal Federal
+145,JUZGADO PENAL ECONOMICO 5,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6138 / 4130-6141 | jnpenalec5@pjn.gov.ar",,1,Penal Federal
+146,JUZGADO PENAL ECONOMICO 6,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6146/6149 | jnpenalec6@pjn.gov.ar",,1,Penal Federal
+147,JUZGADO PENAL ECONOMICO 7,N/D,"Av. De Los Inmigrantes 1950, 2° piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6280/6283 | jnpenalec7@pjn.gov.ar",,1,Penal Federal
+148,JUZGADO PENAL ECONOMICO 8,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6288/6291 | jnpenalec8@pjn.gov.ar",,1,Penal Federal
+149,JUZGADO PENAL ECONOMICO 9,N/D,"Sarmiento 1118, 3° PISO (C1041AAX) | Ciudad Autónoma de Buenos Aires | 4124-7070 | jnpenaleconomico9@pjn.gov.ar",,1,Penal Federal
+150,SECRETARIA 1,N/D,"Av. De Los Inmigrantes 1950, 3° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6122",,1,Penal Federal
+151,SECRETARIA 10,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6138",,1,Penal Federal
+152,SECRETARIA 105,N/D,"Talcahuano 550, 3° P of. 3075 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0861 / 3816 | jncrimcorr1.sec105@pjn.gov.ar",,1,Penal Federal
+153,SECRETARIA 106,N/D,"Talcahuano 550, 5° P of. 5142 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-1322 / 4371–3903 / 4371-3944 | jncrimcorr42.sec106@pjn.gov.ar",,1,Penal Federal
+154,SECRETARIA 107,N/D,"Talcahuano 550, 3° P 0f. 3070 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2975 / 6382 | jncrimcorr2.sec107@pjn.gov.ar",,1,Penal Federal
+155,SECRETARIA 108,N/D,"Talcahuano 550, P° 5° of. 5103 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-6366 / 4371-4451 | jncrimcorr9.sec108@pjn.gov.ar",,1,Penal Federal
+156,SECRETARIA 109,N/D,"Juncal 941, 2° P. (C1062ABG) | Ciudad Autónoma de Buenos Aires | 4032-7203 /7205 /7198 | jncrimcorr43.sec109@pjn.gov.ar",,1,Penal Federal
+157,SECRETARIA 11,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6146",,1,Penal Federal
+158,SECRETARIA 110,N/D,"Talcahuano 550, 5° P, Puerta 5079 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 11 4372 4679 / 11 4371 8207 y 11 4371 5363 | jninstruccion3.sec110@pjn.gov.ar",,1,Penal Federal
+159,SECRETARIA 111,N/D,"Talcahuano 550, 7° Piso Of 7074 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-9513 / 1123621111 | jncrimcorr16.sec111@pjn.gov.ar",,1,Penal Federal
+160,SECRETARIA 112,N/D,"Talcahuano 550, 5° P of. 5074 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2829 / 4371-7763 /4374-4107 / 4373-0548 | jncrimcorr41.sec112@pjn.gov.ar",,1,Penal Federal
+161,SECRETARIA 113,N/D,"Talcahuano 550, 7° P 0f.7079 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-4368 / 4371-0503 | jncrimcorr4.sec113@pjn.gov.ar",,1,Penal Federal
+162,SECRETARIA 114,N/D,"Lavalle 1171, P.B. (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0997 /9 /8 /6 /5 /4 /3 /2 | jncrimcorr32.sec114@pjn.gov.ar",,1,Penal Federal
+163,SECRETARIA 115,N/D,"Comodoro Py 2002, P.B. (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7208 /09 /10 /11 /12 | jncrimcorr44.sec115@pjn.gov.ar",,1,Penal Federal
+164,SECRETARIA 116,N/D,"Talcahuano 550, P° 6° of. 6007 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3774 / 7461 | jncrimcorr5.sec116@pjn.gov.ar",,1,Penal Federal
+165,SECRETARIA 117,N/D,"Talcahuano 550, 3° Oficina 3088 (C1013AAL) | Ciudad Autónoma de Buenos Aires | (011) 4372-1126 / (011) 4371-1322 / (011) 4371-3964 (Fax 4371-3964) | jncrimcorr34.sec117@pjn.gov.ar",,1,Penal Federal
+166,SECRETARIA 118,N/D,"Talcahuano 550, P° 3° puertas 3089/3090 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43713022 | jncrimcorr6.sec118@pjn.gov.ar",,1,Penal Federal
+167,SECRETARIA 119,N/D,"Talcahuano 550, 3° P of. 3115 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-2582 / 4371-9593 | jncrimcorr31.sec119@pjn.gov.ar",,1,Penal Federal
+168,SECRETARIA 12,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6149",,1,Penal Federal
+169,SECRETARIA 120,N/D,"Talcahuano 550, 7° P of. 7048 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-7693 / 4373-6903 | jncrimcorr35.sec120@pjn.gov.ar",,1,Penal Federal
+170,SECRETARIA 121,N/D,"Talcahuano 550, P° 5° of. 5119 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-6764 /6571 | jncrimcorr7.sec121@pjn.gov.ar",,1,Penal Federal
+171,SECRETARIA 122,N/D,"Lavalle 1171, 2° Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2108 /2102 | jncrimcorr45.sec122@pjn.gov.ar",,1,Penal Federal
+172,SECRETARIA 123,N/D,"Talcahuano 550, P° 3° Oficina 3081 y 3128 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-1370 / 4371-6432 (Fax 4371-6432) | jncrimcorr36.sec123@pjn.gov.ar",,1,Penal Federal
+173,SECRETARIA 124,N/D,"Talcahuano 550, P° 3° Oficina 3076/3067 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3575 | jncrimcorr27.sec124@pjn.gov.ar",,1,Penal Federal
+174,SECRETARIA 125,N/D,"Talcahuano 550, P° 3° of. 3074 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2701 (Secretaría) 4371-6518 (Secretaría privada) | jncrimcorr8.sec125@pjn.gov.ar",,1,Penal Federal
+175,SECRETARIA 129,N/D,"Talcahuano 550, 7° P of. 7040 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-2767 / 4371-9413 (Fax 4371-9413) | jncrimcorr37.sec129@pjn.gov.ar",,1,Penal Federal
+176,SECRETARIA 13,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6280",,1,Penal Federal
+177,SECRETARIA 130,N/D,"Talcahuano 550, P 7° of. 7042 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0737 | jncrimcorr10.sec130@pjn.gov.ar.",,1,Penal Federal
+178,SECRETARIA 131,N/D,"Talcahuano 550, 7° P of. 7047 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-6969 / 4371-6676 / 4372-2655 | jncrimcorr24.sec131@pjn.gov.ar",,1,Penal Federal
+179,SECRETARIA 132,N/D,"Talcahuano 550, 5° P of. 5051 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2141 / 4371-7659 / 4373-4715 (Fax 4373-4715) | jncrimcorr38.sec132@pjn.gov.ar",,1,Penal Federal
+180,SECRETARIA 133,N/D,"Talcahuano 550, 5° P of. 5055 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-8101 | jncrimcorr11.sec133@pjn.gov.ar",,1,Penal Federal
+181,SECRETARIA 134,N/D,"Talcahuano 550, 8° P of. 8001, 8002, 8003 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0479 (Fax 4371-0479) | jncrimcorr46.sec134@pjn.gov.ar",,1,Penal Federal
+182,SECRETARIA 135,N/D,"Lavalle 1171, P.B. (C1048AAC) | Ciudad Autónoma de Buenos Aires | 43792195 / 43792196 / 43792197 | jncrimcorr39.sec135@pjn.gov.ar",,1,Penal Federal
+183,SECRETARIA 136,N/D,"Talcahuano 550, 5° P of. 5105 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-0149 / 4371-6299 | jncrimcorr47.sec136@pjn.gov.ar",,1,Penal Federal
+184,SECRETARIA 137,N/D,"Talcahuano 550, P° 5° of. 5019 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-6850 / 4372-8360 | jncrimcorr12.sec137@pjn.gov.ar",,1,Penal Federal
+185,SECRETARIA 139,N/D,"Talcahuano 550, 5° P of. 5086 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2161 / 4373-5997 | jncrimcorr40.sec139@pjn.gov.ar.",,1,Penal Federal
+186,SECRETARIA 14,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6283",,1,Penal Federal
+187,SECRETARIA 140,N/D,"Talcahuano 550, 5° P of. 5128 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-4247 | jninstruccion13.sec140@pjn.gov.ar",,1,Penal Federal
+188,SECRETARIA 142,N/D,"Talcahuano 550, 5° P of. 5093 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-1550 / 4374-7534/ 4373-4648 | jncrimcorr28.sec142@pjn.gov.ar",,1,Penal Federal
+189,SECRETARIA 143,N/D,"Talcahuano 550, 5° P of. 5050 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4374-7344/ 7451 | jncrimcorr14.sec143@pjn.gov.ar",,1,Penal Federal
+190,SECRETARIA 145,N/D,"Lavalle 1171, P.B. (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2154 (Fax 4379-2157) | jncrimcorr48.sec145@pjn.gov.ar",,1,Penal Federal
+191,SECRETARIA 146,N/D,"Talcahuano 550, 5° P of. 5044 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-9970 | jncrimcorr15.sec146@pjn.gov.ar",,1,Penal Federal
+192,SECRETARIA 148,N/D,"Talcahuano 550, 7° P of. 7060 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43745452 | jncrimcorr22.sec148@pjn.gov.ar",,1,Penal Federal
+193,SECRETARIA 15,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6287",,1,Penal Federal
+194,SECRETARIA 152,N/D,"Talcahuano 550, 5° P of. 5125 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-7405 / 6923 | jncrimcorr29.sec152@pjn.gov.ar",,1,Penal Federal
+195,SECRETARIA 153,N/D,"Talcahuano 550, 5° P of. 5029 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-7498 /6790 /7520 | jncrimcorr17.sec153@pjn.gov.ar",,1,Penal Federal
+196,SECRETARIA 155,N/D,"Talcahuano 550, 5° P of. 5138 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43721546 / 43718164 / 43749015 | jncrimcorr26.sec155@pjn.gov.ar",,1,Penal Federal
+197,SECRETARIA 156,N/D,"Talcahuano 550, 5° P of. 5145 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0564 / 4371-4229 | jncrimcorr18.sec156@pjn.gov.ar",,1,Penal Federal
+198,SECRETARIA 158,N/D,"Talcahuano 550, 5º P Of. 5023 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-8434 Mesa de Entradas / 15-4190-8741 | jncrimcorr23.sec158@pjn.gov.ar",,1,Penal Federal
+199,SECRETARIA 159,N/D,"Talcahuano 550, 5° P of. 5004 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43721741 / 43733312 | jncrimcorr19.sec159@pjn.gov.ar",,1,Penal Federal
+200,SECRETARIA 16,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6291",,1,Penal Federal
+201,SECRETARIA 161,N/D,"Talcahuano 550, 5° P of. 5006 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-0327 / 4678 / 4374-9220 | jncrimcorr25.sec161@pjn.gov.ar",,1,Penal Federal
+202,SECRETARIA 162,N/D,"Talcahuano 550, 5° P of. 5148 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 11-4372-2229 | jncrimcorr20.sec162@pjn.gov.ar",,1,Penal Federal
+203,SECRETARIA 164,N/D,"Talcahuano 550, P 7° of. 7074 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43717496 / 43733740 / 43724324 (Fax 43724279) | jncrimcorr30.sec164@pjn.gov.ar",,1,Penal Federal
+204,SECRETARIA 165,N/D,"Talcahuano 550, 5° P of. 5131 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3155 / 4373-6082 | jncrimcorr21.sec165@pjn.gov.ar",,1,Penal Federal
+205,SECRETARIA 169,N/D,"Lavalle 1171, 5° P (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2160 / 02 | jncrimcorr49.sec169@pjn.gov.ar",,1,Penal Federal
+206,SECRETARIA 17,N/D,nan,,1,Penal Federal
+207,SECRETARIA 170,N/D,"Talcahuano 550, 5° P of. 5108 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 43714599 /6815 | jncrimcorr33.sec170@pjn.gov.ar",,1,Penal Federal
+208,SECRETARIA 18,N/D,nan,,1,Penal Federal
+209,SECRETARIA 19,N/D,nan,,1,Penal Federal
+210,SECRETARIA 2,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6123",,1,Penal Federal
+211,SECRETARIA 20,N/D,jnpenaleconomico10.sec20@pjn.gov.ar,,1,Penal Federal
+212,SECRETARIA 207,N/D,"Lavalle 1171, 7° P contrafrente (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2142 / 4124-0978 / 4124-0913 | jncrimcorr49.sec207@pjn.gov.ar",,1,Penal Federal
+213,SECRETARIA 21,N/D,nan,,1,Penal Federal
+214,SECRETARIA 22,N/D,nan,,1,Penal Federal
+215,SECRETARIA 23,N/D,"Comodoro Py 2002, 4 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7191/2/3 | jncrimcorrfed12.sec23@pjn.gov.ar",,1,Penal Federal
+216,SECRETARIA 24,N/D,"Comodoro Py 2002, 4 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7194/7196 | jncrimcorrfed12.sec24@pjn.gov.ar",,1,Penal Federal
+217,SECRETARIA 3,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6455",,1,Penal Federal
+218,SECRETARIA 4,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6458",,1,Penal Federal
+219,SECRETARIA 5,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6526/6529",,1,Penal Federal
+220,SECRETARIA 51,N/D,"Lavalle 1638, 3° P. (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8062 / 2205 8032 (Fax 4374-4755) | jncrimcorr50.sec51@pjn.gov.ar",,1,Penal Federal
+221,SECRETARIA 55,N/D,"Lavalle 1638, 3° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8026/8083 | jncrimcorr55.sec55@pjn.gov.ar",,1,Penal Federal
+222,SECRETARIA 56,N/D,"Lavalle 1638, 5° P., mitad de pasillo (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8050 /8052 /8039 / 4374-8920 /8905 | jncrimcorr56.sec56@pjn.gov.ar",,1,Penal Federal
+223,SECRETARIA 58,N/D,"Lavalle 1638, 4° P. (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8044 / 8046 (mesa de entradas) 2205-8054 /8055 /56 (secretaria) (Fax 4374-8695) | jncrimcorr51.sec58@pjn.gov.ar",,1,Penal Federal
+224,SECRETARIA 6,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6526/6529",,1,Penal Federal
+225,SECRETARIA 60,N/D,"Lavalle 1638, 1° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8006 / 8007 / 8008 (Fax 4374-1672) | jncrimcorr52.sec60@pjn.gov.ar",,1,Penal Federal
+226,SECRETARIA 61,N/D,"Lavalle 1638, 2° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8017 int. 58017 - 2205-8001 int. 58001 (ex Sec. 63) | jncrimcorr57.sec61@pjn.gov.ar",,1,Penal Federal
+227,SECRETARIA 64,N/D,"Juncal 941, 3° P. (C1062ABG) | Ciudad Autónoma de Buenos Aires | 4322-1346 / 4327-0694 /0253 / 4328-9892 (Fax 4327-0694) | jncrimcorr58.sec64@pjn.gov.ar",,1,Penal Federal
+228,SECRETARIA 66,N/D,"Juncal 941, 1° P. (C1062ABG) | Ciudad Autónoma de Buenos Aires | 4327-0626 -mesa de entradas- y 4327-0907 | jncrimcorr53.sec66@pjn.gov.ar",,1,Penal Federal
+229,SECRETARIA 7,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6130/6133",,1,Penal Federal
+230,SECRETARIA 71,N/D,"Av. De Los Inmigrantes 1950, 3° P Puerta 330 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6332 /33 /23 /25 /6211 Cel: 117020-2460 | jncrimcorr60.sec71@pjn.gov.ar",,1,Penal Federal
+231,SECRETARIA 73,N/D,"Lavalle 1638, 7° P (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8058 y 2205-8074 /75 /76 /66 /82 | jncrimcorr54.sec73@pjn.gov.ar / jncrimcorr54@pjn.gov.ar",,1,Penal Federal
+232,SECRETARIA 74,N/D,"Lavalle 1638, 6° y 7° P. (C1048AAN) | Ciudad Autónoma de Buenos Aires | 2205-8069 /70 /71 /72 /77 /78 /79 /80 | jncrimcorr59.sec74@pjn.gov.ar",,1,Penal Federal
+233,SECRETARIA 77,N/D,"Av. De Los Inmigrantes 1950, 3° P Puerta 311 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6329 /6330 /6331 /6349 / 6346 | jncrimcorr61.sec77@pjn.gov.ar",,1,Penal Federal
+234,SECRETARIA 79,N/D,"Av. De Los Inmigrantes 1950, 3° P oficina 356/358/346 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6337 /6338 /6339 /6538 /6535 | jncrimcorr62.sec79@pjn.gov.ar",,1,Penal Federal
+235,SECRETARIA 8,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6130/6133",,1,Penal Federal
+236,SECRETARIA 81,N/D,"Av. De Los Inmigrantes 1950, 3° P Puerta 336 (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6343 / 6351 | jncrimcorr63.sec81@pjn.gov.ar",,1,Penal Federal
+237,SECRETARIA 9,N/D,"Av. De Los Inmigrantes 1950, 2° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6141",,1,Penal Federal
+238,SECRETARIA DE JURISPRUDENCIA,N/D,"Comodoro Py 2002, 9º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7379/80 (Fax 4032-7384) | cfcasacionpenal.jurisprudencia@pjn.gov.ar",,1,Penal Federal
+239,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 1,N/D,"Comodoro Py 2002, 1º piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7244/7245 | tocrimfed1@pjn.gov.ar",,1,Penal Federal
+240,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 1 DE SAN MARTIN,Primera Instancia,,,1,Penal Federal
+241,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 2,N/D,"Comodoro Py 2002, 1º piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7254/7255 | tocrimfed2@pjn.gov.ar",,1,Penal Federal
+242,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 3,N/D,"Comodoro Py 2002, 7º Piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7264/7464/7263 | tocrimfed3@pjn.gov.ar",,1,Penal Federal
+243,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 4,N/D,"Comodoro Py 2002, 6º Piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7272 / 7273 | tocrimfed4@pjn.gov.ar",,1,Penal Federal
+244,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 5,N/D,"Comodoro Py 2002, piso 6 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7282/7831 | tocrimfed5@pjn.gov.ar",,1,Penal Federal
+245,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 5 DE SAN MARTIN,Primera Instancia,,,1,Penal Federal
+246,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 6,N/D,"Comodoro Py 2002, 6º Piso, Ala Rio (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7290/7291 | tocrimfed6@pjn.gov.ar",,1,Penal Federal
+247,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 7,N/D,"Talcahuano 550, 6º Piso of. 6118 (C1013AAL) | Ciudad Autónoma de Buenos Aires | (011) 4371-3955 / 4372-2705 | tocrimfed7@pjn.gov.ar",,1,Penal Federal
+248,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 8,N/D,Comodoro Py 2002 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7308/7309 | tocrimfed8@pjn.gov.ar,,1,Penal Federal
+249,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL DE LA PLATA 1,Primera Instancia,,,1,Penal Federal
+250,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 1,N/D,"Talcahuano 550, 6º Piso Of. 6113 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0664/9966 | tocriminal1@pjn.gov.ar",,1,Penal Federal
+252,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 11,N/D,"Lavalle 1171, 2º piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-0107 | tocriminal11@pjn.gov.ar",,1,Penal Federal
+253,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 12,N/D,"Lavalle 1171, 4º piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0961 al 65 | tocriminal12@pjn.gov.ar",,1,Penal Federal
+254,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 13,N/D,"Lavalle 1171, 4º piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0949/53 | tocriminal13@pjn.gov.ar",,1,Penal Federal
+255,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 14,N/D,"Lavalle 1171, 1º piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2194/2094/2137 | tocriminal14@pjn.gov.ar",,1,Penal Federal
+256,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 15,N/D,"Lavalle 1171, 8º Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124 0966 al 74 | tocriminal15@pjn.gov.ar",,1,Penal Federal
+257,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 16,N/D,"Lavalle 1171, 8º Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0938 al 45 | tocriminal16@pjn.gov.ar",,1,Penal Federal
+258,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 17,N/D,"Lavalle 1171, 7º Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0976 4124-0986 al 91 | tocriminal17@pjn.gov.ar",,1,Penal Federal
+259,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 18,N/D,"Lavalle 1171, 6º Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-0120 al 0124 | tocriminal18@pjn.gov.ar",,1,Penal Federal
+260,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 19,N/D,"Lavalle 1171, 9º Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-2182/2184 | tocriminal19@pjn.gov.ar",,1,Penal Federal
+261,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 2,N/D,"Talcahuano 550, 6º Piso (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-5234 | tocriminal2@pjn.gov.ar",,1,Penal Federal
+262,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 20,N/D,"Lavalle 1171, 9º Piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0929/36 | tocriminal20@pjn.gov.ar",,1,Penal Federal
+263,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 21,N/D,"Lavalle 1171, 4º Piso Contrafrente (C1048AAC) | Ciudad Autónoma de Buenos Aires | tel: 39888255 cel: 1157031187 ó 1123706166 | tocriminal21@pjn.gov.ar",,1,Penal Federal
+264,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 22,N/D,"Comodoro Py 2002, 6º Piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7299/7300 | tocriminal22@pjn.gov.ar",,1,Penal Federal
+265,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 24,N/D,"Paraguay 1536, 9º Piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4811-6164/ 4813-7739 / 4811-6473 | tocriminal24@pjn.gov.ar",,1,Penal Federal
+266,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 25,N/D,"Paraguay 1536, 3º Piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4813-4663 / 4813-6291 / 4812-1006 | tocriminal25@pjn.gov.ar",,1,Penal Federal
+267,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 26,N/D,"Paraguay 1536, 4º Piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4812-3575/5020 | tocriminal26@pjn.gov.ar",,1,Penal Federal
+268,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 27,N/D,"Paraguay 1536, 4° Piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4812-0344/4531 | tocriminal27@pjn.gov.ar",,1,Penal Federal
+269,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 28,N/D,"Paraguay 1536, 3º Piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4812-0525/0883 | tocriminal28@pjn.gov.ar",,1,Penal Federal
+270,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 29,N/D,"Paraguay 1536, 2º piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4811-9356/4813-7312 | tocriminal29@pjn.gov.ar",,1,Penal Federal
+271,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 3,N/D,"Talcahuano 550, 6º Piso of. 6073 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-1582/4843 | tocriminal3@pjn.gov.ar",,1,Penal Federal
+272,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 30,N/D,"Paraguay 1536, 2º piso (C1061ABD) | Ciudad Autónoma de Buenos Aires | 4813-0956 4811-4672/7163 | tocriminal30@pjn.gov.ar",,1,Penal Federal
+273,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 4,N/D,"Talcahuano 550, 6º Piso oficina 6115 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2119/2123 | tocriminal4@pjn.gov.ar",,1,Penal Federal
+274,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 5,N/D,"Talcahuano 550, 6º Piso Of. 6130 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-3665/4372-9266 | tocriminal5@pjn.gov.ar",,1,Penal Federal
+275,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 7,N/D,"Talcahuano 550, 6º Piso of. 6134 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-2594/4-371-4795 | tocriminal7@pjn.gov.ar",,1,Penal Federal
+276,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 8,N/D,"Talcahuano 550, 6º Piso (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-0125 / 4371-8748 | tocriminal8@pjn.gov.ar",,1,Penal Federal
+277,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 9,N/D,"Talcahuano 550, 6º Piso of 6116 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2165/9174 | tocriminal9@pjn.gov.ar",,1,Penal Federal
+278,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 10,N/D,"Talcahuano 550, 6º Piso Puerta 6084 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4375-0883/4371-0705/4371-0750/4372-2256 | tocriminal10@pjn.gov.ar",,1,Penal Federal
+279,TRIBUNAL ORAL EN LO PENAL ECONOMICO 1,N/D,"Comodoro Py 2002, 3 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7345 | topenalec1@pjn.gov.ar",,1,Penal Federal
+280,TRIBUNAL ORAL EN LO PENAL ECONOMICO 2,N/D,Comodoro Py 2002 (C1104BEN) | Ciudad Autónoma de Buenos Aires | Secretaria de juicio - 4032-7354 Secretaría de Ejecución - 4032-7589 | topenalec2@pjn.gov.ar,,1,Penal Federal
+281,TRIBUNAL ORAL EN LO PENAL ECONOMICO 3,N/D,"Comodoro Py 2002, 7° piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7363 / 7362 | topenalec3@pjn.gov.ar",,1,Penal Federal
