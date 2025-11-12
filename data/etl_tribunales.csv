@@ -32,10 +32,10 @@ tribunal_id,nombre,instancia,domicilio_sede,contacto,jurisdiccion_id,fuero
 31,CAMARA PENAL ECONOMICO,N/D,"Av. De Los Inmigrantes 1950, 2° Y 3° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6165 / 4130-6166",,1,Penal Federal
 32,CAMARA PENAL ECONOMICO SALA A,N/D,"Av. De Los Inmigrantes 1950, 3° Piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6440 | cnpenalec.salaa@pjn.gov.ar",,1,Penal Federal
 33,CAMARA PENAL ECONOMICO SALA B,N/D,"Av. De Los Inmigrantes 1950, 3er. piso (C1104ADO) | Ciudad Autónoma de Buenos Aires | 4130-6441 | cnpenalec.salab@pjn.gov.ar",,1,Penal Federal
-34,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA DE JUICIOS AMBIENTALES,Primera Instancia,,,1,Penal Federal
-35,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL 3,Primera Instancia,,,1,Penal Federal
-36,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL DE RELACIONES DE CONSUMO,Primera Instancia,,,1,Penal Federal
-37,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA PENAL ESPECIAL,Primera Instancia,,,1,Penal Federal
+34,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA DE JUICIOS AMBIENTALES,Primera Instancia,Talcahuano 550 Ciudad de Buenos Aires,Tel: (11) 4370 4476,1,Penal Federal
+35,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL 3,Primera Instancia,Talcahuano 550 Ciudad de Buenos Aires,Tel: (11) 4370 4626,1,Penal Federal
+36,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL DE RELACIONES DE CONSUMO,Primera Instancia,Talcahuano 550 Ciudad de Buenos Aires,Tel: (11) 4370 4285,1,Penal Federal
+37,CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA PENAL ESPECIAL,Primera Instancia,Talcahuano 550 Ciudad de Buenos Aires,,1,Penal Federal
 38,JUZGADO CRIM. Y CORR. FEDERAL DE LA PLATA 3,Primera Instancia,,,1,Penal Federal
 39,JUZGADO CRIMINAL Y CORRECCIONAL 1,N/D,"Talcahuano 550, 3° P of. 3125 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-5049 | jncrimcorr1.sec105@pjn.gov.ar",,1,Penal Federal
 40,JUZGADO CRIMINAL Y CORRECCIONAL 10,N/D,"Talcahuano 550, P 7° of. 7042 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-8328 | jncrimcorr10@pjn.gov.ar / jncrimcorr10.sec130@pjn.gov.ar",,1,Penal Federal
@@ -249,6 +249,7 @@ tribunal_id,nombre,instancia,domicilio_sede,contacto,jurisdiccion_id,fuero
 248,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL 8,N/D,Comodoro Py 2002 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7308/7309 | tocrimfed8@pjn.gov.ar,,1,Penal Federal
 249,TRIBUNAL ORAL EN LO CRIMINAL FEDERAL DE LA PLATA 1,Primera Instancia,,,1,Penal Federal
 250,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 1,N/D,"Talcahuano 550, 6º Piso Of. 6113 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-0664/9966 | tocriminal1@pjn.gov.ar",,1,Penal Federal
+251,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 10,Primera Instancia,,,1,Penal Federal
 252,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 11,N/D,"Lavalle 1171, 2º piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4379-0107 | tocriminal11@pjn.gov.ar",,1,Penal Federal
 253,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 12,N/D,"Lavalle 1171, 4º piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0961 al 65 | tocriminal12@pjn.gov.ar",,1,Penal Federal
 254,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 13,N/D,"Lavalle 1171, 4º piso (C1048AAC) | Ciudad Autónoma de Buenos Aires | 4124-0949/53 | tocriminal13@pjn.gov.ar",,1,Penal Federal
@@ -275,7 +276,7 @@ tribunal_id,nombre,instancia,domicilio_sede,contacto,jurisdiccion_id,fuero
 275,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 7,N/D,"Talcahuano 550, 6º Piso of. 6134 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4372-2594/4-371-4795 | tocriminal7@pjn.gov.ar",,1,Penal Federal
 276,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 8,N/D,"Talcahuano 550, 6º Piso (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4373-0125 / 4371-8748 | tocriminal8@pjn.gov.ar",,1,Penal Federal
 277,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 9,N/D,"Talcahuano 550, 6º Piso of 6116 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4371-2165/9174 | tocriminal9@pjn.gov.ar",,1,Penal Federal
-278,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONAL 10,N/D,"Talcahuano 550, 6º Piso Puerta 6084 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4375-0883/4371-0705/4371-0750/4372-2256 | tocriminal10@pjn.gov.ar",,1,Penal Federal
+278,TRIBUNAL ORAL EN LO CRIMINAL Y CORRECCIONALL 10,N/D,"Talcahuano 550, 6º Piso Puerta 6084 (C1013AAL) | Ciudad Autónoma de Buenos Aires | 4375-0883/4371-0705/4371-0750/4372-2256 | tocriminal10@pjn.gov.ar",,1,Penal Federal
 279,TRIBUNAL ORAL EN LO PENAL ECONOMICO 1,N/D,"Comodoro Py 2002, 3 (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7345 | topenalec1@pjn.gov.ar",,1,Penal Federal
 280,TRIBUNAL ORAL EN LO PENAL ECONOMICO 2,N/D,Comodoro Py 2002 (C1104BEN) | Ciudad Autónoma de Buenos Aires | Secretaria de juicio - 4032-7354 Secretaría de Ejecución - 4032-7589 | topenalec2@pjn.gov.ar,,1,Penal Federal
 281,TRIBUNAL ORAL EN LO PENAL ECONOMICO 3,N/D,"Comodoro Py 2002, 7° piso (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7363 / 7362 | topenalec3@pjn.gov.ar",,1,Penal Federal

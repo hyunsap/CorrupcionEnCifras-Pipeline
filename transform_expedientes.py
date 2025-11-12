@@ -505,6 +505,56 @@ def generar_dim_tribunales(df, path="tribunales_full.csv"):
     print("Extrayendo tribunales con normalización...")
     tribunales = {}
 
+    # --- HARDCODEADO: Secretarías de la Corte Suprema ---
+    corte_suprema_tribunales = [
+        {
+            "nombre": "CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA DE JUICIOS AMBIENTALES",
+            "instancia": "Primera Instancia",
+            "domicilio_sede": "Talcahuano 550 Ciudad de Buenos Aires",
+            "contacto": "Tel: (11) 4370 4476",
+            "fuero": "Penal Federal",
+            "jurisdiccion": "Federal"
+        },
+        {
+            "nombre": "CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL 3",
+            "instancia": "Primera Instancia",
+            "domicilio_sede": "Talcahuano 550 Ciudad de Buenos Aires",
+            "contacto": "Tel: (11) 4370 4626",
+            "fuero": "Penal Federal",
+            "jurisdiccion": "Federal"
+        },
+        {
+            "nombre": "CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL DE RELACIONES DE CONSUMO",
+            "instancia": "Primera Instancia",
+            "domicilio_sede": "Talcahuano 550 Ciudad de Buenos Aires",
+            "contacto": "Tel: (11) 4370 4285",
+            "fuero": "Penal Federal",
+            "jurisdiccion": "Federal"
+        },
+        {
+            "nombre": "CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA PENAL ESPECIAL",
+            "instancia": "Primera Instancia",
+            "domicilio_sede": "Talcahuano 550 Ciudad de Buenos Aires",
+            "contacto": None,
+            "fuero": "Penal Federal",
+            "jurisdiccion": "Federal"
+        }
+    ]
+    
+    # Agregar tribunales hardcodeados (ya normalizados)
+    for trib in corte_suprema_tribunales:
+        nombre = trib["nombre"]
+        key = _norm(nombre)
+        if key:
+            tribunales[key] = {
+                "nombre": nombre,
+                "instancia": trib["instancia"],
+                "domicilio_sede": trib["domicilio_sede"],
+                "contacto": trib["contacto"],
+                "fuero": trib["fuero"],
+                "jurisdiccion": trib["jurisdiccion"]
+            }
+
     # --- PRIMERO: Desde tribunales_full.csv (PRIORIDAD: info completa) ---
     df_tr = safe_read_csv_pd(path)
     if not df_tr.empty:
@@ -538,20 +588,23 @@ def generar_dim_tribunales(df, path="tribunales_full.csv"):
             if not key:
                 continue
 
+            # No sobrescribir si ya existe (priorizar hardcodeados)
+            if key in tribunales:
+                continue
+
             tel = str(r[col_tel]).strip() if col_tel in r and pd.notna(r[col_tel]) else None
             mail = str(r[col_mail]).strip() if col_mail in r and pd.notna(r[col_mail]) else None
             contacto = " | ".join([p for p in [f"Tel: {tel}" if tel else None,
                                                f"Email: {mail}" if mail else None] if p])
 
-            if key not in tribunales:
-                tribunales[key] = {
-                    "nombre": nombre,
-                    "instancia": "N/D",
-                    "domicilio_sede": r.get(col_det),
-                    "contacto": contacto or None,
-                    "fuero": None,
-                    "jurisdiccion": "Federal"
-                }
+            tribunales[key] = {
+                "nombre": nombre,
+                "instancia": "N/D",
+                "domicilio_sede": r.get(col_det),
+                "contacto": contacto or None,
+                "fuero": None,
+                "jurisdiccion": "Federal"
+            }
 
     # --- SEGUNDO: Desde los expedientes (solo si NO existen en scraper) ---
     for _, r in df.iterrows():
@@ -610,6 +663,42 @@ def procesar_jueces_y_relaciones(nombre_to_id, path="tribunales_full.csv"):
         print("Advertencia: tribunales_full.csv no encontrado o vacío. Se omite jueces/relaciones.")
         return
 
+    # --- HARDCODEADO: Responsables de Corte Suprema ---
+    corte_suprema_responsables = [
+        {
+            "tribunal": "CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA DE JUICIOS AMBIENTALES",
+            "responsable": "Dr. Nestor Alfredo Cafferatta",
+            "cargo": "Secretario",
+            "situacion": "Efectivo",
+            "telefono": "(11) 4370 4476",
+            "email": None
+        },
+        {
+            "tribunal": "CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL 3",
+            "responsable": "Dr. Diego Seitún",
+            "cargo": "Secretario",
+            "situacion": "Efectivo",
+            "telefono": "(11) 4370 4626",
+            "email": None
+        },
+        {
+            "tribunal": "CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL DE RELACIONES DE CONSUMO",
+            "responsable": "Dra. Elena Nolasco Highton",
+            "cargo": "Secretaria",
+            "situacion": "Efectiva",
+            "telefono": "(11) 4370 4285",
+            "email": None
+        },
+        {
+            "tribunal": "CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA PENAL ESPECIAL",
+            "responsable": "Dr. Fernando Javier Arnedo",
+            "cargo": "Secretario",
+            "situacion": "Efectivo",
+            "telefono": None,
+            "email": None
+        }
+    ]
+
     def pick(*cands):
         for c in df.columns:
             for cand in cands:
@@ -666,6 +755,16 @@ def procesar_jueces_y_relaciones(nombre_to_id, path="tribunales_full.csv"):
     relaciones = set()
     skip = 0
 
+    # --- Procesar responsables hardcodeados PRIMERO ---
+    for resp in corte_suprema_responsables:
+        tribunal = resp["tribunal"]
+        tid = nombre_to_id.get(_norm(tribunal))
+        if tid:
+            nombre = resp["responsable"]
+            jueces.setdefault(nombre, {"email": resp.get("email"), "telefono": resp.get("telefono")})
+            relaciones.add((tid, nombre, resp.get("cargo"), resp.get("situacion")))
+
+    # --- Procesar responsables desde scraper ---
     for _, r in df.iterrows():
         titulo = str(r[col_t]).strip() if col_t else None
         pathv = str(r[col_p]).strip() if col_p and pd.notna(r[col_p]) else None
