@@ -208,7 +208,7 @@ CREATE TABLE tribunal_juez (
     juez_id INTEGER NOT NULL,
     cargo VARCHAR(100),
     situacion VARCHAR(50) DEFAULT 'Efectivo' 
-        CHECK (situacion IN ('Efectivo', 'Efectiva', 'Subrogante', 'Interino', 'Interina', 'Suplente', 'Contratado', 'Contratada', 'Adscripto', 'Adscripta', 'Titular', 'En Comisión', 'En comisión', 'Reemplazante', 'Reemplazanta', 'Ad-hoc', 'Conjuez', 'Vacante', 'Secretario', 'Secretaria', 'Prosecretario', 'Prosecretaria')),
+        CHECK (situacion IN ('-','Efectivo', 'Efectiva', 'Subrogante', 'Interino', 'Interina', 'Suplente', 'Contratado', 'Contratada', 'Adscripto', 'Adscripta', 'Titular', 'En Comisión', 'En comisión', 'Reemplazante', 'Reemplazanta', 'Ad-hoc', 'Conjuez', 'Vacante', 'Secretario', 'Secretaria', 'Prosecretario', 'Prosecretaria')),
     fecha_desde DATE,
     fecha_hasta DATE,
     

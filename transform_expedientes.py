@@ -453,7 +453,7 @@ def procesar_radicaciones():
     df_T = safe_read_csv_pd("terminadas_radicaciones.csv")
     df = pd.concat([df_t, df_T], ignore_index=True)
     ren = {"Expediente": "numero_expediente", "Orden": "orden", "Fecha": "fecha_radicacion",
-           "Tribunal": "tribunal", "Fiscal": "fiscal_nombre", "Fiscalía": "fiscalia", "Fiscalia": "fiscalia"}
+           "Juzgado": "tribunal", "Fiscal": "fiscal_nombre", "Fiscalía": "fiscalia", "Fiscalia": "fiscalia"}
     for k, v in ren.items():
         if k in df.columns:
             df.rename(columns={k: v}, inplace=True)

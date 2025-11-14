@@ -453,44 +453,46 @@ def cargar_tribunal_juez(conn):
     count = 0
     errores = 0
     try:
-        with conn.cursor() as cur, open("etl_tribunal_juez.csv", newline="", encoding="utf-8") as f:
+        with open("etl_tribunal_juez.csv", newline="", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
                 try:
-                    # Verificar que existan tribunal y juez
-                    cur.execute("SELECT tribunal_id FROM tribunal WHERE tribunal_id = %s", 
-                               (parse_nullable(row["tribunal_id"]),))
-                    if not cur.fetchone():
-                        errores += 1
-                        continue
-                    
-                    cur.execute("SELECT juez_id FROM juez WHERE juez_id = %s", 
-                               (parse_nullable(row["juez_id"]),))
-                    if not cur.fetchone():
-                        errores += 1
-                        continue
-                    
-                    cur.execute("""
-                        INSERT INTO tribunal_juez (tribunal_id, juez_id, cargo, situacion)
-                        VALUES (%s, %s, %s, %s)
-                        ON CONFLICT (tribunal_id, juez_id) DO UPDATE
-                        SET cargo = EXCLUDED.cargo,
-                            situacion = EXCLUDED.situacion
-                    """, (
-                        parse_nullable(row["tribunal_id"]),
-                        parse_nullable(row["juez_id"]),
-                        parse_nullable(row["cargo"]),
-                        parse_nullable(row["situacion"])
-                    ))
-                    count += 1
+                    with conn.cursor() as cur:  
+                        
+                        cur.execute("SELECT tribunal_id FROM tribunal WHERE tribunal_id = %s", 
+                                   (parse_nullable(row["tribunal_id"]),))
+                        if not cur.fetchone():
+                            errores += 1
+                            continue
+                        
+                        cur.execute("SELECT juez_id FROM juez WHERE juez_id = %s", 
+                                   (parse_nullable(row["juez_id"]),))
+                        if not cur.fetchone():
+                            errores += 1
+                            continue
+                        
+                        cur.execute("""
+                            INSERT INTO tribunal_juez (tribunal_id, juez_id, cargo, situacion)
+                            VALUES (%s, %s, %s, %s)
+                            ON CONFLICT (tribunal_id, juez_id) DO UPDATE
+                            SET cargo = EXCLUDED.cargo,
+                                situacion = EXCLUDED.situacion
+                        """, (
+                            parse_nullable(row["tribunal_id"]),
+                            parse_nullable(row["juez_id"]),
+                            parse_nullable(row["cargo"]),
+                            parse_nullable(row["situacion"])
+                        ))
+                        conn.commit()  # Commit después de cada INSERT exitoso
+                        count += 1
                 except Exception as e:
+                    conn.rollback()  # Rollback solo de esta fila
                     errores += 1
                     if errores <= 3:
                         print(f"  ⚠️ Error en tribunal-juez: {e}")
-        conn.commit()
-        print(f"✅ Relaciones tribunal-juez insertadas: {count} (no encontrados: {errores})")
+        
+        print(f"✅ Relaciones tribunal-juez insertadas: {count} (errores: {errores})")
     except Exception as e:
-        conn.rollback()
         print(f"❌ Error al cargar tribunal-juez: {e}")
 
 # ============================================
