@@ -1,5 +1,5 @@
 -- ============================================
--- Configuración inicial
+-- ConfiguraciÃ³n inicial
 -- ============================================
 SET client_encoding = 'UTF8';
 SET timezone = 'America/Argentina/Buenos_Aires';
@@ -16,7 +16,7 @@ CREATE TABLE fuero (
     nombre VARCHAR(100) NOT NULL UNIQUE
 );
 
--- Jurisdicción
+-- JurisdicciÃ³n
 CREATE TABLE jurisdiccion (
     jurisdiccion_id SERIAL PRIMARY KEY,
     ambito VARCHAR(50) NOT NULL,
@@ -38,7 +38,7 @@ CREATE TABLE tribunal (
         ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
--- Secretaría
+-- SecretarÃ­a
 CREATE TABLE secretaria (
     secretaria_id SERIAL PRIMARY KEY,
     nombre VARCHAR(200) NOT NULL,
@@ -72,7 +72,7 @@ CREATE TABLE expediente (
     caratula TEXT,
     jurisdiccion TEXT,
     tribunal TEXT, -- redundancia textual
-    estado_procesal VARCHAR(50) CHECK (estado_procesal IN ('En trámite', 'Terminada')),
+    estado_procesal VARCHAR(50) CHECK (estado_procesal IN ('En trÃ¡mite', 'Terminada')),
     fecha_inicio DATE,
     fecha_ultimo_movimiento DATE,
     camara_origen TEXT,
@@ -140,7 +140,7 @@ CREATE TABLE rol_parte (
         ON DELETE CASCADE ON UPDATE CASCADE
 );
 
--- Relación N:M entre expediente y tipo de delito
+-- RelaciÃ³n N:M entre expediente y tipo de delito
 CREATE TABLE expediente_delito (
     numero_expediente VARCHAR(50) NOT NULL,
     tipo_delito TEXT NOT NULL,
@@ -153,7 +153,7 @@ CREATE TABLE expediente_delito (
         ON DELETE RESTRICT
 );
 
--- Representación
+-- RepresentaciÃ³n
 CREATE TABLE representacion (
     numero_expediente VARCHAR(50) NOT NULL,
     parte_id INTEGER NOT NULL,
@@ -200,7 +200,7 @@ CREATE TABLE juez (
 );
 
 -- ============================================
--- Tabla intermedia: Relación Tribunal-Juez
+-- Tabla intermedia: RelaciÃ³n Tribunal-Juez
 -- ============================================
 
 CREATE TABLE tribunal_juez (
@@ -208,7 +208,7 @@ CREATE TABLE tribunal_juez (
     juez_id INTEGER NOT NULL,
     cargo VARCHAR(100),
     situacion VARCHAR(50) DEFAULT 'Efectivo' 
-        CHECK (situacion IN ('Efectivo', 'Subrogante', 'Interino', 'Suplente', 'Contratado','Adscripto', 'Titular','En Comisión', 'En comisión','Reemplazante','Ad-hoc','Conjuez','Vacante')),
+        CHECK (situacion IN ('Efectivo', 'Efectiva', 'Subrogante', 'Interino', 'Interina', 'Suplente', 'Contratado', 'Contratada', 'Adscripto', 'Adscripta', 'Titular', 'En Comisión', 'En comisión', 'Reemplazante', 'Reemplazanta', 'Ad-hoc', 'Conjuez', 'Vacante', 'Secretario', 'Secretaria', 'Prosecretario', 'Prosecretaria')),
     fecha_desde DATE,
     fecha_hasta DATE,
     
@@ -225,7 +225,7 @@ CREATE TABLE tribunal_juez (
 );
 
 -- ============================================
--- Índices
+-- Ãndices
 -- ============================================
 CREATE INDEX idx_expediente_fecha_inicio ON expediente(fecha_inicio);
 CREATE INDEX idx_expediente_fecha_ultimo_movimiento ON expediente(fecha_ultimo_movimiento);
@@ -244,21 +244,21 @@ CREATE INDEX idx_radicacion_fecha ON radicacion(fecha_radicacion);
 -- ============================================
 -- Comentarios
 -- ============================================
-COMMENT ON TABLE expediente IS 'Tabla principal que contiene la información de los expedientes judiciales';
-COMMENT ON COLUMN expediente.estado_procesal IS 'Estado procesal textual: En trámite o Terminada';
-COMMENT ON TABLE parte IS 'Personas físicas o jurídicas involucradas en un expediente';
-COMMENT ON TABLE rol_parte IS 'Roles específicos que una parte cumple en un expediente';
-COMMENT ON TABLE representacion IS 'Relación entre parte y letrado en un expediente';
-COMMENT ON TABLE expediente_delito IS 'Asociación N:M entre expedientes y delitos imputados';
+COMMENT ON TABLE expediente IS 'Tabla principal que contiene la informaciÃ³n de los expedientes judiciales';
+COMMENT ON COLUMN expediente.estado_procesal IS 'Estado procesal textual: En trÃ¡mite o Terminada';
+COMMENT ON TABLE parte IS 'Personas fÃ­sicas o jurÃ­dicas involucradas en un expediente';
+COMMENT ON TABLE rol_parte IS 'Roles especÃ­ficos que una parte cumple en un expediente';
+COMMENT ON TABLE representacion IS 'RelaciÃ³n entre parte y letrado en un expediente';
+COMMENT ON TABLE expediente_delito IS 'AsociaciÃ³n N:M entre expedientes y delitos imputados';
 COMMENT ON TABLE resolucion IS 'Resoluciones dictadas en un expediente';
 COMMENT ON TABLE radicacion IS 'Historial de radicaciones de cada expediente (movimientos entre tribunales)';
 COMMENT ON TABLE plazo IS 'Plazos procesales asociados a cada expediente';
 COMMENT ON TABLE juez IS 'Magistrados y jueces que integran tribunales';
-COMMENT ON TABLE tribunal_juez IS 'Relación N:M entre tribunales y jueces con información de cargo y situación';
+COMMENT ON TABLE tribunal_juez IS 'RelaciÃ³n N:M entre tribunales y jueces con informaciÃ³n de cargo y situaciÃ³n';
 
 -- ============================================
 -- Datos iniciales
 -- ============================================
 INSERT INTO jurisdiccion (jurisdiccion_id, ambito, provincia, departamento_judicial)
-VALUES (1, 'Federal', 'Ciudad Autónoma de Buenos Aires', 'Comodoro Py')
+VALUES (1, 'Federal', 'Ciudad Autonoma de Buenos Aires', 'Comodoro Py')
 ON CONFLICT (jurisdiccion_id) DO NOTHING;
