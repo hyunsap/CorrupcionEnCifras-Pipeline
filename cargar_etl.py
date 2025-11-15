@@ -73,6 +73,52 @@ def parse_nullable_date(value):
     print(f"⚠️ Advertencia: formato de fecha no reconocido: {value}")
     return None
 
+def parsear_delito(delito_str):
+    """
+    Parsea un string de delito y extrae: nombre, artículo, ley
+    
+    Ejemplos:
+    "Art. 210 CP - ASOCIACION ILICITA" 
+    -> nombre: "ASOCIACION ILICITA", articulo: "210", ley: "CP"
+    
+    "ASOCIACION ILICITA"
+    -> nombre: "ASOCIACION ILICITA", articulo: None, ley: None
+    """
+    delito_str = delito_str.strip()
+    
+    # Patrón 1: "Art. 210 CP - NOMBRE" o "Art 210 - NOMBRE"
+    patron1 = r'(?:Art\.?\s*)?(\d+(?:\s*(?:inc|bis|ter)\.?\s*\d+)?)\s*([A-Z\.]+)?\s*-\s*(.+)'
+    
+    # Patrón 2: "NOMBRE (Art. 210 CP)"
+    patron2 = r'(.+?)\s*\((?:Art\.?\s*)?(\d+(?:\s*(?:inc|bis|ter)\.?\s*\d+)?)\s*([A-Z\.]+)?\)'
+    
+    # Patrón 3: Solo artículo al inicio sin "Art."
+    patron3 = r'^(\d+)\s+([A-Z\.]+)?\s*-?\s*(.+)'
+    
+    match = re.match(patron1, delito_str)
+    if match:
+        articulo = match.group(1).strip() if match.group(1) else None
+        ley = match.group(2).strip() if match.group(2) else None
+        nombre = match.group(3).strip() if match.group(3) else delito_str
+        return nombre, articulo, ley
+    
+    match = re.match(patron2, delito_str)
+    if match:
+        nombre = match.group(1).strip()
+        articulo = match.group(2).strip() if match.group(2) else None
+        ley = match.group(3).strip() if match.group(3) else None
+        return nombre, articulo, ley
+    
+    match = re.match(patron3, delito_str)
+    if match and len(match.group(1)) <= 4:  # Evitar falsos positivos
+        articulo = match.group(1).strip()
+        ley = match.group(2).strip() if match.group(2) else None
+        nombre = match.group(3).strip() if match.group(3) else delito_str
+        return nombre, articulo, ley
+    
+    # Si no matchea ningún patrón, devolver solo el nombre
+    return delito_str, None, None
+
 # ============================================
 # Funciones de limpieza previas
 # ============================================
@@ -99,7 +145,7 @@ def limpiar_tablas(conn):
                 "jurisdiccion",
                 "fuero",
                 "letrado",
-                "tipo_delito"
+                "tipo_delito" 
             ]
             
             for tabla in tablas:
@@ -115,7 +161,8 @@ def limpiar_tablas(conn):
                 "letrado_letrado_id_seq",
                 "parte_parte_id_seq",
                 "resolucion_id_resolucion_seq",
-                "radicacion_radicacion_id_seq"
+                "radicacion_radicacion_id_seq",
+                "tipo_delito_tipo_delito_id_seq" 
             ]
             
             for seq in secuencias:
@@ -129,6 +176,7 @@ def limpiar_tablas(conn):
     except Exception as e:
         conn.rollback()
         print(f"❌ Error en limpieza: {e}")
+
 
 # ============================================
 # Funciones de carga
@@ -162,7 +210,7 @@ def cargar_jurisdiccion(conn):
             for row in reader:
                 cur.execute("""
                     INSERT INTO jurisdiccion (jurisdiccion_id, ambito, departamento_judicial)
-                    VALUES (%s, %s, %s, %s)
+                    VALUES (%s, %s, %s)
                     ON CONFLICT (jurisdiccion_id) DO UPDATE 
                     SET ambito = EXCLUDED.ambito,
                         departamento_judicial = EXCLUDED.departamento_judicial
@@ -493,6 +541,110 @@ def cargar_tribunal_juez(conn):
     except Exception as e:
         print(f"❌ Error al cargar tribunal-juez: {e}")
 
+def extraer_y_cargar_delitos(conn):
+    """Extrae delitos únicos de expedientes y los normaliza en tipo_delito"""
+    print("Extrayendo y cargando tipos de delito...")
+    count = 0
+    errores = 0
+    
+    try:
+        with conn.cursor() as cur:
+            # Obtener todos los delitos únicos de la columna delitos
+            cur.execute("""
+                SELECT DISTINCT TRIM(unnest(string_to_array(delitos, ','))) as delito
+                FROM expediente 
+                WHERE delitos IS NOT NULL AND delitos != ''
+            """)
+            
+            delitos_raw = cur.fetchall()
+            delitos_procesados = set()  # Para evitar duplicados por nombre
+            
+            for (delito_raw,) in delitos_raw:
+                if not delito_raw or not delito_raw.strip():
+                    continue
+                
+                try:
+                    nombre, articulo, ley = parsear_delito(delito_raw)
+                    
+                    # Usar nombre como clave única
+                    if nombre not in delitos_procesados:
+                        cur.execute("""
+                            INSERT INTO tipo_delito (nombre, articulo, ley)
+                            VALUES (%s, %s, %s)
+                            ON CONFLICT (nombre) DO UPDATE
+                            SET articulo = COALESCE(EXCLUDED.articulo, tipo_delito.articulo),
+                                ley = COALESCE(EXCLUDED.ley, tipo_delito.ley)
+                        """, (nombre, articulo, ley))
+                        delitos_procesados.add(nombre)
+                        count += 1
+                except Exception as e:
+                    errores += 1
+                    if errores <= 5:
+                        print(f"  ⚠️ Error parseando delito '{delito_raw}': {e}")
+            
+            conn.commit()
+            print(f"✅ Tipos de delito insertados: {count} (errores: {errores})")
+                    
+    except Exception as e:
+        conn.rollback()
+        print(f"❌ Error al cargar tipos de delito: {e}")
+
+
+def vincular_expedientes_delitos(conn):
+    """Vincula expedientes con sus delitos normalizados en expediente_delito"""
+    print("Vinculando expedientes con delitos...")
+    count = 0
+    errores = 0
+    no_encontrados = 0
+    
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""
+                SELECT numero_expediente, delitos 
+                FROM expediente 
+                WHERE delitos IS NOT NULL AND delitos != ''
+            """)
+            
+            expedientes = cur.fetchall()
+            
+            for numero_exp, delitos_str in expedientes:
+                # Separar delitos por coma
+                delitos_lista = [d.strip() for d in delitos_str.split(',') if d.strip()]
+                
+                for delito_raw in delitos_lista:
+                    try:
+                        nombre, _, _ = parsear_delito(delito_raw)
+                        
+                        # Buscar el tipo_delito_id por nombre
+                        cur.execute("""
+                            SELECT tipo_delito_id FROM tipo_delito WHERE nombre = %s
+                        """, (nombre,))
+                        
+                        result = cur.fetchone()
+                        if result:
+                            tipo_delito_id = result[0]
+                            cur.execute("""
+                                INSERT INTO expediente_delito (numero_expediente, tipo_delito_id)
+                                VALUES (%s, %s)
+                                ON CONFLICT DO NOTHING
+                            """, (numero_exp, tipo_delito_id))
+                            count += 1
+                        else:
+                            no_encontrados += 1
+                            if no_encontrados <= 3:
+                                print(f"  ⚠️ Delito no encontrado: '{nombre}' en exp {numero_exp}")
+                    except Exception as e:
+                        errores += 1
+                        if errores <= 5:
+                            print(f"  ⚠️ Error vinculando {numero_exp}: {e}")
+            
+            conn.commit()
+            print(f"✅ Vínculos expediente-delito creados: {count} (errores: {errores}, no encontrados: {no_encontrados})")
+            
+    except Exception as e:
+        conn.rollback()
+        print(f"❌ Error al vincular expedientes con delitos: {e}")
+
 # ============================================
 # Main
 # ============================================
@@ -516,12 +668,15 @@ def main():
         cargar_radicacion(conn)
         cargar_juez(conn)
         cargar_tribunal_juez(conn)
+        extraer_y_cargar_delitos(conn)
+        vincular_expedientes_delitos(conn)
         
         print("\n=== ✅ Carga completa exitosa ===")
     except Exception as e:
         print(f"\n=== ❌ Error general: {e} ===")
     finally:
         conn.close()
+
 
 if __name__ == "__main__":
     main()
