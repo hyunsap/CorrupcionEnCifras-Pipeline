@@ -9,7 +9,7 @@ os.chdir('/app/data')
 
 
 # =========================
-# Diccionarios de normalización
+# Diccionarios de normalización CORREGIDOS
 # =========================
 
 CAMARAS = {
@@ -42,16 +42,78 @@ CAMARAS = {
     "CNT": "Cámara Nacional de Apelaciones del Trabajo",
 }
 
+# ✅ SEPARAR FUERO (competencia material) de JURISDICCIÓN (ámbito)
 FUERO_POR_CAMARA = {
-    "CFP": "Penal Federal", "CCC": "Penal Federal", "CPF": "Penal Federal",
-    "FRO": "Penal Federal", "FGR": "Penal Federal", "FPO": "Penal Federal",
-    "FTU": "Penal Federal", "FCB": "Penal Federal", "FPA": "Penal Federal",
-    "FSA": "Penal Federal", "FBB": "Penal Federal", "FCT": "Penal Federal",
-    "FMZ": "Penal Federal", "FCR": "Penal Federal", "FSM": "Penal Federal",
-    "FLP": "Penal Federal", "FMP": "Penal Federal", "FRE": "Penal Federal",
-    "CSS": "Penal Federal", "CPN": "Penal Federal", "CPE": "Penal Federal",
-    "CCF": "Civil", "CIV": "Civil", "COM": "Comercial", "CNT": "Laboral",
-    "CAF": "Contencioso Administrativo", "CNE": "Electoral"
+    # Criminal y Correccional
+    "CFP": "Criminal y Correccional",
+    "CCC": "Criminal y Correccional",
+    
+    # Casación Penal
+    "CPF": "Casación Penal",
+    "CPN": "Casación Penal",
+    
+    # Penal Económico
+    "CPE": "Penal Económico",
+    
+    # Cámaras Federales (genéricas) - inferir como Criminal
+    "FRO": "Criminal y Correccional",
+    "FGR": "Criminal y Correccional",
+    "FPO": "Criminal y Correccional",
+    "FTU": "Criminal y Correccional",
+    "FCB": "Criminal y Correccional",
+    "FPA": "Criminal y Correccional",
+    "FSA": "Criminal y Correccional",
+    "FBB": "Criminal y Correccional",
+    "FCT": "Criminal y Correccional",
+    "FMZ": "Criminal y Correccional",
+    "FCR": "Criminal y Correccional",
+    "FSM": "Criminal y Correccional",
+    "FLP": "Criminal y Correccional",
+    "FMP": "Criminal y Correccional",
+    "FRE": "Criminal y Correccional",
+    
+    # Otros fueros
+    "CCF": "Civil y Comercial",
+    "CIV": "Civil",
+    "COM": "Comercial",
+    "CNT": "Laboral",
+    "CAF": "Contencioso Administrativo",
+    "CNE": "Electoral",
+    "CSS": "Seguridad Social"
+}
+
+# ✅ NUEVO: Inferir jurisdicción por cámara
+JURISDICCION_POR_CAMARA = {
+    # Federales
+    "CFP": "Federal",
+    "CPF": "Federal",
+    "FRO": "Federal",
+    "FGR": "Federal",
+    "FPO": "Federal",
+    "FTU": "Federal",
+    "FCB": "Federal",
+    "FPA": "Federal",
+    "FSA": "Federal",
+    "FBB": "Federal",
+    "FCT": "Federal",
+    "FMZ": "Federal",
+    "FCR": "Federal",
+    "FSM": "Federal",
+    "FLP": "Federal",
+    "FMP": "Federal",
+    "FRE": "Federal",
+    "CAF": "Federal",
+    "CCF": "Federal",
+    "CSS": "Federal",
+    
+    # Nacionales
+    "CCC": "Nacional",
+    "CPN": "Nacional",
+    "CPE": "Nacional",
+    "CIV": "Nacional",
+    "COM": "Nacional",
+    "CNT": "Nacional",
+    "CNE": "Nacional"
 }
 
 # =========================
@@ -85,21 +147,35 @@ def safe_open(path, mode, **kwargs):
     return open(path, mode, **kwargs)
 
 # =========================
-# Funciones auxiliares de inferencia
+# Funciones auxiliares de inferencia CORREGIDAS
 # =========================
 
 def inferir_fuero_por_camara(numero_expediente):
+    """Retorna el FUERO (competencia material) según la sigla del expediente"""
     if not numero_expediente:
         return "Desconocido"
     sigla = str(numero_expediente).split()[0].upper()
-    return FUERO_POR_CAMARA.get(sigla, "Desconocido")
+    return FUERO_POR_CAMARA.get(sigla, "Criminal y Correccional")  # Default razonable
+
+def inferir_jurisdiccion_por_camara(numero_expediente):
+    """Retorna la JURISDICCIÓN (Federal/Nacional) según la sigla del expediente"""
+    if not numero_expediente:
+        return None  # ✅ Retornar None si no hay expediente
+    sigla = str(numero_expediente).split()[0].upper()
+    return JURISDICCION_POR_CAMARA.get(sigla, None)  # ✅ None si sigla desconocida
 
 def inferir_jurisdiccion_por_radicacion(radicacion):
+    """
+    Infiere jurisdicción por el texto de radicación.
+    Prioridad baja - usar inferir_jurisdiccion_por_camara() primero.
+    """
     if not radicacion:
-        return "Nacional"
+        return None
     if "FEDERAL" in radicacion.upper():
         return "Federal"
-    return "Nacional"
+    if "NACIONAL" in radicacion.upper():
+        return "Nacional"
+    return None
 
 def extraer_camara_y_ano(numero_expediente):
     if not numero_expediente:
@@ -127,11 +203,55 @@ def desarmar_radicacion(radicacion):
     return fecha, tribunal, fiscal, fiscalia
 
 # =========================
-# NORMALIZACIÓN DE TRIBUNALES ✨
+# PARSEO DE DETALLE DE TRIBUNALES
+# =========================
+
+def parsear_detalle_tribunal(detalle_texto):
+    """
+    Parsea el campo 'detalle' del scraper de tribunales que viene en formato:
+    "Comodoro Py 2002, PISO 1º (C1104BEN) | Ciudad Autónoma de Buenos Aires | 4032-7476 | cfcasacionpenal.secgeneral@pjn.gov.ar"
+    
+    Retorna:
+        dict con claves: 'domicilio_sede', 'telefono', 'email'
+    """
+    if not detalle_texto or not isinstance(detalle_texto, str):
+        return {"domicilio_sede": None, "telefono": None, "email": None}
+    
+    partes = [p.strip() for p in detalle_texto.split("|")]
+    
+    domicilio_completo = None
+    telefono = None
+    email = None
+    
+    # Intentar detectar cada parte por patrón
+    for parte in partes:
+        parte_limpia = parte.strip()
+        
+        # Email: contiene '@'
+        if "@" in parte_limpia:
+            email = parte_limpia
+        # Teléfono: contiene solo números, espacios, guiones, paréntesis
+        elif re.match(r'^[\d\s\-\(\)]+$', parte_limpia) and len(parte_limpia) >= 6:
+            telefono = parte_limpia
+        # Domicilio: el resto (generalmente las primeras dos partes)
+        else:
+            if domicilio_completo is None:
+                domicilio_completo = parte_limpia
+            else:
+                # Si ya hay domicilio, agregar la siguiente parte (ej: ciudad)
+                domicilio_completo = f"{domicilio_completo}, {parte_limpia}"
+    
+    return {
+        "domicilio_sede": domicilio_completo,
+        "telefono": telefono,
+        "email": email
+    }
+
+# =========================
+# NORMALIZACIÓN DE TRIBUNALES
 # =========================
 
 def _strip_accents(s):
-    """Elimina acentos de un string"""
     if s is None:
         return None
     s = str(s)
@@ -139,7 +259,6 @@ def _strip_accents(s):
     return ''.join(ch for ch in nfd if unicodedata.category(ch) != 'Mn')
 
 def _norm(s):
-    """Normalización simple para comparación (sin perder info de CAMARA/SALA)"""
     if s is None:
         return None
     s = _strip_accents(s).lower()
@@ -147,9 +266,6 @@ def _norm(s):
     return re.sub(r'\s+', ' ', s).strip() or None
 
 def _es_dependencia(t):
-    """
-    Detecta si un título es una dependencia (sala/secretaría) que debe combinarse con el tribunal padre.
-    """
     if not t:
         return False
     t_lower = t.lower()
@@ -158,41 +274,25 @@ def _es_dependencia(t):
         t_lower == 'salas' or
         'secretaria' in t_lower or 
         'jurisprudencia' in t_lower or
-        # ✨ Agregar detección de SALA con números romanos (I, II, III, IV, V, etc.)
         bool(re.match(r'^sala\s+[ivxlcdm]+\s*$', t_lower))
     )
 
 def _tribunal_desde_path(path):
-    """
-    Extrae el nombre del tribunal desde el path, ignorando dependencias (salas/secretarías).
-    
-    Ejemplos:
-    - "FUEROS FEDERALES > CÁMARA PENAL ECONÓMICO > SALA A" → "CÁMARA PENAL ECONÓMICO"
-    - "FUEROS > CÁMARA CRIMINAL > JUZGADO 5 > SECRETARÍA 116" → "JUZGADO 5"
-    """
     if not path:
         return None
     parts = [p.strip() for p in str(path).split('>') if p.strip()]
     if not parts:
         return None
     
-    # Recorrer desde el final hacia atrás hasta encontrar un tribunal (no dependencia)
     for i in range(len(parts) - 1, -1, -1):
         parte = parts[i]
         parte_norm = _norm(parte)
-        
-        # Si NO es una dependencia, es el tribunal
         if not _es_dependencia(parte_norm):
             return parte
     
-    # Si todo son dependencias, retornar el último
     return parts[-1]
 
 def _romano_a_arabigo(numero_romano):
-    """
-    Convierte números romanos a arábigos.
-    Ejemplos: I→1, II→2, III→3, IV→4, V→5, etc.
-    """
     if not numero_romano:
         return numero_romano
     
@@ -203,7 +303,6 @@ def _romano_a_arabigo(numero_romano):
     
     numero_romano = str(numero_romano).upper().strip()
     
-    # Verificar que solo contiene caracteres romanos válidos
     if not all(c in valores for c in numero_romano):
         return numero_romano
     
@@ -220,94 +319,45 @@ def _romano_a_arabigo(numero_romano):
     
     return str(total)
 
-
 def normalizar_nombre_tribunal(nombre, incluir_sala=False, path=None):
-    """
-    ✨ Normaliza nombres de tribunales para unificar nomenclaturas.
-    
-    Transformaciones aplicadas:
-    1. Elimina acentos (ECONÓMICO → ECONOMICO, CASACIÓN → CASACION)
-    2. Elimina "NRO.", "Nº", "N°" dejando solo el número
-    3. Simplifica "CAMARA NACIONAL EN LO" → "CAMARA" (unifica variantes)
-    4. Simplifica "NACIONAL EN LO" → "" en otros contextos
-    5. Elimina "DE LA CAPITAL FEDERAL"
-    6. Convierte números romanos a arábigos (SALA I → SALA 1)
-    7. Normaliza espacios
-    8. Si incluir_sala=True y es una SALA, construye: "CAMARA [NOMBRE] SALA [NUMERO]"
-    
-    Ejemplos de unificación:
-    - "CÁMARA NACIONAL EN LO PENAL ECONÓMICO" → "CAMARA PENAL ECONOMICO"
-    - "CAMARA PENAL ECONOMICO" → "CAMARA PENAL ECONOMICO"
-    - "SALA A - PENAL ECONÓMICO" (con path) → "CAMARA PENAL ECONOMICO SALA A"
-    - "SALA I" (con path) → "CAMARA NACIONAL DE CASACION CRIMINAL Y CORRECCIONAL SALA 1"
-    - "JUZGADO NACIONAL EN LO CRIMINAL NRO. 23" → "JUZGADO CRIMINAL 23"
-    
-    Casos especiales:
-    - "CÁMARA NACIONAL DE CASACIÓN" → "CAMARA NACIONAL DE CASACION" (mantiene NACIONAL sin "EN LO")
-    """
     if not nombre:
         return None
     
-    # 1. Eliminar acentos
     nfd = unicodedata.normalize('NFD', str(nombre))
     sin_acentos = ''.join(ch for ch in nfd if unicodedata.category(ch) != 'Mn')
-    
-    # 2. Mayúsculas
     s = sin_acentos.upper()
     
-    # 3. Detectar si es una SALA antes de eliminar info
     es_sala = bool(re.match(r'^SALA\s+[A-Z0-9IVX]+', s))
     identificador_sala = None
     if es_sala and incluir_sala:
-        # Extraer letra/número de sala (puede ser romano o arábigo)
         m = re.match(r'^SALA\s+([A-Z0-9IVX]+)', s)
         if m:
             identificador_sala = m.group(1)
-            # ✨ Convertir números romanos a arábigos
             identificador_sala = _romano_a_arabigo(identificador_sala)
         
-        # Obtener nombre del tribunal padre desde el path
         if path:
             tribunal_padre = _tribunal_desde_path(path)
             if tribunal_padre:
-                # Normalizar el padre recursivamente (sin incluir sala)
                 tribunal_normalizado = normalizar_nombre_tribunal(tribunal_padre, incluir_sala=False)
                 if tribunal_normalizado and identificador_sala:
                     return f"{tribunal_normalizado} SALA {identificador_sala}"
     
-    # 4. Quitar variaciones de número (NRO., Nº, N°)
     s = re.sub(r'\bNRO\.\s*', '', s)
     s = re.sub(r'\bNRO\s+', '', s)
     s = re.sub(r'\bNº\s*', '', s)
     s = re.sub(r'\bN°\s*', '', s)
     
-    # 5. Caso especial: unificar "CAMARA NACIONAL EN LO PENAL ECONOMICO" con "CAMARA PENAL ECONOMICO"
     s = re.sub(r'\bCAMARA NACIONAL EN LO PENAL ECONOMICO\b', 'CAMARA PENAL ECONOMICO', s)
     
-    # 6. Eliminar "NACIONAL EN LO" en otros contextos (juzgados, etc.) pero NO en cámaras
-    # Solo afecta a JUZGADO NACIONAL EN LO, TRIBUNAL NACIONAL EN LO, etc.
     if 'CAMARA' not in s:
         s = re.sub(r'\bNACIONAL EN LO\b', '', s)
     
-    # 7. Eliminar "DE LA CAPITAL FEDERAL" y variantes
     s = re.sub(r'\bDE LA CAP\.\s*FEDERAL\b', '', s)
     s = re.sub(r'\bDE LA CAPITAL FEDERAL\b', '', s)
-    
-    # 8. Eliminar " - PENAL ECONOMICO", " - CRIMINAL", etc. (redundante en salas)
     s = re.sub(r'\s*-\s*PENAL\s+ECONOMICO\b', '', s)
     s = re.sub(r'\s*-\s*CRIMINAL\b', '', s)
-    
-    # 9. Eliminar "EN LO" cuando aparece después de CASACION
     s = re.sub(r'\bCASACION\s+EN\s+LO\b', 'CASACION', s)
-    
-    # 10. Eliminar "NACIONAL" suelto (pero ya eliminamos "NACIONAL EN LO")
-    # Esto limpia casos como "CAMARA NACIONAL DE CASACION" → "CAMARA DE CASACION"
-    # PERO: mantener cuando es parte de un nombre oficial completo
-    
-    # 11. Reemplazar guiones con espacios
     s = s.replace('-', ' ')
-    
-    # 12. Normalizar espacios múltiples
     s = re.sub(r'\s+', ' ', s).strip()
     
     return s
@@ -334,10 +384,20 @@ def procesar_expedientes():
             delitos = limpiar_texto(row.get("Delitos") or row.get("delitos"))
             fecha_inicio, tribunal, fiscal, fiscalia = desarmar_radicacion(radicacion)
             camara, ano_inicio = extraer_camara_y_ano(numero)
-            fuero = inferir_fuero_por_camara(numero)
-            jurisdiccion = inferir_jurisdiccion_por_radicacion(radicacion)
             
-            # ✨ NORMALIZAR NOMBRE DEL TRIBUNAL
+            # ✅ SEPARAR fuero y jurisdicción
+            fuero = inferir_fuero_por_camara(numero)
+            jurisdiccion = inferir_jurisdiccion_por_camara(numero)
+            
+            # Fallback SOLO si no se pudo inferir (None o vacío)
+            # NO sobreescribir si ya se infirió correctamente
+            if not jurisdiccion:
+                jurisdiccion_rad = inferir_jurisdiccion_por_radicacion(radicacion)
+                if jurisdiccion_rad:
+                    jurisdiccion = jurisdiccion_rad
+                else:
+                    jurisdiccion = "Federal"  # Default si no se pudo determinar
+            
             tribunal_normalizado = normalizar_nombre_tribunal(limpiar_texto(tribunal))
             
             rows.append({
@@ -353,7 +413,7 @@ def procesar_expedientes():
                 "delitos": delitos,
                 "fiscal": limpiar_texto(fiscal),
                 "fiscalia": limpiar_texto(fiscalia),
-                "fuero": fuero
+                "fuero": fuero  # ✅ Ya no mezcla con jurisdicción
             })
             if estado_id == 1:
                 count_tramite += 1
@@ -461,7 +521,6 @@ def procesar_radicaciones():
         if c in df.columns:
             df[c] = df[c].map(limpiar_texto)
     
-    # ✨ NORMALIZAR NOMBRES DE TRIBUNALES EN RADICACIONES
     if "tribunal" in df.columns:
         df["tribunal"] = df["tribunal"].map(normalizar_nombre_tribunal)
     
@@ -480,22 +539,29 @@ def procesar_radicaciones():
 # =========================
 
 def generar_dim_fueros(df):
+    """✅ Genera tabla de FUEROS (competencia material)"""
     vals = sorted(set([v for v in df.get("fuero", []).tolist() if v]))
     with open("etl_fueros.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["fuero_id", "nombre"])
         w.writeheader()
         for i, n in enumerate(vals, start=1):
             w.writerow({"fuero_id": i, "nombre": n})
-    print(f"Fueros únicos: {len(vals)}")
+    print(f"✓ Fueros únicos: {len(vals)} → {vals}")
 
 def generar_dim_jurisdicciones(df):
+    """✅ Genera tabla de JURISDICCIONES (ámbito territorial)"""
     vals = sorted(set([v for v in df.get("jurisdiccion", []).tolist() if v]))
     with open("etl_jurisdicciones.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["jurisdiccion_id", "ambito", "departamento_judicial"])
         w.writeheader()
         for i, a in enumerate(vals, start=1):
-            w.writerow({"jurisdiccion_id": i, "ambito": a, "departamento_judicial": "Comodoro Py"})
-    print(f"Jurisdicciones únicas: {len(vals)}")
+            # Solo Federal tiene departamento judicial
+            w.writerow({
+                "jurisdiccion_id": i,
+                "ambito": a,
+                "departamento_judicial": "Comodoro Py" if a == "Federal" else None
+            })
+    print(f"✓ Jurisdicciones únicas: {len(vals)} → {vals}")
 
 # =========================
 # 6) Dimensión Tribunales + Jueces
@@ -504,58 +570,62 @@ def generar_dim_jurisdicciones(df):
 def generar_dim_tribunales(df, path="tribunales_full.csv"):
     print("Extrayendo tribunales con normalización...")
     tribunales = {}
+    
+    # ✅ Crear diccionario de jurisdicciones para lookup
+    # Leer el CSV de jurisdicciones que acabamos de generar
+    jurisdiccion_lookup = {}
+    try:
+        with open("etl_jurisdicciones.csv", "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                ambito = row.get("ambito")
+                jid = row.get("jurisdiccion_id")
+                if ambito and jid:
+                    jurisdiccion_lookup[ambito] = int(jid)
+        print(f"✓ Jurisdicciones cargadas: {jurisdiccion_lookup}")
+    except FileNotFoundError:
+        print("⚠️ Advertencia: etl_jurisdicciones.csv no encontrado. Usando valores por defecto.")
+        jurisdiccion_lookup = {"Federal": 1, "Nacional": 2}
 
-    # --- HARDCODEADO: Secretarías de la Corte Suprema ---
+    # Hardcoded: Secretarías de Corte Suprema
     corte_suprema_tribunales = [
         {
             "nombre": "CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA DE JUICIOS AMBIENTALES",
-            "instancia": "Primera Instancia",
             "domicilio_sede": "Talcahuano 550 Ciudad de Buenos Aires",
             "contacto": "Tel: (11) 4370 4476",
-            "fuero": "Penal Federal",
+            "fuero": "Criminal y Correccional",
             "jurisdiccion": "Federal"
         },
         {
             "nombre": "CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL 3",
-            "instancia": "Primera Instancia",
             "domicilio_sede": "Talcahuano 550 Ciudad de Buenos Aires",
             "contacto": "Tel: (11) 4370 4626",
-            "fuero": "Penal Federal",
+            "fuero": "Criminal y Correccional",
             "jurisdiccion": "Federal"
         },
         {
             "nombre": "CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA JUDICIAL DE RELACIONES DE CONSUMO",
-            "instancia": "Primera Instancia",
             "domicilio_sede": "Talcahuano 550 Ciudad de Buenos Aires",
             "contacto": "Tel: (11) 4370 4285",
-            "fuero": "Penal Federal",
+            "fuero": "Civil y Comercial",
             "jurisdiccion": "Federal"
         },
         {
             "nombre": "CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA PENAL ESPECIAL",
-            "instancia": "Primera Instancia",
             "domicilio_sede": "Talcahuano 550 Ciudad de Buenos Aires",
             "contacto": None,
-            "fuero": "Penal Federal",
+            "fuero": "Criminal y Correccional",
             "jurisdiccion": "Federal"
         }
     ]
     
-    # Agregar tribunales hardcodeados (ya normalizados)
     for trib in corte_suprema_tribunales:
         nombre = trib["nombre"]
         key = _norm(nombre)
         if key:
-            tribunales[key] = {
-                "nombre": nombre,
-                "instancia": trib["instancia"],
-                "domicilio_sede": trib["domicilio_sede"],
-                "contacto": trib["contacto"],
-                "fuero": trib["fuero"],
-                "jurisdiccion": trib["jurisdiccion"]
-            }
+            tribunales[key] = trib
 
-    # --- PRIMERO: Desde tribunales_full.csv (PRIORIDAD: info completa) ---
+    # Desde tribunales_full.csv
     df_tr = safe_read_csv_pd(path)
     if not df_tr.empty:
         def pick(*cands):
@@ -576,63 +646,96 @@ def generar_dim_tribunales(df, path="tribunales_full.csv"):
             pathv = str(r[col_p]).strip() if col_p in r and pd.notna(r[col_p]) else None
             nombre = titulo
             
-            # Si es una dependencia (SALA A, SECRETARÍA 116, etc.), combinar con tribunal padre
             if _es_dependencia(_norm(titulo)):
-                # ✨ NORMALIZAR CON SALA INCLUIDA
                 nombre = normalizar_nombre_tribunal(titulo, incluir_sala=True, path=pathv)
             else:
-                # ✨ NORMALIZAR SIN SALA
                 nombre = normalizar_nombre_tribunal(titulo, incluir_sala=False)
             
             key = _norm(nombre) if nombre else None
-            if not key:
+            if not key or key in tribunales:
                 continue
 
-            # No sobrescribir si ya existe (priorizar hardcodeados)
-            if key in tribunales:
-                continue
-
-            tel = str(r[col_tel]).strip() if col_tel in r and pd.notna(r[col_tel]) else None
-            mail = str(r[col_mail]).strip() if col_mail in r and pd.notna(r[col_mail]) else None
+            # PARSEAR el campo 'detalle' para separar domicilio de contacto
+            detalle_raw = str(r[col_det]).strip() if col_det in r and pd.notna(r[col_det]) else None
+            detalle_parseado = parsear_detalle_tribunal(detalle_raw)
+            
+            # Priorizar columnas individuales si existen (del scraper)
+            tel = str(r[col_tel]).strip() if col_tel in r and pd.notna(r[col_tel]) else detalle_parseado.get("telefono")
+            mail = str(r[col_mail]).strip() if col_mail in r and pd.notna(r[col_mail]) else detalle_parseado.get("email")
+            domicilio = detalle_parseado.get("domicilio_sede")
+            
+            # Construir string de contacto (solo tel + email)
             contacto = " | ".join([p for p in [f"Tel: {tel}" if tel else None,
                                                f"Email: {mail}" if mail else None] if p])
 
+            #Inferir fuero desde el path (ej: "FUEROS FEDERALES > PENAL ECONÓMICO > ...")
+            fuero_inferido = "Criminal y Correccional"  # Default
+            jurisdiccion_inferida = "Federal"  # Default
+            
+            if pathv:
+                path_upper = pathv.upper()
+                
+                # Inferir JURISDICCIÓN desde el path
+                if "FUEROS FEDERALES" in path_upper or "FEDERAL" in path_upper.split(">")[0]:
+                    jurisdiccion_inferida = "Federal"
+                elif "FUEROS NACIONALES" in path_upper or "NACIONAL" in path_upper.split(">")[0]:
+                    jurisdiccion_inferida = "Nacional"
+                # Si el path contiene "FUEROS CON COMPETENCIA EN TODO EL PAÍS" es Federal
+                elif "TODO EL PAIS" in path_upper or "TODO EL PAÍS" in path_upper:
+                    jurisdiccion_inferida = "Federal"
+                
+                # Inferir FUERO desde el path
+                if "PENAL ECONÓMICO" in path_upper:
+                    fuero_inferido = "Penal Económico"
+                elif "CASACIÓN" in path_upper:
+                    fuero_inferido = "Casación Penal"
+                elif "CIVIL" in path_upper and "COMERCIAL" in path_upper:
+                    fuero_inferido = "Civil y Comercial"
+                elif "CIVIL" in path_upper:
+                    fuero_inferido = "Civil"
+                elif "COMERCIAL" in path_upper:
+                    fuero_inferido = "Comercial"
+                elif "LABORAL" in path_upper or "TRABAJO" in path_upper:
+                    fuero_inferido = "Laboral"
+                elif "CONTENCIOSO" in path_upper:
+                    fuero_inferido = "Contencioso Administrativo"
+                elif "ELECTORAL" in path_upper:
+                    fuero_inferido = "Electoral"
+                elif "SEGURIDAD SOCIAL" in path_upper:
+                    fuero_inferido = "Seguridad Social"
+
             tribunales[key] = {
                 "nombre": nombre,
-                "instancia": "N/D",
-                "domicilio_sede": r.get(col_det),
+                "domicilio_sede": domicilio,
                 "contacto": contacto or None,
-                "fuero": None,
-                "jurisdiccion": "Federal"
+                "fuero": fuero_inferido,
+                "jurisdiccion": jurisdiccion_inferida
             }
 
-    # --- SEGUNDO: Desde los expedientes (solo si NO existen en scraper) ---
+    # Desde expedientes (solo si NO existen)
     for _, r in df.iterrows():
-        n = r.get("tribunal")  # Ya viene normalizado
+        n = r.get("tribunal")
         if n:
             key = _norm(n)
-            # ✨ SOLO agregar si NO existe en tribunales_full.csv
             if key not in tribunales:
                 tribunales[key] = {
                     "nombre": n,
-                    "instancia": "Primera Instancia",
                     "fuero": r.get("fuero"),
                     "jurisdiccion": r.get("jurisdiccion"),
                     "domicilio_sede": None,
                     "contacto": None
                 }
 
-    # --- Asignar IDs ---
+    # Asignar IDs
     keys = sorted(tribunales.keys())
     nombre_to_id = {k: i + 1 for i, k in enumerate(keys)}
 
-    # --- Escribir CSV ---
+    # Escribir CSV
     with open("etl_tribunales.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(
             f,
             fieldnames=[
-                "tribunal_id", "nombre", "instancia",
-                "domicilio_sede", "contacto", "jurisdiccion_id", "fuero"
+                "tribunal_id", "nombre","domicilio_sede", "contacto", "jurisdiccion_id", "fuero"
             ]
         )
         w.writeheader()
@@ -640,15 +743,18 @@ def generar_dim_tribunales(df, path="tribunales_full.csv"):
             t = tribunales[k]
 
             if not t.get("fuero"):
-                t["fuero"] = "Penal Federal"  # Inferir por defecto
+                t["fuero"] = "Criminal y Correccional"  #Default
+
+            #Lookup del jurisdiccion_id correcto según el ámbito
+            ambito = t.get("jurisdiccion", "Federal")  # Default: Federal
+            jid = jurisdiccion_lookup.get(ambito, 1)  # Si no existe, usar 1 (Federal)
 
             w.writerow({
                 "tribunal_id": nombre_to_id[k],
                 "nombre": t["nombre"],
-                "instancia": t.get("instancia"),
                 "domicilio_sede": t.get("domicilio_sede"),
                 "contacto": t.get("contacto"),
-                "jurisdiccion_id": 1,
+                "jurisdiccion_id": jid,  
                 "fuero": t.get("fuero")
             })
 
@@ -663,7 +769,6 @@ def procesar_jueces_y_relaciones(nombre_to_id, path="tribunales_full.csv"):
         print("Advertencia: tribunales_full.csv no encontrado o vacío. Se omite jueces/relaciones.")
         return
 
-    # --- HARDCODEADO: Responsables de Corte Suprema ---
     corte_suprema_responsables = [
         {
             "tribunal": "CORTE SUPREMA DE JUSTICIA DE LA NACION SECRETARIA DE JUICIOS AMBIENTALES",
@@ -755,7 +860,6 @@ def procesar_jueces_y_relaciones(nombre_to_id, path="tribunales_full.csv"):
     relaciones = set()
     skip = 0
 
-    # --- Procesar responsables hardcodeados PRIMERO ---
     for resp in corte_suprema_responsables:
         tribunal = resp["tribunal"]
         tid = nombre_to_id.get(_norm(tribunal))
@@ -764,7 +868,6 @@ def procesar_jueces_y_relaciones(nombre_to_id, path="tribunales_full.csv"):
             jueces.setdefault(nombre, {"email": resp.get("email"), "telefono": resp.get("telefono")})
             relaciones.add((tid, nombre, resp.get("cargo"), resp.get("situacion")))
 
-    # --- Procesar responsables desde scraper ---
     for _, r in df.iterrows():
         titulo = str(r[col_t]).strip() if col_t else None
         pathv = str(r[col_p]).strip() if col_p and pd.notna(r[col_p]) else None
@@ -829,16 +932,27 @@ def procesar_jueces_y_relaciones(nombre_to_id, path="tribunales_full.csv"):
 # =========================
 
 def main():
-    print("=== Iniciando ETL con normalización completa ===\n")
+    print("=== Iniciando ETL con fueros/jurisdicciones corregidos ===\n")
+    
+    # 1. Procesar expedientes (fuente principal de datos)
     df_exp = procesar_expedientes()
+    
+    # 2. Procesar datos relacionados
     procesar_intervinientes()
     procesar_resoluciones()
     procesar_radicaciones()
+    
+    # 3. Generar dimensiones (en orden de dependencia)
     generar_dim_fueros(df_exp)
-    generar_dim_jurisdicciones(df_exp)
-    nombre_to_id = generar_dim_tribunales(df_exp)
+    generar_dim_jurisdicciones(df_exp)  # ✅ PRIMERO jurisdicciones
+    
+    # 4. Generar tribunales (necesita jurisdicciones.csv)
+    nombre_to_id = generar_dim_tribunales(df_exp)  # ✅ DESPUÉS tribunales
+    
+    # 5. Procesar jueces y relaciones
     procesar_jueces_y_relaciones(nombre_to_id)
-    print("\n=== ETL finalizado correctamente ===")
+    
+    print("\n=== ✅ ETL finalizado correctamente ===")
 
 if __name__ == "__main__":
     main()

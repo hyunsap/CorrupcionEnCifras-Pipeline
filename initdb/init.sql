@@ -27,7 +27,6 @@ CREATE TABLE jurisdiccion (
 CREATE TABLE tribunal (
     tribunal_id SERIAL PRIMARY KEY,
     nombre VARCHAR(200) UNIQUE NOT NULL,
-    instancia VARCHAR(50),
     domicilio_sede TEXT,
     contacto VARCHAR(200),
     fuero VARCHAR(100) NOT NULL,
@@ -252,4 +251,8 @@ COMMENT ON TABLE tribunal_juez IS 'Relación N:M entre tribunales y jueces con i
 -- ============================================
 INSERT INTO jurisdiccion (jurisdiccion_id, ambito, departamento_judicial)
 VALUES (1, 'Federal', 'Comodoro Py')
+ON CONFLICT (jurisdiccion_id) DO NOTHING;
+
+INSERT INTO jurisdiccion (jurisdiccion_id, ambito, departamento_judicial)
+VALUES (2, 'Nacional', 'Comodoro Py')
 ON CONFLICT (jurisdiccion_id) DO NOTHING;

@@ -235,19 +235,17 @@ def cargar_tribunal(conn):
             for row in reader:
                 cur.execute("""
                     INSERT INTO tribunal (
-                        tribunal_id, nombre, instancia, domicilio_sede,
+                        tribunal_id, nombre, domicilio_sede,
                         contacto, jurisdiccion_id, fuero
-                    ) VALUES (%s, %s, %s, %s, %s, %s, %s)
+                    ) VALUES (%s, %s, %s, %s, %s, %s)
                     ON CONFLICT (nombre) DO UPDATE 
-                    SET instancia = EXCLUDED.instancia,
-                        domicilio_sede = EXCLUDED.domicilio_sede,
+                    SET domicilio_sede = EXCLUDED.domicilio_sede,
                         contacto = EXCLUDED.contacto,
                         jurisdiccion_id = EXCLUDED.jurisdiccion_id,
                         fuero = EXCLUDED.fuero
                 """, (
                     parse_nullable(row["tribunal_id"]),
                     parse_nullable(row["nombre"]),
-                    parse_nullable(row["instancia"]),
                     parse_nullable(row["domicilio_sede"]),
                     parse_nullable(row["contacto"]),
                     parse_nullable(row["jurisdiccion_id"]),
