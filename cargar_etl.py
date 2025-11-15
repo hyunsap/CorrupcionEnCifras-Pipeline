@@ -14,7 +14,7 @@ DB_CONFIG = {
     "user": os.getenv("DB_USER", "admin"),
     "password": os.getenv("DB_PASSWORD", "td8corrupcion"),
     "host": os.getenv("DB_HOST", "localhost"),
-    "port": os.getenv("DB_PORT", "5432"),
+    "port": os.getenv("DB_PORT", "5433"),
 }
 
 def conectar_db():
@@ -161,16 +161,14 @@ def cargar_jurisdiccion(conn):
             reader = csv.DictReader(f)
             for row in reader:
                 cur.execute("""
-                    INSERT INTO jurisdiccion (jurisdiccion_id, ambito, provincia, departamento_judicial)
+                    INSERT INTO jurisdiccion (jurisdiccion_id, ambito, departamento_judicial)
                     VALUES (%s, %s, %s, %s)
                     ON CONFLICT (jurisdiccion_id) DO UPDATE 
                     SET ambito = EXCLUDED.ambito,
-                        provincia = EXCLUDED.provincia,
                         departamento_judicial = EXCLUDED.departamento_judicial
                 """, (
                     parse_nullable(row["jurisdiccion_id"]),
                     parse_nullable(row["ambito"]),
-                    parse_nullable(row["provincia"]),
                     parse_nullable(row["departamento_judicial"])
                 ))
                 count += 1

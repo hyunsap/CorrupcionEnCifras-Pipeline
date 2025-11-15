@@ -491,10 +491,10 @@ def generar_dim_fueros(df):
 def generar_dim_jurisdicciones(df):
     vals = sorted(set([v for v in df.get("jurisdiccion", []).tolist() if v]))
     with open("etl_jurisdicciones.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=["jurisdiccion_id", "ambito", "provincia", "departamento_judicial"])
+        w = csv.DictWriter(f, fieldnames=["jurisdiccion_id", "ambito", "departamento_judicial"])
         w.writeheader()
         for i, a in enumerate(vals, start=1):
-            w.writerow({"jurisdiccion_id": i, "ambito": a, "provincia": None, "departamento_judicial": "Comodoro Py"})
+            w.writerow({"jurisdiccion_id": i, "ambito": a, "departamento_judicial": "Comodoro Py"})
     print(f"Jurisdicciones únicas: {len(vals)}")
 
 # =========================

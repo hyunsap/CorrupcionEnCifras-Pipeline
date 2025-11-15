@@ -48,452 +48,417 @@ juez_id,nombre,email,telefono
 47,"Dr. Calvete, Adolfo",,4124-0949/53
 48,"Dr. Calzada, Julián",,4130-6245
 49,"Dr. Candela, Walter José",,
-50,"Dr. Canero, Herminio Fernando",,
-51,"Dr. Canero, Martín Fernando",,4032-7130
-52,"Dr. Capurro, Mariano Pedro",,4032-7595
-53,"Dr. Caputo, Rafael Francisco",,4130-6284/6285
-54,"Dr. Carbajo, Javier",,4032-7417
-55,"Dr. Carcione, Mariano",,4032 7281/82
-56,"Dr. Carovano, Juan Paulo",,4371-3903/9714/3944
-57,"Dr. Caruso, Federico Guillermo",,4130-6120/21/22
-58,"Dr. Casanello, Sebastián Norberto",jncrimcorrfed7@pjn.gov.ar,
-59,"Dr. Casariego, Julio López",,4379-0106
-60,"Dr. Cassina, Lucas Augusto",,
-61,"Dr. Castelli, German Andres",,4752-1677
-62,"Dr. Castrillon, Sebastian",,
-63,"Dr. Castro, Fernando Jose",,4371-6485/9513
-64,"Dr. Catania, Alejandro J.",,4130-6126/6127
-65,"Dr. Caunedo, Fernando Mario",,
-66,"Dr. Cavassa, Walter",,
-67,"Dr. Chaban, Emir Karim",,
-68,"Dr. Chediek, Carlos Mariano R.",,4812-0525/0883
-69,"Dr. Cicciaro, Juan Esteban",cncrimcorr.voc21@pjn.gov.ar,4370-4921
-70,"Dr. Cisneros, Tomás Santiago",,
-71,"Dr. Corallo, Tomas",,
-72,"Dr. Coronel, Nicolás Eduardo",,
-73,"Dr. Costabel, Nestor Guillermo",,
-74,"Dr. Cresta, Guido Damián",,
-75,"Dr. Croucher, Pablo Ernesto",jncrimcorr52.sec60@pjn.gov.ar,2205-8005/06/07/09/10
-76,"Dr. Cura , Juan Jose",,
-77,"Dr. D'Elia, Carlos Daniel",,
-78,"Dr. De Campos, Manuel Arturo",,
-79,"Dr. De La Fuente, Javier Esteban",,4812-0344/4531
-80,"Dr. De Santo, Jorge Anselmo",jncrimcorr46@pjn.gov.ar,
-81,"Dr. De Schutere, Enrique María",,
-82,"Dr. De Simoni, Sebastian Pablo",,4371-2161
-83,"Dr. De la Torre, Fabian Xavier Patricio",,
-84,"Dr. Decaria, Hugo",,
-85,"Dr. Del Gaizo, Sebastián Ramiro",,
-86,"Dr. Del Viso, Martín Carlos",jncrimcorr28.sec142@pjn.gov.ar - jncrimcorr28@pjn.gov.ar,
-87,"Dr. Di Nesta, Fabián",fabian.di-nesta@pjn.gov.ar,
-88,"Dr. Dialeva Balmaceda, Maximiliano",,
-89,"Dr. Dias, Horacio Leonardo",,4379-2188/2190
-90,"Dr. Diaz, Máximo Nicolas",,4124-7094
-91,Dr. Diego Seitún,,(11) 4370 4626
-92,"Dr. Divito, Mauro Antonio",,
-93,"Dr. Donarini, Horacio Diego",,4379-2154
-94,"Dr. Días, Horacio Leonardo",,4124-6637
-95,"Dr. Echegaray, Sergio Alejandro",,4032-7146
-96,"Dr. Ercolini, Julián Daniel",,4032-7174
-97,"Dr. Falcioni, Javier Alejandro",,
-98,"Dr. Farah, Eduardo Guillermo",,4032-7517
-99,"Dr. Febre, Pablo Andrés",pablo.febre@pjn.gov.ar,4032-7168
-100,"Dr. Fera Gomez, Diego Martín",,4130-6131/6133
-101,"Dr. Fernandez, Marcos Andres",,
-102,Dr. Fernando Javier Arnedo,,
-103,"Dr. Fernández Pezzano, Tomás María",,
-104,"Dr. Fernández, Leandro Javier",,
-105,"Dr. Ferro, Alejandro Héctor",jncrimcorr36@pjn.gov.ar,
-106,"Dr. Fornari, Ignacio Carlos",,4032-7337
-107,"Dr. Fornasari, Federico",,4032-7178
-108,"Dr. Friele, Guillermo Enrique",,4813-0956/4811 4672
-109,"Dr. Gallo, Diego",,4379-0108
-110,"Dr. Galván Greenway, Juan Pedro",,4130-6277
-111,"Dr. Gamboa, Enrique J.",,4 124-0949/53
-112,"Dr. García Berro, Diego",,4032-7339
-113,"Dr. Gatto, Damian",,4124 0966
-114,"Dr. Gegunded, Alberto",,
-115,"Dr. Gemignani, Juan Carlos",,4032-7394
-116,"Dr. Ghersi, Sebastian",,
-117,"Dr. Ghirlanda, Gabriel Omar",,
-118,"Dr. Giménez Uriburu, Rodrigo",,4032 7254/55
-119,"Dr. Giudice Bravo, Juan",,
-120,"Dr. Godoy, Alfredo",,
-121,"Dr. Goerner, Rodolfo Gustavo",toc29@pjn.gov.ar,4813-7312
-122,"Dr. González Ferrari , Gustavo",,4382-0944
-123,"Dr. González Gusmerotti, José Luis",,4130-6528
-124,"Dr. González del Campo, Mariano Javier",,
-125,"Dr. González, Federico",federicog.gonzalez@pjn.gov.ar,4371-4907
-126,"Dr. Gordillo Torres, Juan Manuel",,
-127,"Dr. Gorini, Jorge Luciano",,4032-7247
-128,"Dr. Grangeat, Juan Manuel",juan.grangeat@pjn.gov.ar,4032-7171
-129,"Dr. Grunberg, Adrian Federico",,4032 7244/ 45
-130,"Dr. Guardia, Diego Leif",,4124-0949/53
-131,"Dr. Guarrochena, Mariano",,4032 7234
-132,"Dr. Guerrero, Francisco",,
-133,"Dr. Hachmanian, Emmanuel Matias",,
-134,"Dr. Hernandez , Diego",,4371 4599/43716815
-135,"Dr. Herrera, Julio Andres",,4371-6850
-136,"Dr. Hornos, Gustavo M.",,4032-7436
-137,"Dr. Hornos, Roberto Enrique",,4130-6114
-138,"Dr. Huarte Petite, Alberto",,4371-2003/9966
-139,"Dr. Idoyaga Molina, Rodrigo",,4032-7361
-140,"Dr. Iriarte, Ignacio Fabián",ignacio.iriarte@pjn.gov.ar,
-141,"Dr. Irurzun, Martin",,4032-7532
-142,"Dr. Iturralde, Mariano",,
-143,"Dr. Jantus, Pablo",,4124-6633
-144,"Dr. Jorge, Leonardo",,4032-7677
-145,"Dr. Kenny, Patricio Javier",,4032 7272/73
-146,"Dr. Kirszenbaum, Damian Ignacio",,
-147,"Dr. Krause Mayol , Javier G.",,4130-6144/6145/6146
-148,"Dr. Labadens, Ignacio",,4032 7244/45
-149,"Dr. Laderach, Federico",,
-150,"Dr. Laiño Dondiz, Manuel",dondiz.laino@pjn.gov.ar,4130-3137
-151,"Dr. Laiño, Lauro Fernan",,4302-7589
-152,"Dr. Larrabure, Francisco Agustín",,
-153,"Dr. Laufer, Pablo",pablo.laufer@pjn.gov.ar,4124 0929/31/36/37/47
-154,"Dr. Leiva, Ricardo Jorge",,
-155,"Dr. Lijo, Ariel Oscar",,4032-7126
-156,"Dr. Litvack, Alejandro",,
-157,"Dr. Llan de Rosas, Francisco",,
-158,"Dr. Llauro, Santiago",,
-159,"Dr. Llorens, Mariano",,4032-7512
-160,"Dr. Losada, Luis Gustavo",,
-161,"Dr. Lucero, Pablo Guillermo",cncrimcorr.voc4@pjn.gov.ar,4370-4938
-162,"Dr. Lucini, Julio Marcelo",cncrimcorr.voc7@pjn.gov.ar - julio.lucini@pjn.gov.ar,4370-4909
-163,"Dr. Luis Roberto José, Salas",,4371-2003/9966
-164,"Dr. Luxardo, Patricio Martín",,
-165,"Dr. López Biscayart, Javier",,4124-7070
-166,"Dr. López, Hernán Martín",cncrimcorr.voc16@pjn.gov.ar,4370-4922
-167,"Dr. López, Santiago A.",,4124-6625
-168,"Dr. Maciocio, Roxana A",,4371-4229/0564
-169,"Dr. Madariaga, Martín Miguel",,
-170,"Dr. Magariños, Mario",,4124-6626
-171,"Dr. Magnone, Walter Daniel",,4032-7399
-172,"Dr. Mahiques, Carlos Alberto",,4032-7408/7370
-173,"Dr. Maneiro, Fernando",,4379-2188/2190
-174,"Dr. Manoukian, Sergio",,
-175,"Dr. Mariño, Ramiro Ariel",ramiro.marino@pjn.gov.ar,4370-4928
-176,"Dr. Marrollo, Alejandro Ezequiel",,
-177,"Dr. Martinez De Giorgi, Marcelo Pedro H.",,4032-7158
-178,"Dr. Martinez Farre, Guillermo Carlos",,
-179,"Dr. Martinez Murias, Ignacio",,
-180,"Dr. Martín, Adrián Norberto",,4124 0966/74
-181,"Dr. Mazzucco, Damián M.",damian.mazzucco@pjn.gov.ar,0297 446-2208
-182,"Dr. Medina, Darío Martín",,4124-0961
-183,"Dr. Meirovich, Gustavo Darìo",,4130-6284/6285
-184,"Dr. Mejuto, Juan Manuel",,4032-7280
-185,"Dr. Mendez Signori, Enrique",tocrimfed7@pjn.gov.ar,4371-3955/2705
-186,"Dr. Mercader, Patricio Hernan",,4032-7356
-187,"Dr. Michetti, Marcelo J.",,4813-0956/4811-7163/4672
-188,"Dr. Michilini, José Antonio",,4790-1374/4794-6446
-189,"Dr. Mihura Gradin, Sixto",,4373-0125 / 4371-8748
-190,"Dr. Misculin , Gustavo Ivan",,4130-6329/30/31
-191,"Dr. Mogaburu, Joaquin Ignacio",tocrimfed7@pjn.gov.ar,
-192,"Dr. Mongelo, Juan Martin",,
-193,"Dr. Morin, Daniel Emilio",,4124-6629
-194,"Dr. Mormandi, Eugenia",,
-195,"Dr. Moya, Pablo",,
-196,"Dr. Muffatti, Marcelo Alberto",,
-197,"Dr. Murano, Esteban Horacio",,4032-7114
-198,"Dr. Márquez, Luis Oscar",,4124-0961
-199,"Dr. Nanni, Ignacio",,
-200,"Dr. Nardiello, Angel Gabriel",,
-201,"Dr. Navarro, Hugo Daniel",toc29@pjn.gov.ar,4813-7312
-202,Dr. Nestor Alfredo Cafferatta,,(11) 4370 4476
-203,"Dr. Noceti Achával, Alejandro",,4375-0883/4371-0750
-204,"Dr. Noguera, Leandro",jncrimcorrfed5.sec10@pjn.gov.ar,4032-7138
-205,"Dr. Obligado, Daniel Horacio",,4032-7274/5
-206,"Dr. Oppel, Nicolás Elías",,
-207,"Dr. Ortea Escandón, Rafael",,4032-7162
-208,"Dr. Ortega, Jose Luis",,4124-5407
-209,"Dr. Paduczak, Sergio Adrián",,4032-7297/7296
-210,"Dr. Palazzi, Fernando SEbastián",,4130-6129
-211,"Dr. Pandiella, Hernan Vicente",,4130-6456/6458
-212,"Dr. Pedroso, Julio Augusto",,
-213,"Dr. Peluso, Martín Sebastián",,
-214,"Dr. Pereyra, Javier Rodrigo",javier.pereyra@pjn.gov.ar,4 370 5158
-215,"Dr. Perez Arias, Jose",,
-216,"Dr. Perez Lance, Adrian Augusto",,4371-3665/4372-9266
-217,"Dr. Petrecca, Juan Pablo",,
-218,"Dr. Petrone, Daniel Antonio",,4032-7397
-219,"Dr. Piendibene, Adolfo Omar",,4032-7101
-220,"Dr. Pierretti, Gustavo Miguel",,
-221,"Dr. Pinto, Ricardo Matias",cncrimcorr.voc11@pjn.gov.ar,4370-4931
-222,"Dr. Pistarini, Manuel Carlos",,
-223,"Dr. Plater, Jorge Douglas",,
-224,"Dr. Pociello Argerich, Rodolfo",rodolfo.pociello-argerich@pjn.gov.ar,
-225,"Dr. Pogonza, Ovidio",jncrimcorr54@pjn.gov.ar,
-226,"Dr. Poledo, Carlos",,4032 7281/82
-227,"Dr. Polverini, Jorge Horacio",,
-228,"Dr. Poncio, Santiago Alberto",,
-229,"Dr. Pozzi, Dario Anibal",,4032-7545
-230,"Dr. Quian Zavalia, Santiago",,
-231,"Dr. Quiñones, Julio Pablo",,
-232,"Dr. Rabbione, Edmundo",,
-233,"Dr. Rafecas, Daniel Eduardo",jncrimcorrfed3@pjn.gov.ar,4032-7118
-234,"Dr. Ramirez, Fernando Ramon",,4371-2165/9174
-235,"Dr. Ramirez, Gustavo Ariel",gustavo.ramirez@pjn.gov.ar,4032-7167
-236,"Dr. Ramos Padilla, Juan María",toc29@pjn.gov.ar,4813-7312
-237,"Dr. Ramos, Sebastian Roberto",,4032-7119
-238,"Dr. Ramos, Sebastián Roberto",JNCRIMCORRFED2@PJN.GOV.AR,4032-7110
-239,"Dr. Rappa, Osvaldo Daniel",,
-240,"Dr. Rengel Mirat, Carlos Alberto",,4812-0525/0883
-241,"Dr. Rengel, Diego",,4124-0949/53
-242,"Dr. Rico, Eduardo Manuel",,
-243,"Dr. Rimondi, Jorge Luis",,
-244,"Dr. Rinaldi, Darío",,
-245,"Dr. Rinaldi, Fernando Pedro",,
-246,"Dr. Rios, Javier Feliciano",,
-247,"Dr. Rivera Solari, Adrián Guillermo",adrian.rivera-solari@pjn.gov.ar,4032-7122
-248,"Dr. Robet, Guillermo",,
-249,"Dr. Rodriguez, Guillermo",,4373-0377
-250,"Dr. Rodríguez Costich, Martín",,2205-8053
-251,"Dr. Rodríguez Varela, Ignacio",cncrimcorr.voc10@pjn.gov.ar,4370-4990
-252,"Dr. Rofrano, Gustavo Jorge",,4372-1582/4843
-253,"Dr. Rojas, Isidro Omar",jncrimcorr56.sec56@pjn.gov.ar,2205-8037/38
-254,"Dr. Roldan, Federico",,4130-6229
-255,"Dr. Romeo, Jorge Horacio",,
-256,"Dr. Romero, Federico Nahuel",,
-257,"Dr. Rongo, Guillermo Ricardo",,
-258,"Dr. Ruiz, Ernesto Javier",,
-259,"Dr. Ruiz, Sebastian Pedro",,
-260,"Dr. Salas, Luis Roberto José",,4371-2003/9966
-261,"Dr. Salvá, Federico Marcelo",,4812-0344/4965
-262,"Dr. Sanchez , Marcelo Alejandro",marcelo.sanchez@pjn.gov.ar,4370 4942
-263,"Dr. Sanchez Sarmiento, Javier",,
-264,"Dr. Sanfilippo, Alejandro José",,
-265,"Dr. Sarrabayrouse, Eugenio Carlos",,4124-6626
-266,"Dr. Sañudo, Alfredo Alejandro",,4373-0125 / 4371-8748
-267,"Dr. Schwab, Martín",,4032 7280
-268,"Dr. Scollo, Javier Francisco",,4032-7464
-269,"Dr. Scotto, Mariano Alberto",cncrimcorr.presidencia@pjn.gov.ar,4370-4998
-270,"Dr. Slokar, Alejandro Walter",,4032-7431
-271,"Dr. Slupski, Diego Javier",,
-272,"Dr. Smietniansky, Martín",,4032-7151
-273,"Dr. Sposetti, Maximiliano A.",maximiliano.sposetti@pjn.gov.ar,
-274,"Dr. Stokfisz, Fernando",,4130-6107
-275,"Dr. Strifezza, Juan Pablo",,4373-0149
-276,"Dr. Torres, Ariel Hernan",jncrimcorr56.sec56@pjn.gov.ar,42205-8049
-277,"Dr. Torres, Ezequiel Matías",,
-278,"Dr. Toselli, Nicolás",,4032-7308/7309
-279,"Dr. Tosselli, Nicolás",,
-280,"Dr. Touris, Marcelo Fernando",,
-281,"Dr. Valle, Gustavo Pablo",,4372-1582/4843
-282,"Dr. Vazquez, Osvaldo Gonzalo",,2205-8017/18
-283,"Dr. Vega, Gabriel",,4372-2594/4-371-4795
-284,"Dr. Vega, Pablo Daniel",,
-285,"Dr. Villanueva, Diego Andrés",,4 371 6366
-286,"Dr. Villella, Guillermo Ricardo",,4130-6216
-287,"Dr. Wenner , Marcos",marcos.wenner@pjn.gov..ar,
-288,"Dr. Yacobucci, Guillermo Jorge",,4032-7410
-289,"Dr. Yadarola, Martin",,
-290,"Dr. Yadarola, Pablo",jnpenalec2@pjn.gov.ar,4130-6452
-291,"Dr. Zabala, Jorge Alejandro",,4032-7341
-292,"Dr. Zielli, Juan Patricio",,
-293,"Dr. Álvarez Herrero, Sebastián Martín",,
-294,"Dr. Álvarez, Matías Horacio",matiash.alvarez@pjn.gov.ar,
-295,"Dra. Acosta, María Rita",,
-296,"Dra. Acselrad , Flora",cncrimcorr.sala1@pjn.gov.ar,4370-4963
-297,"Dra. Adami, Sabrina E.",,4124-0961
-298,"Dra. Agostinelli, María Florencia",,
-299,"Dra. Aidar, Irma Esther",,
-300,"Dra. Alliaud, Alejandra Mercedes",,2205-8030
-301,"Dra. Angulo, Graciela",,
-302,"Dra. Anselmo, Claudia Sabrina",jncrimcorr52.sec60@pjn.gov.ar,2205-8007/8
-303,"Dra. Arancibia, Fernanda Alejandra",,4032-7677
-304,"Dra. Auletta, Karina",,4371-3022
-305,"Dra. Baez Zabala, Cynthia",,
-306,"Dra. Bajlec, María Silvina",,
-307,"Dra. Barbano, María",,4032-7308/7309
-308,"Dra. Barczuk, María Desirée",jnpenaleconomico11.sec21@pjn.gov.ar,4124-7081/7089
-309,"Dra. Barrionuevo, Liliana Noemi",,4379-2182/2184
-310,"Dra. Basso Craig, Marcela",,4130-6115
-311,"Dra. Becchi, Patricia",,8121006
-312,"Dra. Berlingieri, Rosana Verónica",,4130-6524/6526
-313,"Dra. Bernan, Yamile Susana",,4371-6518
-314,"Dra. Bianchi, María José",maria.bianchi@pjn.gov.ar,
-315,"Dra. Bisaccia, Marisa",,4032-7264/7466
-316,"Dra. Biuso, Silvia Alejandra",,
-317,"Dra. Bloch, Ivana Verónica",ivana.bloch@pjn.gov.ar,4371-2123/2119
-318,"Dra. Bloj, Yael",,4370-4936
-319,"Dra. Bresciani , Verónica",,
-320,"Dra. Bruniard, Laura Graciela",,
-321,"Dra. Busi Chaves, Alejandra",jncrimcorr51.sec58@pjn.gov.ar,2205-8054/55/56
-322,"Dra. Busso, Mónica E.",,
-323,"Dra. Bustillo, Inés María",,4812-0344/4531
-324,"Dra. Cabeza Díaz, Marcela",,
-325,"Dra. Calaon, Mariana",,4032-7363
-326,"Dra. Campagnoli, Andrea Fabiana",,
-327,"Dra. Canella, Rosana Maria",,4130-6229
-328,"Dra. Cano Frers, Josefina",,
-329,"Dra. Cantisani, Ines",,4124 0945/ 0938/41
-330,"Dra. Capuchetti, María Eugenia",jncrmcorrfed9@pjn.gov.ar,
-331,"Dra. Carande, Maria Martha",maria.carande@pjn.gov.ar,
-332,"Dra. Carbajales , María Inés",,4130-6281/82/83
-333,"Dra. Caron, Albertina Anatonia",albertina.caron@pjn.gov.ar,4032-7122
-334,"Dra. Cassani, María Belén",tocriminal7@pjn.gov.ar,4372-2594/4-371-4795
-335,"Dra. Castro, Jimena Inés",,
-336,"Dra. Cavalleri, Claudia Leticia",jncrimcorr54@pjn.gov.ar,
-337,"Dra. Cavallero, María del Pilar",,
-338,"Dra. Chaij, Mariana Leonor",,4124-7063
-339,"Dra. Charnis, María Laura",,4032-7186
-340,"Dra. Chena Cullen , María Raquel",jncrimcorr21@pjn.gov.ar jncrimcorr21.sec165@pjn.gov.ar,4371-3155 / 4373-6082
-341,"Dra. Chichizola, Maria Cecilia",tocrimfed7@pjn.gov.ar,4371-3955/2705
-342,"Dra. Cicchetti, Cynthia",,4032 7244/45
-343,"Dra. Cicconi, Sabrina",,
-344,"Dra. Columba, Fabiola",,
-345,"Dra. Cuenca Aranda, Lucia",tocrimfed7@pjn.gov.ar,4371-3955/2705
-346,"Dra. Currais, Mariana",,
-347,"Dra. Cusmanich, Patricia Elisa",,4032-7299/7300
-348,"Dra. D'Esposito, Maria Ines",jncrimcorr55@pjn.gov.ar,
-349,"Dra. Dankert, Maria Veronica",,4130-6246
-350,"Dra. Daray, María Florencia",maria.daray@pjn.gov.ar,4 370 4916
-351,"Dra. Dato, Maria Ines",maria.dato@pjn.gov.ar,4130-6136
-352,"Dra. Davenport, Valeria Andrea",,
-353,"Dra. De Giacomi, Cecilia Andrea",cecilia.de-giacomi@pjn.gov.ar,
-354,"Dra. De Oyarbide Castillo, Constanza",,4130-6246
-355,"Dra. De Rosa, Veronica",,4371-1322
-356,"Dra. De Rosa, Viviana Carla",viviana.derosa@pjn.gov.ar,4130-6139
-357,"Dra. Debenedetto Regueira, María Elina",,
-358,"Dra. Decarli, Virginia Laura",virginia.decarli@pjn.gov.ar,4370-4933
-359,"Dra. Di Nardo, María Victoria",,
-360,"Dra. Diedrich, Maria Alejandra",tocrimfed7@pjn.gov.ar,4371-3955/2705
-361,"Dra. Dieta de Herrero, Ana",,4813-4663/6291
-362,"Dra. Diez, María de los Ángeles",,
-363,"Dra. Doorn, Lucía",,
-364,"Dra. Dropulich, Paola",,4124-6623
-365,"Dra. Durao, Dolores",,4032-7354
-366,Dra. Elena Nolasco Highton,,(11) 4370 4285
-367,"Dra. Esposito, Anabella Elizabeth",,4124-7068
-368,"Dra. Estevez, Mariela Silvina",,
-369,"Dra. Fernandez, Stella M.",,2205-8031
-370,"Dra. Fernández Funes, María Constanza",,
-371,"Dra. Franco, Maria Veronica",marivefranco@gmail.com,
-372,"Dra. Fuertes, Paula",paula.fuertes@pjn.gov.ar,4370 4996
-373,"Dra. Galletti, María Fabiana",,2205-8022
-374,"Dra. Galli, María José",,
-375,"Dra. Gallo, María Dolores",dolores.gallo@pjn.gov.ar,
-376,"Dra. Gambirassi, María Inés",,4032-7106
-377,"Dra. García, Tamara Julieta",,
-378,"Dra. García, Verónica Georgina Luján",veronica.garcia@pjn.gov.ar,4130-6287
-379,"Dra. Garzon, Nancy Beatriz",jnpenaleconomico10.sec19@pjn.gov.ar,4124-7078/7079
-380,"Dra. Geijo, María Florencia",,
-381,"Dra. Ghirardelli, Maria Gabriela",,
-382,"Dra. Glineur, Mariana Elsa",,4372-9266/3665
-383,"Dra. Glujovsky, Déborah",,4032-7464/6
-384,"Dra. Godoy, María Ximena",,4032-7343
-385,"Dra. Gonzalez, Karina Marcela",,
-386,"Dra. González, Paula Verónica",,
-387,"Dra. Gorsd, Paula",,4124-6617
-388,"Dra. Guerra, Romina Ayelén",,
-389,"Dra. Guzzardi, Ana Silvia",,
-390,"Dra. Gómez Maiorano, Ángeles Mariana",,
-391,"Dra. Halata, Miriam Andrea",,
-392,"Dra. Hendler, Martha Lorena",,4130-6290
-393,"Dra. Hopp, Cecilia",,4032-7380
-394,"Dra. Iriart, Silvina Patricia",,4375-0882/0705
-395,"Dra. Klappenbach, Maria Isabel",,3823344
-396,"Dra. Kohen, Paola Yanina",,
-397,"Dra. Lamas, Lorena Karina",,4 371 0503
-398,"Dra. Lara, Verónica Mariana",,4032-7159
-399,"Dra. Lasala, Evangelina María",toc29@pjn.gov.ar,4813-7312
-400,"Dra. Laíño Dondiz, Magdalena",cncrimcorr.voc3@pjn.gov.ar,4370-4940
-401,"Dra. Le Pera, Natalia Noel",,
-402,"Dra. Ledesma, Angela Ester",,4032-7492
-403,"Dra. Leon, Myrna Iris",,
-404,"Dra. Licata Caruso, Carla",jnpenaleconomico11.sec22@pjn.gov.ar,4124-7081/7089
-405,"Dra. Llinas, Solange",,
-406,"Dra. Lores Arnaiz, Carolina",,4032 7183
-407,"Dra. Lospenatto, Mónica Beatriz",,4124-0949/53
-408,"Dra. Lópes, Analía",,4379-0107
-409,"Dra. López Iñiguez, María Gabriela",,4032-7308/7309
-410,"Dra. Mallo, Patricia Gabriela",,4124-0931/37/47
-411,"Dra. Mangeri Cobas, Anahí",cncrimcorr.sala1@pjn.gov.ar,4370-4963
-412,"Dra. Marinez Espinoza, Alejandra",,
-413,"Dra. Mariño, Soledad Eugenia",,
-414,"Dra. Martinez, María Fernanda",,4371-3575
-415,"Dra. Martínez , Mónica Patricia",,
-416,"Dra. Mendieta, Carla",,
-417,"Dra. Miranda, Ángeles",toc29@pjn.gov.ar,4813-7312
-418,"Dra. Monferrer, Analía S.",,
-419,"Dra. Morillo Guglielmi, Gisela",gisela.morillo-guglielmi@pjn.gov.ar,4370-4995
-420,"Dra. Mánico, Silvana Belén",,
-421,"Dra. Namer, Sabrina",,4032-7308/7309
-422,"Dra. Neme, Ivana Carolina",,
-423,"Dra. Neuville, María de los Ángeles",jncrimcorr58.sec64@pjn.gov.ar,4327-0253 / 4327-0280
-424,"Dra. Nicocia, Laura Irene",,
-425,"Dra. Nieto , Soledad",,
-426,"Dra. Oberlander, Cinthia Raquel",,4372-7126 // 4370-4932
-427,"Dra. Olivera, Aldana Romina",,4130 6245
-428,"Dra. Oliviero, Cecilia",cecilia.oliviero@pjn.gov.ar,4370-5167
-429,"Dra. Otatti Rossi, Maria Estefania",,
-430,"Dra. Otero, María Inés",cncrimcorr.sala6@pjn.gov.ar,4370-4928
-431,"Dra. Paez, Lorena Alejandra",,2205-8001
-432,"Dra. Pagliano, Carolina Inés",,
-433,"Dra. Paisan, Elizabeth Alejandra",,
-434,"Dra. Palliotti, Adriana",,4032-7278/9
-435,"Dra. Palmaghini, Fabiana Emma",,
-436,"Dra. Parafita, María Gabriela",,
-437,"Dra. Patricios, Maria Josefina",,
-438,"Dra. Peluffo, Vanesa Alejandra",,
-439,"Dra. Pepe, Sandra",,
-440,"Dra. Perilli, Karina Rosario",,4032-7363 / 7362
-441,"Dra. Perzan, María Cecilia",,4372 4679
-442,"Dra. Petazzi, Paula",,
-443,"Dra. Poleri, Ana",ana.poleri@pjn.gov.ar,4370-5139
-444,"Dra. Potes, Verónica",,
-445,"Dra. Provítola, Maria Alejandra",jncrimcorr6@pjn.gov.ar,4124-5434
-446,"Dra. Páez, Sonia Elizabeth",,
-447,"Dra. Quinteros, Ivana Sandra",,4032-7542
-448,"Dra. Raposeiras, Lucía del Pilar",,4032-7425
-449,"Dra. Raña, Andrea Fabiana",andrea.rana@pjn.gov.ar,4370-4994
-450,"Dra. Ribas, Cecilia",,4032-7290/91
-451,"Dra. Robiglio, Carolina Laura Inés",,4130-6113
-452,"Dra. Robles, María Lujan",,4371-0737
-453,"Dra. Rodriguez Basavilbaso, Silvina",,
-454,"Dra. Rodriguez, Andrea",,
-455,"Dra. Rodríguez Pacilly, María Agustina",,
-456,"Dra. Rodríguez, Alejandra",,
-457,"Dra. Rodríguez, Carina Nancy",,
-458,"Dra. Rombolá, Carolina Andrea",,4032-7354
-459,"Dra. Romero, Sandra",,4124-7078/7079
-460,"Dra. Rosciani, Andrea Veronica",andrea.rosciani@pjn.gov.ar,
-461,"Dra. Rosito Peralta Urquiza, Maria Valeria",,4130-6123/6125
-462,"Dra. Saa, Valeria",,4379-2188/2190
-463,"Dra. Sansone, María Virginia",,4124-0966/74
-464,"Dra. Sanz, Paula",,4032-7143
-465,"Dra. Saá, Mercedes",,4124 0966
-466,"Dra. Scoppa, Agustina",,
-467,"Dra. Scorzelli, Luciana",,
-468,"Dra. Seijas, María Florencia",,
-469,"Dra. Servini, Maria Romilda",jncrimcorrfed1@pjn.gov.ar,4371-4732 4371-1330
-470,"Dra. Silva, Alejandra",alejandra.silva@pjn.gov.ar,
-471,"Dra. Silvano Pelizza, Carolina",,
-472,"Dra. Sircovich, Jesica Yael",,
-473,"Dra. Smith, María Alejandra",,4032-7352
-474,"Dra. Soprano, Maite Miriam",,
-475,"Dra. Sosa, María Julia",,4032-7175
-476,"Dra. Straccia, Maria Veronica",,4124-7081/7083
-477,"Dra. Sáenz Samaniego, Lucrecia",,
-478,"Dra. Talarico, Maria Victoria",,4032-7544
-479,"Dra. Tellechea Suárez, Mariana Andrea",,4032-7413
-480,"Dra. Toso, Cecilia Fernanda",jncrimcorr23.sec158@pjn.gov.ar,4373-0377
-481,"Dra. Turconi, Maria Laura",,
-482,"Dra. Turner, Mariana",,
-483,"Dra. Uhrlandt, Erica María",,
-484,"Dra. Vanella, Carolina Alejandra",,4130-6117
-485,"Dra. Vega, Ana Laura",,
-486,"Dra. Vites, Sandra Cristina",,
-487,"Dra. Wüllich, Delfina María",,
-488,"Dra. Zabala Duffau, Andrea M.",,4130/6278/79/80
-489,"Dra. Zucconi, Karina Mariana",karina.zucconi@pjn.gov.ar,
-490,"Dra. da Rocha, Maria Clara",,4032-7363/58
-491,"Sr. Bauman , Ezequiel",toc29@pjn.gov.ar,4813-7312
-492,"Sr. Caride, Miguel Carlos",,
-493,"Sr. López, José Andrés",,
-494,"Sr. Mazzucchelli, Gustavo César",,4370-4930
-495,"Sr. Núñez, Javier Horacio",javierh.nunez@pjn.gov.ar,4370-4933
-496,"Sr. Olazagoitía, Patricio",,
-497,"Sr. Rosas, Juan Manuel",,
-498,"Sra. Ferreiro, Analía Laura",,
+50,"Dr. Canero, Martín Fernando",,4032-7130
+51,"Dr. Capurro, Mariano Pedro",,4032-7595
+52,"Dr. Caputo, Rafael Francisco",,4130-6284/6285
+53,"Dr. Carbajo, Javier",,4032-7417
+54,"Dr. Carovano, Juan Paulo",,4371-3903/9714/3944
+55,"Dr. Caruso, Federico Guillermo",,4130-6120/21/22
+56,"Dr. Casanello, Sebastián Norberto",jncrimcorrfed7@pjn.gov.ar,
+57,"Dr. Casariego, Julio López",,4379-0106
+58,"Dr. Cassina, Lucas Augusto",,
+59,"Dr. Castrillon, Sebastian",,
+60,"Dr. Castro, Fernando Jose",,4371-6485/9513
+61,"Dr. Catania, Alejandro J.",,4130-6126/6127
+62,"Dr. Caunedo, Fernando Mario",,
+63,"Dr. Cavassa, Walter",,
+64,"Dr. Chaban, Emir Karim",,
+65,"Dr. Chediek, Carlos Mariano R.",,4812-0525/0883
+66,"Dr. Cicciaro, Juan Esteban",cncrimcorr.voc21@pjn.gov.ar,4370-4921
+67,"Dr. Cisneros, Tomás Santiago",,
+68,"Dr. Corallo, Tomas",,
+69,"Dr. Coronel, Nicolás Eduardo",,
+70,"Dr. Cresta, Guido Damián",,
+71,"Dr. Croucher, Pablo Ernesto",jncrimcorr52.sec60@pjn.gov.ar,2205-8005/06/07/09/10
+72,"Dr. Cura , Juan Jose",,
+73,"Dr. D'Elia, Carlos Daniel",,
+74,"Dr. De Campos, Manuel Arturo",,
+75,"Dr. De La Fuente, Javier Esteban",,4812-0344/4531
+76,"Dr. De Santo, Jorge Anselmo",jncrimcorr46@pjn.gov.ar,
+77,"Dr. De Schutere, Enrique María",,
+78,"Dr. De Simoni, Sebastian Pablo",,4371-2161
+79,"Dr. De la Torre, Fabian Xavier Patricio",,
+80,"Dr. Decaria, Hugo",,
+81,"Dr. Del Gaizo, Sebastián Ramiro",,
+82,"Dr. Del Viso, Martín Carlos",jncrimcorr28.sec142@pjn.gov.ar - jncrimcorr28@pjn.gov.ar,
+83,"Dr. Di Nesta, Fabián",fabian.di-nesta@pjn.gov.ar,
+84,"Dr. Dialeva Balmaceda, Maximiliano",,
+85,"Dr. Dias, Horacio Leonardo",,4379-2188/2190
+86,"Dr. Diaz, Máximo Nicolas",,4124-7094
+87,Dr. Diego Seitún,,(11) 4370 4626
+88,"Dr. Divito, Mauro Antonio",,
+89,"Dr. Donarini, Horacio Diego",,4379-2154
+90,"Dr. Días, Horacio Leonardo",,4124-6637
+91,"Dr. Echegaray, Sergio Alejandro",,4032-7146
+92,"Dr. Ercolini, Julián Daniel",,4032-7174
+93,"Dr. Farah, Eduardo Guillermo",,4032-7517
+94,"Dr. Febre, Pablo Andrés",pablo.febre@pjn.gov.ar,4032-7168
+95,"Dr. Fera Gomez, Diego Martín",,4130-6131/6133
+96,"Dr. Fernandez, Marcos Andres",,
+97,Dr. Fernando Javier Arnedo,,
+98,"Dr. Fernández, Leandro Javier",,
+99,"Dr. Ferro, Alejandro Héctor",jncrimcorr36@pjn.gov.ar,
+100,"Dr. Fornari, Ignacio Carlos",,4032-7337
+101,"Dr. Fornasari, Federico",,4032-7178
+102,"Dr. Friele, Guillermo Enrique",,4813-0956/4811 4672
+103,"Dr. Gallo, Diego",,4379-0108
+104,"Dr. Galván Greenway, Juan Pedro",,4130-6277
+105,"Dr. Gamboa, Enrique J.",,4 124-0949/53
+106,"Dr. García Berro, Diego",,4032-7339
+107,"Dr. Gatto, Damian",,4124 0966
+108,"Dr. Gegunded, Alberto",,
+109,"Dr. Gemignani, Juan Carlos",,4032-7394
+110,"Dr. Ghersi, Sebastian",,
+111,"Dr. Ghirlanda, Gabriel Omar",,
+112,"Dr. Giménez Uriburu, Rodrigo",,4032 7254/55
+113,"Dr. Giudice Bravo, Juan",,
+114,"Dr. Godoy, Alfredo",,
+115,"Dr. Goerner, Rodolfo Gustavo",toc29@pjn.gov.ar,4813-7312
+116,"Dr. González Ferrari , Gustavo",,4382-0944
+117,"Dr. González Gusmerotti, José Luis",,4130-6528
+118,"Dr. González, Federico",federicog.gonzalez@pjn.gov.ar,4371-4907
+119,"Dr. Gordillo Torres, Juan Manuel",,
+120,"Dr. Gorini, Jorge Luciano",,4032-7247
+121,"Dr. Grangeat, Juan Manuel",juan.grangeat@pjn.gov.ar,4032-7171
+122,"Dr. Grunberg, Adrian Federico",,4032 7244/ 45
+123,"Dr. Guardia, Diego Leif",,4124-0949/53
+124,"Dr. Guerrero, Francisco",,
+125,"Dr. Hernandez , Diego",,4371 4599/43716815
+126,"Dr. Herrera, Julio Andres",,4371-6850
+127,"Dr. Hornos, Gustavo M.",,4032-7436
+128,"Dr. Hornos, Roberto Enrique",,4130-6114
+129,"Dr. Huarte Petite, Alberto",,4371-2003/9966
+130,"Dr. Idoyaga Molina, Rodrigo",,4032-7361
+131,"Dr. Iriarte, Ignacio Fabián",ignacio.iriarte@pjn.gov.ar,
+132,"Dr. Irurzun, Martin",,4032-7532
+133,"Dr. Iturralde, Mariano",,
+134,"Dr. Jantus, Pablo",,4124-6633
+135,"Dr. Jorge, Leonardo",,4032-7677
+136,"Dr. Kirszenbaum, Damian Ignacio",,
+137,"Dr. Krause Mayol , Javier G.",,4130-6144/6145/6146
+138,"Dr. Labadens, Ignacio",,4032 7244/45
+139,"Dr. Laderach, Federico",,
+140,"Dr. Laiño Dondiz, Manuel",dondiz.laino@pjn.gov.ar,4130-3137
+141,"Dr. Laiño, Lauro Fernan",,4302-7589
+142,"Dr. Larrabure, Francisco Agustín",,
+143,"Dr. Laufer, Pablo",pablo.laufer@pjn.gov.ar,4124 0929/31/36/37/47
+144,"Dr. Leiva, Ricardo Jorge",,
+145,"Dr. Lijo, Ariel Oscar",,4032-7126
+146,"Dr. Litvack, Alejandro",,
+147,"Dr. Llauro, Santiago",,
+148,"Dr. Llorens, Mariano",,4032-7512
+149,"Dr. Losada, Luis Gustavo",,
+150,"Dr. Lucero, Pablo Guillermo",cncrimcorr.voc4@pjn.gov.ar,4370-4938
+151,"Dr. Lucini, Julio Marcelo",cncrimcorr.voc7@pjn.gov.ar - julio.lucini@pjn.gov.ar,4370-4909
+152,"Dr. Luis Roberto José, Salas",,4371-2003/9966
+153,"Dr. Luxardo, Patricio Martín",,
+154,"Dr. López Biscayart, Javier",,4124-7070
+155,"Dr. López, Hernán Martín",cncrimcorr.voc16@pjn.gov.ar,4370-4922
+156,"Dr. López, Santiago A.",,4124-6625
+157,"Dr. Maciocio, Roxana A",,4371-4229/0564
+158,"Dr. Madariaga, Martín Miguel",,
+159,"Dr. Magariños, Mario",,4124-6626
+160,"Dr. Magnone, Walter Daniel",,4032-7399
+161,"Dr. Mahiques, Carlos Alberto",,4032-7408/7370
+162,"Dr. Maneiro, Fernando",,4379-2188/2190
+163,"Dr. Manoukian, Sergio",,
+164,"Dr. Mariño, Ramiro Ariel",ramiro.marino@pjn.gov.ar,4370-4928
+165,"Dr. Marrollo, Alejandro Ezequiel",,
+166,"Dr. Martinez De Giorgi, Marcelo Pedro H.",,4032-7158
+167,"Dr. Martinez Farre, Guillermo Carlos",,
+168,"Dr. Martinez Murias, Ignacio",,
+169,"Dr. Martín, Adrián Norberto",,4124 0966/74
+170,"Dr. Mazzucco, Damián M.",damian.mazzucco@pjn.gov.ar,0297 446-2208
+171,"Dr. Medina, Darío Martín",,4124-0961
+172,"Dr. Meirovich, Gustavo Darìo",,4130-6284/6285
+173,"Dr. Mercader, Patricio Hernan",,4032-7356
+174,"Dr. Michetti, Marcelo J.",,4813-0956/4811-7163/4672
+175,"Dr. Michilini, José Antonio",,4790-1374/4794-6446
+176,"Dr. Mihura Gradin, Sixto",,4373-0125 / 4371-8748
+177,"Dr. Misculin , Gustavo Ivan",,4130-6329/30/31
+178,"Dr. Mongelo, Juan Martin",,
+179,"Dr. Morin, Daniel Emilio",,4124-6629
+180,"Dr. Moya, Pablo",,
+181,"Dr. Muffatti, Marcelo Alberto",,
+182,"Dr. Murano, Esteban Horacio",,4032-7114
+183,"Dr. Márquez, Luis Oscar",,4124-0961
+184,"Dr. Nardiello, Angel Gabriel",,
+185,"Dr. Navarro, Hugo Daniel",toc29@pjn.gov.ar,4813-7312
+186,Dr. Nestor Alfredo Cafferatta,,(11) 4370 4476
+187,"Dr. Noceti Achával, Alejandro",,4375-0883/4371-0750
+188,"Dr. Noguera, Leandro",jncrimcorrfed5.sec10@pjn.gov.ar,4032-7138
+189,"Dr. Oppel, Nicolás Elías",,
+190,"Dr. Ortea Escandón, Rafael",,4032-7162
+191,"Dr. Ortega, Jose Luis",,4124-5407
+192,"Dr. Paduczak, Sergio Adrián",,4032-7297/7296
+193,"Dr. Palazzi, Fernando SEbastián",,4130-6129
+194,"Dr. Pandiella, Hernan Vicente",,4130-6456/6458
+195,"Dr. Pedroso, Julio Augusto",,
+196,"Dr. Peluso, Martín Sebastián",,
+197,"Dr. Pereyra, Javier Rodrigo",javier.pereyra@pjn.gov.ar,4 370 5158
+198,"Dr. Perez Arias, Jose",,
+199,"Dr. Perez Lance, Adrian Augusto",,4371-3665/4372-9266
+200,"Dr. Petrecca, Juan Pablo",,
+201,"Dr. Petrone, Daniel Antonio",,4032-7397
+202,"Dr. Piendibene, Adolfo Omar",,4032-7101
+203,"Dr. Pierretti, Gustavo Miguel",,
+204,"Dr. Pinto, Ricardo Matias",cncrimcorr.voc11@pjn.gov.ar,4370-4931
+205,"Dr. Plater, Jorge Douglas",,
+206,"Dr. Pociello Argerich, Rodolfo",rodolfo.pociello-argerich@pjn.gov.ar,
+207,"Dr. Pogonza, Ovidio",jncrimcorr54@pjn.gov.ar,
+208,"Dr. Polverini, Jorge Horacio",,
+209,"Dr. Poncio, Santiago Alberto",,
+210,"Dr. Pozzi, Dario Anibal",,4032-7545
+211,"Dr. Quian Zavalia, Santiago",,
+212,"Dr. Quiñones, Julio Pablo",,
+213,"Dr. Rabbione, Edmundo",,
+214,"Dr. Rafecas, Daniel Eduardo",jncrimcorrfed3@pjn.gov.ar,4032-7118
+215,"Dr. Ramirez, Fernando Ramon",,4371-2165/9174
+216,"Dr. Ramirez, Gustavo Ariel",gustavo.ramirez@pjn.gov.ar,4032-7167
+217,"Dr. Ramos Padilla, Juan María",toc29@pjn.gov.ar,4813-7312
+218,"Dr. Ramos, Sebastian Roberto",,4032-7119
+219,"Dr. Ramos, Sebastián Roberto",JNCRIMCORRFED2@PJN.GOV.AR,4032-7110
+220,"Dr. Rappa, Osvaldo Daniel",,
+221,"Dr. Rengel Mirat, Carlos Alberto",,4812-0525/0883
+222,"Dr. Rengel, Diego",,4124-0949/53
+223,"Dr. Rico, Eduardo Manuel",,
+224,"Dr. Rimondi, Jorge Luis",,
+225,"Dr. Rinaldi, Darío",,
+226,"Dr. Rinaldi, Fernando Pedro",,
+227,"Dr. Rios, Javier Feliciano",,
+228,"Dr. Rivera Solari, Adrián Guillermo",adrian.rivera-solari@pjn.gov.ar,4032-7122
+229,"Dr. Robet, Guillermo",,
+230,"Dr. Rodriguez, Guillermo",,4373-0377
+231,"Dr. Rodríguez Costich, Martín",,2205-8053
+232,"Dr. Rodríguez Varela, Ignacio",cncrimcorr.voc10@pjn.gov.ar,4370-4990
+233,"Dr. Rofrano, Gustavo Jorge",,4372-1582/4843
+234,"Dr. Rojas, Isidro Omar",jncrimcorr56.sec56@pjn.gov.ar,2205-8037/38
+235,"Dr. Roldan, Federico",,4130-6229
+236,"Dr. Romeo, Jorge Horacio",,
+237,"Dr. Romero, Federico Nahuel",,
+238,"Dr. Rongo, Guillermo Ricardo",,
+239,"Dr. Salas, Luis Roberto José",,4371-2003/9966
+240,"Dr. Salvá, Federico Marcelo",,4812-0344/4965
+241,"Dr. Sanchez , Marcelo Alejandro",marcelo.sanchez@pjn.gov.ar,4370 4942
+242,"Dr. Sanchez Sarmiento, Javier",,
+243,"Dr. Sanfilippo, Alejandro José",,
+244,"Dr. Sarrabayrouse, Eugenio Carlos",,4124-6626
+245,"Dr. Sañudo, Alfredo Alejandro",,4373-0125 / 4371-8748
+246,"Dr. Scollo, Javier Francisco",,4032-7464
+247,"Dr. Scotto, Mariano Alberto",cncrimcorr.presidencia@pjn.gov.ar,4370-4998
+248,"Dr. Slokar, Alejandro Walter",,4032-7431
+249,"Dr. Slupski, Diego Javier",,
+250,"Dr. Smietniansky, Martín",,4032-7151
+251,"Dr. Sposetti, Maximiliano A.",maximiliano.sposetti@pjn.gov.ar,
+252,"Dr. Stokfisz, Fernando",,4130-6107
+253,"Dr. Strifezza, Juan Pablo",,4373-0149
+254,"Dr. Torres, Ariel Hernan",jncrimcorr56.sec56@pjn.gov.ar,42205-8049
+255,"Dr. Torres, Ezequiel Matías",,
+256,"Dr. Touris, Marcelo Fernando",,
+257,"Dr. Valle, Gustavo Pablo",,4372-1582/4843
+258,"Dr. Vazquez, Osvaldo Gonzalo",,2205-8017/18
+259,"Dr. Vega, Gabriel",,4372-2594/4-371-4795
+260,"Dr. Vega, Pablo Daniel",,
+261,"Dr. Villanueva, Diego Andrés",,4 371 6366
+262,"Dr. Villella, Guillermo Ricardo",,4130-6216
+263,"Dr. Wenner , Marcos",marcos.wenner@pjn.gov..ar,
+264,"Dr. Yacobucci, Guillermo Jorge",,4032-7410
+265,"Dr. Yadarola, Martin",,
+266,"Dr. Yadarola, Pablo",jnpenalec2@pjn.gov.ar,4130-6452
+267,"Dr. Zabala, Jorge Alejandro",,4032-7341
+268,"Dr. Zielli, Juan Patricio",,
+269,"Dr. Álvarez Herrero, Sebastián Martín",,
+270,"Dr. Álvarez, Matías Horacio",matiash.alvarez@pjn.gov.ar,
+271,"Dra. Acosta, María Rita",,
+272,"Dra. Acselrad , Flora",cncrimcorr.sala1@pjn.gov.ar,4370-4963
+273,"Dra. Adami, Sabrina E.",,4124-0961
+274,"Dra. Agostinelli, María Florencia",,
+275,"Dra. Aidar, Irma Esther",,
+276,"Dra. Alliaud, Alejandra Mercedes",,2205-8030
+277,"Dra. Angulo, Graciela",,
+278,"Dra. Anselmo, Claudia Sabrina",jncrimcorr52.sec60@pjn.gov.ar,2205-8007/8
+279,"Dra. Arancibia, Fernanda Alejandra",,4032-7677
+280,"Dra. Auletta, Karina",,4371-3022
+281,"Dra. Baez Zabala, Cynthia",,
+282,"Dra. Bajlec, María Silvina",,
+283,"Dra. Barczuk, María Desirée",jnpenaleconomico11.sec21@pjn.gov.ar,4124-7081/7089
+284,"Dra. Barrionuevo, Liliana Noemi",,4379-2182/2184
+285,"Dra. Basso Craig, Marcela",,4130-6115
+286,"Dra. Becchi, Patricia",,8121006
+287,"Dra. Berlingieri, Rosana Verónica",,4130-6524/6526
+288,"Dra. Bernan, Yamile Susana",,4371-6518
+289,"Dra. Bianchi, María José",maria.bianchi@pjn.gov.ar,
+290,"Dra. Bisaccia, Marisa",,4032-7264/7466
+291,"Dra. Biuso, Silvia Alejandra",,
+292,"Dra. Bloch, Ivana Verónica",ivana.bloch@pjn.gov.ar,4371-2123/2119
+293,"Dra. Bloj, Yael",,4370-4936
+294,"Dra. Bresciani , Verónica",,
+295,"Dra. Bruniard, Laura Graciela",,
+296,"Dra. Busi Chaves, Alejandra",jncrimcorr51.sec58@pjn.gov.ar,2205-8054/55/56
+297,"Dra. Busso, Mónica E.",,
+298,"Dra. Bustillo, Inés María",,4812-0344/4531
+299,"Dra. Cabeza Díaz, Marcela",,
+300,"Dra. Calaon, Mariana",,4032-7363
+301,"Dra. Campagnoli, Andrea Fabiana",,
+302,"Dra. Canella, Rosana Maria",,4130-6229
+303,"Dra. Cano Frers, Josefina",,
+304,"Dra. Cantisani, Ines",,4124 0945/ 0938/41
+305,"Dra. Capuchetti, María Eugenia",jncrmcorrfed9@pjn.gov.ar,
+306,"Dra. Carande, Maria Martha",maria.carande@pjn.gov.ar,
+307,"Dra. Carbajales , María Inés",,4130-6281/82/83
+308,"Dra. Caron, Albertina Anatonia",albertina.caron@pjn.gov.ar,4032-7122
+309,"Dra. Cassani, María Belén",tocriminal7@pjn.gov.ar,4372-2594/4-371-4795
+310,"Dra. Castro, Jimena Inés",,
+311,"Dra. Cavalleri, Claudia Leticia",jncrimcorr54@pjn.gov.ar,
+312,"Dra. Cavallero, María del Pilar",,
+313,"Dra. Chaij, Mariana Leonor",,4124-7063
+314,"Dra. Charnis, María Laura",,4032-7186
+315,"Dra. Chena Cullen , María Raquel",jncrimcorr21@pjn.gov.ar jncrimcorr21.sec165@pjn.gov.ar,4371-3155 / 4373-6082
+316,"Dra. Cicchetti, Cynthia",,4032 7244/45
+317,"Dra. Cicconi, Sabrina",,
+318,"Dra. Columba, Fabiola",,
+319,"Dra. Currais, Mariana",,
+320,"Dra. Cusmanich, Patricia Elisa",,4032-7299/7300
+321,"Dra. D'Esposito, Maria Ines",jncrimcorr55@pjn.gov.ar,
+322,"Dra. Dankert, Maria Veronica",,4130-6246
+323,"Dra. Daray, María Florencia",maria.daray@pjn.gov.ar,4 370 4916
+324,"Dra. Dato, Maria Ines",maria.dato@pjn.gov.ar,4130-6136
+325,"Dra. De Giacomi, Cecilia Andrea",cecilia.de-giacomi@pjn.gov.ar,
+326,"Dra. De Oyarbide Castillo, Constanza",,4130-6246
+327,"Dra. De Rosa, Veronica",,4371-1322
+328,"Dra. De Rosa, Viviana Carla",viviana.derosa@pjn.gov.ar,4130-6139
+329,"Dra. Debenedetto Regueira, María Elina",,
+330,"Dra. Decarli, Virginia Laura",virginia.decarli@pjn.gov.ar,4370-4933
+331,"Dra. Di Nardo, María Victoria",,
+332,"Dra. Dieta de Herrero, Ana",,4813-4663/6291
+333,"Dra. Diez, María de los Ángeles",,
+334,"Dra. Doorn, Lucía",,
+335,"Dra. Dropulich, Paola",,4124-6623
+336,"Dra. Durao, Dolores",,4032-7354
+337,Dra. Elena Nolasco Highton,,(11) 4370 4285
+338,"Dra. Esposito, Anabella Elizabeth",,4124-7068
+339,"Dra. Estevez, Mariela Silvina",,
+340,"Dra. Fernandez, Stella M.",,2205-8031
+341,"Dra. Fernández Funes, María Constanza",,
+342,"Dra. Franco, Maria Veronica",marivefranco@gmail.com,
+343,"Dra. Fuertes, Paula",paula.fuertes@pjn.gov.ar,4370 4996
+344,"Dra. Galletti, María Fabiana",,2205-8022
+345,"Dra. Galli, María José",,
+346,"Dra. Gallo, María Dolores",dolores.gallo@pjn.gov.ar,
+347,"Dra. Gambirassi, María Inés",,4032-7106
+348,"Dra. García, Tamara Julieta",,
+349,"Dra. García, Verónica Georgina Luján",veronica.garcia@pjn.gov.ar,4130-6287
+350,"Dra. Garzon, Nancy Beatriz",jnpenaleconomico10.sec19@pjn.gov.ar,4124-7078/7079
+351,"Dra. Geijo, María Florencia",,
+352,"Dra. Ghirardelli, Maria Gabriela",,
+353,"Dra. Glineur, Mariana Elsa",,4372-9266/3665
+354,"Dra. Glujovsky, Déborah",,4032-7464/6
+355,"Dra. Godoy, María Ximena",,4032-7343
+356,"Dra. Gonzalez, Karina Marcela",,
+357,"Dra. González, Paula Verónica",,
+358,"Dra. Gorsd, Paula",,4124-6617
+359,"Dra. Guerra, Romina Ayelén",,
+360,"Dra. Guzzardi, Ana Silvia",,
+361,"Dra. Gómez Maiorano, Ángeles Mariana",,
+362,"Dra. Halata, Miriam Andrea",,
+363,"Dra. Hendler, Martha Lorena",,4130-6290
+364,"Dra. Hopp, Cecilia",,4032-7380
+365,"Dra. Iriart, Silvina Patricia",,4375-0882/0705
+366,"Dra. Klappenbach, Maria Isabel",,3823344
+367,"Dra. Kohen, Paola Yanina",,
+368,"Dra. Lamas, Lorena Karina",,4 371 0503
+369,"Dra. Lara, Verónica Mariana",,4032-7159
+370,"Dra. Lasala, Evangelina María",toc29@pjn.gov.ar,4813-7312
+371,"Dra. Laíño Dondiz, Magdalena",cncrimcorr.voc3@pjn.gov.ar,4370-4940
+372,"Dra. Le Pera, Natalia Noel",,
+373,"Dra. Ledesma, Angela Ester",,4032-7492
+374,"Dra. Leon, Myrna Iris",,
+375,"Dra. Licata Caruso, Carla",jnpenaleconomico11.sec22@pjn.gov.ar,4124-7081/7089
+376,"Dra. Llinas, Solange",,
+377,"Dra. Lores Arnaiz, Carolina",,4032 7183
+378,"Dra. Lospenatto, Mónica Beatriz",,4124-0949/53
+379,"Dra. Lópes, Analía",,4379-0107
+380,"Dra. Mallo, Patricia Gabriela",,4124-0931/37/47
+381,"Dra. Mangeri Cobas, Anahí",cncrimcorr.sala1@pjn.gov.ar,4370-4963
+382,"Dra. Marinez Espinoza, Alejandra",,
+383,"Dra. Mariño, Soledad Eugenia",,
+384,"Dra. Martinez, María Fernanda",,4371-3575
+385,"Dra. Martínez , Mónica Patricia",,
+386,"Dra. Mendieta, Carla",,
+387,"Dra. Miranda, Ángeles",toc29@pjn.gov.ar,4813-7312
+388,"Dra. Monferrer, Analía S.",,
+389,"Dra. Morillo Guglielmi, Gisela",gisela.morillo-guglielmi@pjn.gov.ar,4370-4995
+390,"Dra. Mánico, Silvana Belén",,
+391,"Dra. Namer, Sabrina",,4032-7308/7309
+392,"Dra. Neme, Ivana Carolina",,
+393,"Dra. Neuville, María de los Ángeles",jncrimcorr58.sec64@pjn.gov.ar,4327-0253 / 4327-0280
+394,"Dra. Nicocia, Laura Irene",,
+395,"Dra. Nieto , Soledad",,
+396,"Dra. Oberlander, Cinthia Raquel",,4372-7126 // 4370-4932
+397,"Dra. Olivera, Aldana Romina",,4130 6245
+398,"Dra. Oliviero, Cecilia",cecilia.oliviero@pjn.gov.ar,4370-5167
+399,"Dra. Otero, María Inés",cncrimcorr.sala6@pjn.gov.ar,4370-4928
+400,"Dra. Paez, Lorena Alejandra",,2205-8001
+401,"Dra. Pagliano, Carolina Inés",,
+402,"Dra. Paisan, Elizabeth Alejandra",,
+403,"Dra. Palmaghini, Fabiana Emma",,
+404,"Dra. Parafita, María Gabriela",,
+405,"Dra. Patricios, Maria Josefina",,
+406,"Dra. Peluffo, Vanesa Alejandra",,
+407,"Dra. Pepe, Sandra",,
+408,"Dra. Perilli, Karina Rosario",,4032-7363 / 7362
+409,"Dra. Perzan, María Cecilia",,4372 4679
+410,"Dra. Petazzi, Paula",,
+411,"Dra. Poleri, Ana",ana.poleri@pjn.gov.ar,4370-5139
+412,"Dra. Potes, Verónica",,
+413,"Dra. Provítola, Maria Alejandra",jncrimcorr6@pjn.gov.ar,4124-5434
+414,"Dra. Páez, Sonia Elizabeth",,
+415,"Dra. Quinteros, Ivana Sandra",,4032-7542
+416,"Dra. Raposeiras, Lucía del Pilar",,4032-7425
+417,"Dra. Raña, Andrea Fabiana",andrea.rana@pjn.gov.ar,4370-4994
+418,"Dra. Robiglio, Carolina Laura Inés",,4130-6113
+419,"Dra. Robles, María Lujan",,4371-0737
+420,"Dra. Rodriguez Basavilbaso, Silvina",,
+421,"Dra. Rodriguez, Andrea",,
+422,"Dra. Rodríguez Pacilly, María Agustina",,
+423,"Dra. Rodríguez, Alejandra",,
+424,"Dra. Rodríguez, Carina Nancy",,
+425,"Dra. Rombolá, Carolina Andrea",,4032-7354
+426,"Dra. Romero, Sandra",,4124-7078/7079
+427,"Dra. Rosciani, Andrea Veronica",andrea.rosciani@pjn.gov.ar,
+428,"Dra. Rosito Peralta Urquiza, Maria Valeria",,4130-6123/6125
+429,"Dra. Saa, Valeria",,4379-2188/2190
+430,"Dra. Sansone, María Virginia",,4124-0966/74
+431,"Dra. Sanz, Paula",,4032-7143
+432,"Dra. Saá, Mercedes",,4124 0966
+433,"Dra. Seijas, María Florencia",,
+434,"Dra. Servini, Maria Romilda",jncrimcorrfed1@pjn.gov.ar,4371-4732 4371-1330
+435,"Dra. Silva, Alejandra",alejandra.silva@pjn.gov.ar,
+436,"Dra. Silvano Pelizza, Carolina",,
+437,"Dra. Sircovich, Jesica Yael",,
+438,"Dra. Smith, María Alejandra",,4032-7352
+439,"Dra. Soprano, Maite Miriam",,
+440,"Dra. Sosa, María Julia",,4032-7175
+441,"Dra. Straccia, Maria Veronica",,4124-7081/7083
+442,"Dra. Sáenz Samaniego, Lucrecia",,
+443,"Dra. Talarico, Maria Victoria",,4032-7544
+444,"Dra. Tellechea Suárez, Mariana Andrea",,4032-7413
+445,"Dra. Toso, Cecilia Fernanda",jncrimcorr23.sec158@pjn.gov.ar,4373-0377
+446,"Dra. Turconi, Maria Laura",,
+447,"Dra. Turner, Mariana",,
+448,"Dra. Uhrlandt, Erica María",,
+449,"Dra. Vanella, Carolina Alejandra",,4130-6117
+450,"Dra. Vega, Ana Laura",,
+451,"Dra. Vites, Sandra Cristina",,
+452,"Dra. Wüllich, Delfina María",,
+453,"Dra. Zabala Duffau, Andrea M.",,4130/6278/79/80
+454,"Dra. Zucconi, Karina Mariana",karina.zucconi@pjn.gov.ar,
+455,"Dra. da Rocha, Maria Clara",,4032-7363/58
+456,"Sr. Bauman , Ezequiel",toc29@pjn.gov.ar,4813-7312
+457,"Sr. Caride, Miguel Carlos",,
+458,"Sr. López, José Andrés",,
+459,"Sr. Mazzucchelli, Gustavo César",,4370-4930
+460,"Sr. Núñez, Javier Horacio",javierh.nunez@pjn.gov.ar,4370-4933
+461,"Sr. Olazagoitía, Patricio",,
+462,"Sr. Rosas, Juan Manuel",,
+463,"Sra. Ferreiro, Analía Laura",,
