@@ -36,15 +36,6 @@ CREATE TABLE tribunal (
         ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
--- Secretarí­a
-CREATE TABLE secretaria (
-    secretaria_id SERIAL PRIMARY KEY,
-    nombre VARCHAR(200) NOT NULL,
-    tribunal_id INTEGER NOT NULL,
-    CONSTRAINT fk_secretaria_tribunal 
-        FOREIGN KEY (tribunal_id) REFERENCES tribunal(tribunal_id)
-        ON DELETE CASCADE ON UPDATE CASCADE
-);
 
 -- Tipo Delito
 CREATE TABLE tipo_delito (
@@ -164,22 +155,6 @@ CREATE TABLE representacion (
         ON DELETE CASCADE
 );
 
--- Plazos
-CREATE TABLE plazo (
-    plazo_id SERIAL PRIMARY KEY,
-    numero_expediente VARCHAR(50) NOT NULL,
-    tipo VARCHAR(100) NOT NULL,
-    fecha_inicio DATE NOT NULL,
-    fecha_vencimiento DATE NOT NULL,
-    dias_habiles INTEGER,
-    estado VARCHAR(20) DEFAULT 'vigente' CHECK (estado IN ('vigente', 'vencido', 'cumplido')),
-    tolerancia_dias INTEGER DEFAULT 0,
-    CONSTRAINT fk_plazo_expediente 
-        FOREIGN KEY (numero_expediente) REFERENCES expediente(numero_expediente)
-        ON DELETE CASCADE ON UPDATE CASCADE,
-    CONSTRAINT chk_fechas_plazo CHECK (fecha_vencimiento >= fecha_inicio)
-);
-
 -- ============================================
 -- Tabla de Jueces/Magistrados
 -- ============================================
@@ -217,8 +192,6 @@ CREATE TABLE tribunal_juez (
 CREATE INDEX idx_expediente_fecha_inicio ON expediente(fecha_inicio);
 CREATE INDEX idx_expediente_fecha_ultimo_movimiento ON expediente(fecha_ultimo_movimiento);
 CREATE INDEX idx_parte_expediente ON parte(numero_expediente);
-CREATE INDEX idx_plazo_expediente ON plazo(numero_expediente);
-CREATE INDEX idx_plazo_vencimiento ON plazo(fecha_vencimiento);
 CREATE INDEX idx_tribunal_jurisdiccion ON tribunal(jurisdiccion_id);
 CREATE INDEX idx_tribunal_juez_tribunal ON tribunal_juez(tribunal_id);
 CREATE INDEX idx_tribunal_juez_juez ON tribunal_juez(juez_id);
@@ -242,9 +215,8 @@ COMMENT ON TABLE representacion IS 'Relación entre parte y letrado en un expedi
 COMMENT ON TABLE expediente_delito IS 'Asociación N:M entre expedientes y delitos imputados';
 COMMENT ON TABLE resolucion IS 'Resoluciones dictadas en un expediente';
 COMMENT ON TABLE radicacion IS 'Historial de radicaciones de cada expediente (movimientos entre tribunales)';
-COMMENT ON TABLE plazo IS 'Plazos procesales asociados a cada expediente';
 COMMENT ON TABLE juez IS 'Magistrados y jueces que integran tribunales';
-COMMENT ON TABLE tribunal_juez IS 'Relación N:M entre tribunales y jueces con información de cargo y situaciÃ³n';
+COMMENT ON TABLE tribunal_juez IS 'Relación N:M entre tribunales y jueces con información de cargo y situación';
 
 -- ============================================
 -- Datos iniciales

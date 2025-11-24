@@ -116,7 +116,7 @@ async def run():
     # === Exportación ===
     exportar_resultados(resultados_terminadas, "terminadas")
     
-    print(f"\n✅ Total causas terminadas: {len(resultados_terminadas)}")
+    print(f"\nTotal causas terminadas: {len(resultados_terminadas)}")
 
 
 def procesar_bloque(bloque):
@@ -324,7 +324,7 @@ def exportar_resultados(resultados, tipo):
                     rad["fiscalia"]
                 ])
 
-    print(f"✅ Datos de {tipo} guardados en:")
+    print(f"Datos de {tipo} guardados en:")
     print(f"  - {prefix}_expedientes.csv")
     print(f"  - {prefix}_intervinientes.csv")
     print(f"  - {prefix}_resoluciones.csv")

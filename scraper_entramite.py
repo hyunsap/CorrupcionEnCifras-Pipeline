@@ -257,7 +257,7 @@ async def run():
                         rad["fiscalia"]
                     ])
 
-    print("✅ Datos guardados en:")
+    print("Datos guardados en:")
     print("data/tramite_expedientes.csv")
     print("data/tramite_intervinientes.csv")
     print("data/tramite_resoluciones.csv")

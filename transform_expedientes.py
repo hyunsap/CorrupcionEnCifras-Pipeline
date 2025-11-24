@@ -8,10 +8,7 @@ import pandas as pd
 os.chdir('/app/data')
 
 
-# =========================
-# Diccionarios de normalización CORREGIDOS
-# =========================
-
+# Diccionarios de normalización par inferencia de jurisdicciones y fueros
 CAMARAS = {
     "CFP": "Cámara Nacional de Apelaciones en lo Criminal y Correccional Federal",
     "CCC": "Cámara Nacional de Apelaciones en lo Criminal y Correccional",
@@ -42,7 +39,6 @@ CAMARAS = {
     "CNT": "Cámara Nacional de Apelaciones del Trabajo",
 }
 
-# ✅ SEPARAR FUERO (competencia material) de JURISDICCIÓN (ámbito)
 FUERO_POR_CAMARA = {
     # Criminal y Correccional
     "CFP": "Criminal y Correccional",
@@ -55,7 +51,7 @@ FUERO_POR_CAMARA = {
     # Penal Económico
     "CPE": "Penal Económico",
     
-    # Cámaras Federales (genéricas) - inferir como Criminal
+    # Cámaras Federales - Inferidas como Criminal y Correccional
     "FRO": "Criminal y Correccional",
     "FGR": "Criminal y Correccional",
     "FPO": "Criminal y Correccional",
@@ -82,7 +78,6 @@ FUERO_POR_CAMARA = {
     "CSS": "Seguridad Social"
 }
 
-# ✅ NUEVO: Inferir jurisdicción por cámara
 JURISDICCION_POR_CAMARA = {
     # Federales
     "CFP": "Federal",
@@ -116,10 +111,8 @@ JURISDICCION_POR_CAMARA = {
     "CNE": "Nacional"
 }
 
-# =========================
-# Utilidades
-# =========================
 
+## Funciones auxiliares de limpieza de datos
 def limpiar_texto(texto):
     if texto is None:
         return None
@@ -146,23 +139,21 @@ def safe_open(path, mode, **kwargs):
         return None
     return open(path, mode, **kwargs)
 
-# =========================
-# Funciones auxiliares de inferencia CORREGIDAS
-# =========================
+## Funciones auxiliares de inferencia
 
 def inferir_fuero_por_camara(numero_expediente):
     """Retorna el FUERO (competencia material) según la sigla del expediente"""
     if not numero_expediente:
         return "Desconocido"
     sigla = str(numero_expediente).split()[0].upper()
-    return FUERO_POR_CAMARA.get(sigla, "Criminal y Correccional")  # Default razonable
+    return FUERO_POR_CAMARA.get(sigla, "Criminal y Correccional")  
 
 def inferir_jurisdiccion_por_camara(numero_expediente):
     """Retorna la JURISDICCIÓN (Federal/Nacional) según la sigla del expediente"""
     if not numero_expediente:
-        return None  # ✅ Retornar None si no hay expediente
+        return None  
     sigla = str(numero_expediente).split()[0].upper()
-    return JURISDICCION_POR_CAMARA.get(sigla, None)  # ✅ None si sigla desconocida
+    return JURISDICCION_POR_CAMARA.get(sigla, None)  
 
 def inferir_jurisdiccion_por_radicacion(radicacion):
     """
@@ -187,7 +178,8 @@ def extraer_camara_y_ano(numero_expediente):
         return camara, int(anio)
     return "Desconocida", None
 
-def desarmar_radicacion(radicacion):
+def desarmar_radicacion(radicacion): 
+#Limpia todo el contenido que viene en radicación "Fecha | Tribunal | Fiscal | Fiscalia"
     if not radicacion:
         return "", "", "", ""
     partes = [p.strip() for p in str(radicacion).split("|")]
@@ -202,9 +194,6 @@ def desarmar_radicacion(radicacion):
             fiscalia = p.split(":", 1)[-1].strip() if ":" in p else p.strip()
     return fecha, tribunal, fiscal, fiscalia
 
-# =========================
-# PARSEO DE DETALLE DE TRIBUNALES
-# =========================
 
 def parsear_detalle_tribunal(detalle_texto):
     """
@@ -247,10 +236,8 @@ def parsear_detalle_tribunal(detalle_texto):
         "email": email
     }
 
-# =========================
-# NORMALIZACIÓN DE TRIBUNALES
-# =========================
 
+# Normalización de nombres de tribunales -> Aparecen con diferente nomenclatura en una fuente vs en otra
 def _strip_accents(s):
     if s is None:
         return None
@@ -362,10 +349,9 @@ def normalizar_nombre_tribunal(nombre, incluir_sala=False, path=None):
     
     return s
 
-# =========================
-# 1) EXPEDIENTES
-# =========================
 
+
+#Limpieza de Expedientes
 def procesar_expedientes():
     print("Procesando expedientes...")
     f_tramite = safe_open("tramite_expedientes.csv", "r", newline="", encoding="utf-8")
@@ -384,8 +370,6 @@ def procesar_expedientes():
             delitos = limpiar_texto(row.get("Delitos") or row.get("delitos"))
             fecha_inicio, tribunal, fiscal, fiscalia = desarmar_radicacion(radicacion)
             camara, ano_inicio = extraer_camara_y_ano(numero)
-            
-            # ✅ SEPARAR fuero y jurisdicción
             fuero = inferir_fuero_por_camara(numero)
             jurisdiccion = inferir_jurisdiccion_por_camara(numero)
             
@@ -413,7 +397,7 @@ def procesar_expedientes():
                 "delitos": delitos,
                 "fiscal": limpiar_texto(fiscal),
                 "fiscalia": limpiar_texto(fiscalia),
-                "fuero": fuero  # ✅ Ya no mezcla con jurisdicción
+                "fuero": fuero 
             })
             if estado_id == 1:
                 count_tramite += 1
@@ -441,9 +425,8 @@ def procesar_expedientes():
             writer.writerow({k: r.get(k) for k in fieldnames})
     return pd.DataFrame(rows)
 
-# =========================
-# 2) PARTES / LETRADOS / REPRESENTACIONES
-# =========================
+
+#Partes, letrados y representaciones (representaciones implica conectar el letrado con la parte)
 
 def procesar_intervinientes():
     print("Procesando intervinientes...")
@@ -468,9 +451,8 @@ def procesar_intervinientes():
     reprs.to_csv("etl_representaciones.csv", index=False)
     print(f"Partes: {len(partes)}, Letrados: {len(letrados)}, Representaciones: {len(reprs)}")
 
-# =========================
-# 3) RESOLUCIONES
-# =========================
+
+#Resoluciones con links
 
 def procesar_resoluciones():
     print("Procesando resoluciones...")
@@ -503,9 +485,8 @@ def procesar_resoluciones():
         writer.writerows(out)
     print(f"Resoluciones combinadas: {len(out)}")
 
-# =========================
-# 4) RADICACIONES
-# =========================
+
+#Radicaciones Históricas, ordenadas de última a primera, por cada causa
 
 def procesar_radicaciones():
     print("Procesando radicaciones...")
@@ -539,7 +520,7 @@ def procesar_radicaciones():
 # =========================
 
 def generar_dim_fueros(df):
-    """✅ Genera tabla de FUEROS (competencia material)"""
+    """Genera tabla de FUEROS (competencia material)"""
     vals = sorted(set([v for v in df.get("fuero", []).tolist() if v]))
     with open("etl_fueros.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["fuero_id", "nombre"])
@@ -549,7 +530,7 @@ def generar_dim_fueros(df):
     print(f"✓ Fueros únicos: {len(vals)} → {vals}")
 
 def generar_dim_jurisdicciones(df):
-    """✅ Genera tabla de JURISDICCIONES (ámbito territorial)"""
+    """Genera tabla de JURISDICCIONES (ámbito territorial)"""
     vals = sorted(set([v for v in df.get("jurisdiccion", []).tolist() if v]))
     with open("etl_jurisdicciones.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["jurisdiccion_id", "ambito", "departamento_judicial"])
@@ -563,16 +544,13 @@ def generar_dim_jurisdicciones(df):
             })
     print(f"✓ Jurisdicciones únicas: {len(vals)} → {vals}")
 
-# =========================
-# 6) Dimensión Tribunales + Jueces
-# =========================
+
+#Tribunales + Jueces del scraper de jueces
 
 def generar_dim_tribunales(df, path="tribunales_full.csv"):
     print("Extrayendo tribunales con normalización...")
     tribunales = {}
     
-    # ✅ Crear diccionario de jurisdicciones para lookup
-    # Leer el CSV de jurisdicciones que acabamos de generar
     jurisdiccion_lookup = {}
     try:
         with open("etl_jurisdicciones.csv", "r", encoding="utf-8") as f:
@@ -582,9 +560,9 @@ def generar_dim_tribunales(df, path="tribunales_full.csv"):
                 jid = row.get("jurisdiccion_id")
                 if ambito and jid:
                     jurisdiccion_lookup[ambito] = int(jid)
-        print(f"✓ Jurisdicciones cargadas: {jurisdiccion_lookup}")
+        print(f"Jurisdicciones cargadas: {jurisdiccion_lookup}")
     except FileNotFoundError:
-        print("⚠️ Advertencia: etl_jurisdicciones.csv no encontrado. Usando valores por defecto.")
+        print("Advertencia: etl_jurisdicciones.csv no encontrado. Usando valores por defecto.")
         jurisdiccion_lookup = {"Federal": 1, "Nacional": 2}
 
     # Hardcoded: Secretarías de Corte Suprema
@@ -655,7 +633,7 @@ def generar_dim_tribunales(df, path="tribunales_full.csv"):
             if not key or key in tribunales:
                 continue
 
-            # PARSEAR el campo 'detalle' para separar domicilio de contacto
+            # Parsear el campo 'detalle' para separar domicilio de contacto
             detalle_raw = str(r[col_det]).strip() if col_det in r and pd.notna(r[col_det]) else None
             detalle_parseado = parsear_detalle_tribunal(detalle_raw)
             
@@ -927,10 +905,6 @@ def procesar_jueces_y_relaciones(nombre_to_id, path="tribunales_full.csv"):
     print(f"Jueces procesados: {len(keys)}, Relaciones: {len(relaciones)}, sin match: {skip}")
 
 
-# =========================
-# MAIN
-# =========================
-
 def main():
     print("=== Iniciando ETL con fueros/jurisdicciones corregidos ===\n")
     
@@ -944,15 +918,15 @@ def main():
     
     # 3. Generar dimensiones (en orden de dependencia)
     generar_dim_fueros(df_exp)
-    generar_dim_jurisdicciones(df_exp)  # ✅ PRIMERO jurisdicciones
-    
+    generar_dim_jurisdicciones(df_exp)  
+
     # 4. Generar tribunales (necesita jurisdicciones.csv)
-    nombre_to_id = generar_dim_tribunales(df_exp)  # ✅ DESPUÉS tribunales
+    nombre_to_id = generar_dim_tribunales(df_exp) 
     
     # 5. Procesar jueces y relaciones
     procesar_jueces_y_relaciones(nombre_to_id)
     
-    print("\n=== ✅ ETL finalizado correctamente ===")
+    print("\n=== ETL finalizado correctamente ===")
 
 if __name__ == "__main__":
     main()

@@ -28,7 +28,7 @@ async def scrape_cards(page, nivel=0, path="", filtro_primer_nivel=None):
             if await cards.nth(i).count() == 0:
                 continue
 
-            # --- obtener título ---
+            # obtener título de card
             header = ""
             try:
                 header = await cards.nth(i).locator(".card-header").inner_text(timeout=1000)
@@ -38,28 +38,26 @@ async def scrape_cards(page, nivel=0, path="", filtro_primer_nivel=None):
             titulo = header.strip()
             titulo_upper = titulo.upper()
 
-            # --- filtrar cards no deseadas ---
+            # filtrar cards no deseadas -> traban el scraper y no dan información relevante
             if any(palabra in titulo_upper for palabra in EXCLUIR):
                 continue
 
-            # --- filtrar primer nivel si se indica ---
+            # se mete a fueros nacionales, federales o de competencia en todo el país
             if nivel == 0 and filtro_primer_nivel and titulo not in filtro_primer_nivel:
                 continue
 
-            # --- FILTRO ADICIONAL PARA NIVEL 1 ---
+            # filtro adicional
             if nivel == 1:
                 if not ("JUSTICIA NACIONAL EN LO CRIMINAL Y CORRECCIONAL FEDERAL" in titulo_upper or
                         "JUSTICIA FEDERAL DE CASACIÓN PENAL" in titulo_upper or "Justicia Nacional en lo Penal Económico".upper() in titulo_upper or "JUSTICIA NACIONAL EN LO CRIMINAL Y CORRECCIONAL".upper() in titulo_upper):
                     continue
 
-            # --- intentar entrar en la card ---
+            # Se va metiendo en las cards para obtener la informacion
             try:
                 await cards.nth(i).click()
                 await page.wait_for_timeout(1500)
 
-                # =============================
-                # EXTRAER INFO DE LA CARD ABIERTA
-                # =============================
+                # Extraer info de la card abierta
                 info_block = page.locator("guia-dependencia-info .dependencia")
                 if await info_block.count() > 0:
                     titulo_card = await info_block.locator("h5.titulo-guia").inner_text()
@@ -67,7 +65,7 @@ async def scrape_cards(page, nivel=0, path="", filtro_primer_nivel=None):
                     # limpiar detalle: reemplazar saltos de línea por " | "
                     detalle_card = " | ".join([line.strip() for line in detalle_card.splitlines() if line.strip()])
 
-                    # --- integrantes dentro de la card abierta ---
+                    # integrantes dentro de la card abierta 
                     integrantes = []
                     personas = await page.locator("guia-integrantes div.persona").all()
                     for persona in personas:
@@ -117,9 +115,7 @@ async def scrape_cards(page, nivel=0, path="", filtro_primer_nivel=None):
                             "responsables": resp_str_abierta
                         })
 
-                # =============================
-                # SUBCARDS
-                # =============================
+                # Navegación a subcards
                 try:
                     await page.wait_for_selector("guia-subdependencias div.dependencia-card", timeout=2000)
                     nuevo_path = f"{path} > {titulo}" if path else titulo
@@ -157,7 +153,7 @@ async def run():
             writer.writeheader()
             writer.writerows(resultados)
 
-        print(f"✅ Scrap completo: {len(resultados)} registros guardados en data/tribunales_full.csv")
+        print(f"Scrap completo: {len(resultados)} registros guardados en data/tribunales_full.csv")
         await browser.close()
 
 asyncio.run(run())

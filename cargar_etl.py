@@ -54,7 +54,6 @@ def parse_nullable_date(value):
     if re.match(r'^\d{2}-\d{2}-\d{2}$', value):
         partes = value.split('-')
         try:
-            # Asumir formato YY-MM-DD
             year = int(partes[0])
             month = int(partes[1])
             day = int(partes[2])
@@ -169,14 +168,13 @@ def limpiar_tablas(conn):
                 try:
                     cur.execute(f"ALTER SEQUENCE {seq} RESTART WITH 1")
                 except Exception as e:
-                    print(f"  ⚠️ No se pudo reiniciar {seq}: {e}")
+                    print(f"No se pudo reiniciar {seq}: {e}")
         
         conn.commit()
-        print("✓ Limpieza completada\n")
+        print("Limpieza completada\n")
     except Exception as e:
         conn.rollback()
-        print(f"❌ Error en limpieza: {e}")
-
+        print(f"Error en limpieza: {e}")
 
 # ============================================
 # Funciones de carga
@@ -196,10 +194,10 @@ def cargar_fuero(conn):
                 """, (parse_nullable(row["fuero_id"]), parse_nullable(row["nombre"])))
                 count += 1
         conn.commit()
-        print(f"✅ Fueros insertados: {count}")
+        print(f"Fueros insertados: {count}")
     except Exception as e:
         conn.rollback()
-        print(f"❌ Error al cargar fueros: {e}")
+        print(f"Error al cargar fueros: {e}")
 
 def cargar_jurisdiccion(conn):
     print("Cargando jurisdicciones...")
@@ -221,10 +219,10 @@ def cargar_jurisdiccion(conn):
                 ))
                 count += 1
         conn.commit()
-        print(f"✅ Jurisdicciones insertadas: {count}")
+        print(f"Jurisdicciones insertadas: {count}")
     except Exception as e:
         conn.rollback()
-        print(f"❌ Error al cargar jurisdicciones: {e}")
+        print(f"Error al cargar jurisdicciones: {e}")
 
 def cargar_tribunal(conn):
     print("Cargando tribunales...")
@@ -253,10 +251,10 @@ def cargar_tribunal(conn):
                 ))
                 count += 1
         conn.commit()
-        print(f"✅ Tribunales insertados: {count}")
+        print(f"Tribunales insertados: {count}")
     except Exception as e:
         conn.rollback()
-        print(f"❌ Error al cargar tribunales: {e}")
+        print(f"Error al cargar tribunales: {e}")
 
 def cargar_expediente(conn):
     print("Cargando expedientes...")
@@ -295,12 +293,12 @@ def cargar_expediente(conn):
                 except Exception as e:
                     errores += 1
                     if errores <= 5:  # Mostrar solo los primeros 5 errores
-                        print(f"  ⚠️ Error en expediente {row.get('numero_expediente')}: {e}")
+                        print(f"Error en expediente {row.get('numero_expediente')}: {e}")
         conn.commit()
-        print(f"✅ Expedientes insertados: {count} (errores: {errores})")
+        print(f"Expedientes insertados: {count} (errores: {errores})")
     except Exception as e:
         conn.rollback()
-        print(f"❌ Error al cargar expedientes: {e}")
+        print(f"Error al cargar expedientes: {e}")
 
 def cargar_parte_y_rol(conn):
     print("Cargando partes y roles...")
@@ -329,10 +327,10 @@ def cargar_parte_y_rol(conn):
                     """, (parte_id, parse_nullable(row["rol"])))
                     rol_count += 1
         conn.commit()
-        print(f"✅ Partes insertadas: {parte_count}, Roles insertados: {rol_count}")
+        print(f"Partes insertadas: {parte_count}, Roles insertados: {rol_count}")
     except Exception as e:
         conn.rollback()
-        print(f"❌ Error al cargar partes/roles: {e}")
+        print(f"Error al cargar partes/roles: {e}")
 
 def cargar_letrado(conn):
     print("Cargando letrados...")
@@ -351,10 +349,10 @@ def cargar_letrado(conn):
                 """, (nombre,))
                 count += 1
         conn.commit()
-        print(f"✅ Letrados insertados: {count}")
+        print(f"Letrados insertados: {count}")
     except Exception as e:
         conn.rollback()
-        print(f"❌ Error al cargar letrados: {e}")
+        print(f"Error al cargar letrados: {e}")
 
 def cargar_representacion(conn):
     print("Cargando representaciones...")
@@ -368,6 +366,7 @@ def cargar_representacion(conn):
                     cur.execute("SELECT parte_id FROM parte WHERE nombre_razon_social = %s AND numero_expediente = %s",
                                 (parse_nullable(row["nombre_parte"]), parse_nullable(row["numero_expediente"])))
                     parte_id = cur.fetchone()
+
                     cur.execute("SELECT letrado_id FROM letrado WHERE nombre = %s",
                                 (parse_nullable(row["letrado"]),))
                     letrado_id = cur.fetchone()
@@ -389,12 +388,12 @@ def cargar_representacion(conn):
                 except Exception as e:
                     errores += 1
                     if errores <= 3:
-                        print(f"  ⚠️ Error en representación: {e}")
+                        print(f"Error en representación: {e}")
         conn.commit()
-        print(f"✅ Representaciones insertadas: {count} (no encontrados: {errores})")
+        print(f"Representaciones insertadas: {count} (no encontrados: {errores})")
     except Exception as e:
         conn.rollback()
-        print(f"❌ Error al cargar representaciones: {e}")
+        print(f"Error al cargar representaciones: {e}")
 
 def cargar_resolucion(conn):
     print("Cargando resoluciones...")
@@ -420,12 +419,12 @@ def cargar_resolucion(conn):
                 except Exception as e:
                     errores += 1
                     if errores <= 5:
-                        print(f"  ⚠️ Error en resolución {row.get('numero_expediente')}, fecha '{row.get('fecha')}': {e}")
+                        print(f"Error en resolución {row.get('numero_expediente')}, fecha '{row.get('fecha')}': {e}")
         conn.commit()
-        print(f"✅ Resoluciones insertadas: {count} (errores: {errores})")
+        print(f"Resoluciones insertadas: {count} (errores: {errores})")
     except Exception as e:
         conn.rollback()
-        print(f"❌ Error al cargar resoluciones: {e}")
+        print(f"Error al cargar resoluciones: {e}")
 
 def cargar_radicacion(conn):
     print("Cargando radicaciones...")
@@ -459,12 +458,12 @@ def cargar_radicacion(conn):
                 except Exception as e:
                     errores += 1
                     if errores <= 3:
-                        print(f"  ⚠️ Error en radicación: {e}")
+                        print(f"Error en radicación: {e}")
         conn.commit()
-        print(f"✅ Radicaciones insertadas: {count} (errores: {errores})")
+        print(f"Radicaciones insertadas: {count} (errores: {errores})")
     except Exception as e:
         conn.rollback()
-        print(f"❌ Error al cargar radicaciones: {e}")
+        print(f"Error al cargar radicaciones: {e}")
 
 def cargar_juez(conn):
     print("Cargando jueces...")
@@ -487,10 +486,10 @@ def cargar_juez(conn):
                 ))
                 count += 1
         conn.commit()
-        print(f"✅ Jueces insertados: {count}")
+        print(f"Jueces insertados: {count}")
     except Exception as e:
         conn.rollback()
-        print(f"❌ Error al cargar jueces: {e}")
+        print(f"Error al cargar jueces: {e}")
 
 def cargar_tribunal_juez(conn):
     print("Cargando relaciones tribunal-juez...")
@@ -533,11 +532,11 @@ def cargar_tribunal_juez(conn):
                     conn.rollback()  # Rollback solo de esta fila
                     errores += 1
                     if errores <= 3:
-                        print(f"  ⚠️ Error en tribunal-juez: {e}")
+                        print(f" Error en tribunal-juez: {e}")
         
-        print(f"✅ Relaciones tribunal-juez insertadas: {count} (errores: {errores})")
+        print(f"Relaciones tribunal-juez insertadas: {count} (errores: {errores})")
     except Exception as e:
-        print(f"❌ Error al cargar tribunal-juez: {e}")
+        print(f"Error al cargar tribunal-juez: {e}")
 
 def extraer_y_cargar_delitos(conn):
     """Extrae delitos únicos de expedientes y los normaliza en tipo_delito"""
@@ -578,15 +577,14 @@ def extraer_y_cargar_delitos(conn):
                 except Exception as e:
                     errores += 1
                     if errores <= 5:
-                        print(f"  ⚠️ Error parseando delito '{delito_raw}': {e}")
+                        print(f"Error parseando delito '{delito_raw}': {e}")
             
             conn.commit()
-            print(f"✅ Tipos de delito insertados: {count} (errores: {errores})")
+            print(f"Tipos de delito insertados: {count} (errores: {errores})")
                     
     except Exception as e:
         conn.rollback()
-        print(f"❌ Error al cargar tipos de delito: {e}")
-
+        print(f"Error al cargar tipos de delito: {e}")
 
 def vincular_expedientes_delitos(conn):
     """Vincula expedientes con sus delitos normalizados en expediente_delito"""
@@ -630,18 +628,58 @@ def vincular_expedientes_delitos(conn):
                         else:
                             no_encontrados += 1
                             if no_encontrados <= 3:
-                                print(f"  ⚠️ Delito no encontrado: '{nombre}' en exp {numero_exp}")
+                                print(f"Delito no encontrado: '{nombre}' en exp {numero_exp}")
                     except Exception as e:
                         errores += 1
                         if errores <= 5:
-                            print(f"  ⚠️ Error vinculando {numero_exp}: {e}")
+                            print(f"Error vinculando {numero_exp}: {e}")
             
             conn.commit()
-            print(f"✅ Vínculos expediente-delito creados: {count} (errores: {errores}, no encontrados: {no_encontrados})")
+            print(f"Vínculos expediente-delito creados: {count} (errores: {errores}, no encontrados: {no_encontrados})")
             
     except Exception as e:
         conn.rollback()
-        print(f"❌ Error al vincular expedientes con delitos: {e}")
+        print(f"Error al vincular expedientes con delitos: {e}")
+
+# Funciones de metadata para agregar aviso de última actualización de datos
+def crear_tabla_metadata_si_no_existe(conn):
+    """Crea la tabla metadata si no existe"""
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS metadata (
+                    clave VARCHAR(50) PRIMARY KEY,
+                    valor TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
+                )
+            """)
+        conn.commit()
+        print("Tabla metadata actualizada/creada")
+    except Exception as e:
+        print(f"Advertencia al crear tabla metadata: {e}")
+
+def actualizar_metadata_ultima_actualizacion(conn):
+    """
+    Actualiza la fecha de última actualización en la tabla metadata.
+    Esta función debe llamarse al final del proceso de carga exitoso.
+    
+    Args:
+        conn: Conexión a la base de datos (psycopg2)
+    """
+    try:
+        with conn.cursor() as cur:
+            # Insertar o actualizar la fecha de última actualización
+            cur.execute("""
+                INSERT INTO metadata (clave, valor)
+                VALUES ('ultima_actualizacion', NOW())
+                ON CONFLICT (clave) 
+                DO UPDATE SET valor = NOW()
+            """)
+        conn.commit()
+        print("Fecha de última actualización actualizada en metadata")
+    except Exception as e:
+        conn.rollback()
+        print(f"Advertencia: No se pudo actualizar metadata: {e}")
+        # No lanzamos excepción para no interrumpir el proceso si falla esto
 
 # ============================================
 # Main
@@ -650,7 +688,12 @@ def vincular_expedientes_delitos(conn):
 def main():
     print("=== Iniciando carga mejorada a base de datos ===\n")
     conn = conectar_db()
+    carga_exitosa = False  # Flag para saber si todo fue exitoso
+    
     try:
+        # Crear tabla metadata si no existe
+        crear_tabla_metadata_si_no_existe(conn)
+        
         # Limpiar tablas antes de cargar
         limpiar_tablas(conn)
         
@@ -669,12 +712,19 @@ def main():
         extraer_y_cargar_delitos(conn)
         vincular_expedientes_delitos(conn)
         
-        print("\n=== ✅ Carga completa exitosa ===")
+        # Si llegamos aquí, todo fue exitoso
+        carga_exitosa = True
+        
+        if carga_exitosa:
+            actualizar_metadata_ultima_actualizacion(conn)
+        
+        print("\n=== Carga completa exitosa ===")
+        
     except Exception as e:
-        print(f"\n=== ❌ Error general: {e} ===")
+        print(f"\n=== Error general: {e} ===")
+        print(" La fecha de última actualización NO se actualizó debido a errores")
     finally:
         conn.close()
 
-
-if __name__ == "__main__":
+if __name__ == "_main_":
     main()
