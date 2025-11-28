@@ -8,7 +8,7 @@ Pipeline automatizado de scraping, ETL y carga de datos de casos de corrupción.
 - Al menos 2GB de espacio libre en disco
 - Conexión a Internet para el scraping
 
-## 🚀 Inicio Rápido
+## 🚀 Inicio Paso a Paso
 
 ### 1. Clonar el Repositorio
 ```bash
@@ -60,6 +60,20 @@ El cronograma:
 - **4:15 AM** - Loader inserta datos en la base de datos
 
 Para modificar el cronograma, editar las etiquetas `ofelia.job-run.*.schedule` en `docker-compose.yml`.
+
+
+## 🤝 Ejecución Completa
+
+Para ejecutar este pipeline:
+
+1. Instalar Docker y Docker Compose
+2. Clonar este repositorio
+3. Crear carpeta de logs: `mkdir -p logs`
+4. Ejecutar `docker-compose up -d`
+5. Ejecutar `./run_pipeline.sh` (usar Git Bash en Windows)
+6. El pipeline se ejecutará automáticamente cada Domingo
+
+¡Eso es todo! Sin necesidad de configurar entorno de Python ni problemas de dependencias.
 
 ## 📊 Monitoreo
 
@@ -161,16 +175,3 @@ docker-compose logs etl
 
 - **¡Cambiar las contraseñas por defecto** en producción!
 - Restringir el puerto de la base de datos (5433) en producción
-
-## 🤝 Ejecución Completa
-
-Para ejecutar este pipeline:
-
-1. Instalar Docker y Docker Compose
-2. Clonar este repositorio
-3. Crear carpeta de logs: `mkdir -p logs`
-4. Ejecutar `docker-compose up -d`
-5. Ejecutar `./run_pipeline.sh` (usar Git Bash en Windows)
-6. El pipeline se ejecutará automáticamente cada Domingo
-
-¡Eso es todo! Sin necesidad de configurar entorno de Python ni problemas de dependencias.
