@@ -1,6 +1,6 @@
 tribunal_id,nombre,domicilio_sede,contacto,jurisdiccion_id,fuero
 1,CAMARA CRIMINAL Y CORRECCIONAL FEDERAL SALA 1,,,1,Criminal y Correccional
-2,CAMARA CRIMINAL Y CORRECCIONAL FEDERAL SALA 2,,,2,Criminal y Correccional
+2,CAMARA CRIMINAL Y CORRECCIONAL FEDERAL SALA 2,,,1,Criminal y Correccional
 3,CAMARA FEDERAL DE CASACION PENAL,"Comodoro Py 2002, PISO 1º (C1104BEN), Ciudad Autónoma de Buenos Aires",Tel: 4032-7476 | Email: cfcasacionpenal.secgeneral@pjn.gov.ar,1,Casación Penal
 4,CAMARA FEDERAL DE CASACION PENAL SALA 1,"Comodoro Py 2002, 1° piso (C1104BEN), Ciudad Autónoma de Buenos Aires",Tel: 4032-7402 | Email: cfcasacionpenal.sala1@pjn.gov.ar,1,Casación Penal
 5,CAMARA FEDERAL DE CASACION PENAL SALA 2,"Comodoro Py 2002, 1° piso (C1104BEN), Ciudad Autónoma de Buenos Aires, 4032-7414/5",Email: cfcasacionpenal.sala2@pjn.gov.ar,1,Casación Penal

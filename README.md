@@ -1,249 +1,176 @@
-# Corrupción Data Pipeline
+# Pipeline de Datos de Corrupción
 
-Automated data scraping, ETL, and loading pipeline for corruption case data.
+Pipeline automatizado de scraping, ETL y carga de datos de casos de corrupción.
 
-## 📋 Prerequisites
+## 📋 Prerequisitos
 
-- Docker and Docker Compose installed
-- At least 2GB of free disk space
-- Internet connection for scraping
+- Docker y Docker Compose instalados
+- Al menos 2GB de espacio libre en disco
+- Conexión a Internet para el scraping
 
-## 🚀 Quick Start
+## 🚀 Inicio Rápido
 
-### 1. Initial Setup
-
+### 1. Clonar el Repositorio
 ```bash
-# Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/hyunsap/CorrupcionEnCifras-Pipeline
 cd corrupcion-pipeline
-
-# Create required directories
-mkdir -p data logs initdb
-
-# Copy your init.sql to initdb/
-cp /path/to/your/init.sql initdb/
-
-# Create environment file (optional)
-cp .env.example .env
 ```
 
-### 2. Start the Services
-
+### 2. Crear Carpeta de Logs
 ```bash
-# Start database and scheduler
-docker-compose up -d postgres scheduler
+mkdir -p logs
+```
 
-# Wait for database to be ready (about 10 seconds)
+### 3. Iniciar los Servicios
+```bash
+docker-compose up -d 
+
+# Esperar a que la base de datos esté lista (unos 10 segundos)
 docker-compose logs -f postgres
-# Press Ctrl+C when you see "database system is ready to accept connections"
+# Presionar Ctrl+C cuando veas "database system is ready to accept connections"
 ```
 
-### 3. Run Pipeline Manually (First Time)
-
+### 4. Ejecutar Pipeline (Primera Vez)
 ```bash
-# Make the script executable
-chmod +x run_pipeline.sh
-
-# Run the entire pipeline
+# Ejecutar el pipeline completo
 ./run_pipeline.sh
+
+# En Windows, usar Git Bash para ejecutar el script
 ```
 
-Or run each step individually:
-
+O ejecutar cada paso individualmente:
 ```bash
-# Step 1: Run scrapers
+# Paso 1: Ejecutar scrapers
 docker-compose run --rm scraper
 
-# Step 2: Run ETL
+# Paso 2: Ejecutar ETL
 docker-compose run --rm etl
 
-# Step 3: Load data
+# Paso 3: Cargar datos
 docker-compose run --rm loader
 ```
 
-## 📅 Automated Weekly Runs
+## 📅 Ejecución Automática Semanal
 
-The pipeline runs automatically every **Sunday at 2:00 AM** via the scheduler service.
+El pipeline se ejecuta automáticamente cada **Domingo a las 2:00 AM** mediante el servicio scheduler.
 
-The schedule:
-- **2:00 AM** - Scrapers run (generates CSVs)
-- **4:00 AM** - ETL processes the CSVs (2 hours after scrapers)
-- **4:15 AM** - Loader inserts data into database
+El cronograma:
+- **2:00 AM** - Los scrapers se ejecutan (generan CSVs)
+- **4:00 AM** - ETL procesa los CSVs (2 horas después de los scrapers)
+- **4:15 AM** - Loader inserta datos en la base de datos
 
-To modify the schedule, edit the `ofelia.job-run.*.schedule` labels in `docker-compose.yml`.
+Para modificar el cronograma, editar las etiquetas `ofelia.job-run.*.schedule` en `docker-compose.yml`.
 
-### Cron Schedule Format
-```
-0 0 2 * * 0  = Every Sunday at 2:00 AM
-│ │ │ │ │ │
-│ │ │ │ │ └─── Day of week (0-6, 0=Sunday)
-│ │ │ │ └───── Month (1-12)
-│ │ │ └─────── Day of month (1-31)
-│ │ └───────── Hour (0-23)
-│ └─────────── Minute (0-59)
-└───────────── Second (0-59)
-```
+## 📊 Monitoreo
 
-## 📊 Monitoring
-
-### Check Scheduler Status
+### Verificar Estado del Planificador
 ```bash
 docker-compose logs -f scheduler
 ```
 
-### Check Last Run Logs
+### Verificar Logs de Última Ejecución
 ```bash
-# Scraper logs
+# Logs del scraper
 ls -lht logs/scraper_*.log | head -1
 
-# ETL logs
+# Logs del ETL
 docker-compose logs etl
 
-# Loader logs
+# Logs del loader
 docker-compose logs loader
 ```
 
-### View Generated CSVs
+### Ver CSVs Generados
 ```bash
 ls -lh data/
 ```
 
-### Query Database
+### Consultar Base de Datos
 ```bash
-# Connect to database
+# Conectarse a la base de datos
 docker-compose exec postgres psql -U admin -d corrupcion_db
 
-# Check row counts
+# Verificar cantidad de filas
 SELECT tablename, n_live_tup 
 FROM pg_stat_user_tables 
 ORDER BY n_live_tup DESC;
 ```
 
-## 🛠️ Management Commands
+## 🛠️ Comandos de Gestión
 
-### Stop All Services
+### Detener Todos los Servicios
 ```bash
 docker-compose down
 ```
 
-### Stop and Remove All Data
+### Detener y Eliminar Todos los Datos
 ```bash
 docker-compose down -v
-# WARNING: This deletes the database!
+# ADVERTENCIA: ¡Esto elimina la base de datos!
 ```
 
-### Restart a Specific Service
+### Reiniciar un Servicio Específico
 ```bash
 docker-compose restart scheduler
 ```
 
-### View All Logs
-```bash
-docker-compose logs -f
-```
-
-### Rebuild After Code Changes
+### Reconstruir Después de Cambios en el Código
 ```bash
 docker-compose build scraper etl loader
 ```
 
-## 📁 Project Structure
+## 🔧 Configuración
 
-```
-.
-├── docker-compose.yml          # Main orchestration file
-├── Dockerfile.scraper          # Scraper container
-├── Dockerfile.etl              # ETL container (same for loader)
-├── run_scrapers.py             # Sequential scraper runner
-├── run_pipeline.sh             # Manual pipeline runner
-├── requirements.txt            # Python dependencies
-├── scraper_entramite.py       # Scraper script 1
-├── scraper_completas.py        # Scraper script 2
-├── scraper_jueces.py          # Scraper script 3
-├── transform_expedientes.py          # ETL processor
-├── cargar_etl.py               # Database loader
-├── data/                       # Generated CSVs (gitignored)
-├── logs/                       # Application logs (gitignored)
-└── initdb/
-    └── init.sql                # Database initialization
-```
+### Conexión a Base de Datos
 
-## 🔧 Configuration
+Las credenciales están configuradas en `docker-compose.yml`:
+- Puerto: `5433`
+- Base de datos: `corrupcion_db`
+- Usuario: `admin`
+- Contraseña: `td8corrupcion`
 
-### Database Connection
+## 🔍 Solución de Problemas
 
-Set via environment variables in `docker-compose.yml`:
-- `DB_HOST=postgres`
-- `DB_PORT=5432`
-- `DB_NAME=corrupcion_db`
-- `DB_USER=admin`
-- `DB_PASSWORD=td8corrupcion`
-
-### Changing Schedule
-
-Edit `docker-compose.yml` scheduler labels:
-```yaml
-labels:
-  # Run every day at 3 AM instead
-  ofelia.job-run.scraper.schedule: "0 0 3 * * *"
-```
-
-## 🐛 Troubleshooting
-
-### Database won't start
+### Si la base de datos no inicia
 ```bash
-# Check logs
+# Verificar logs
 docker-compose logs postgres
 
-# Reset database
+# Resetear base de datos
 docker-compose down -v
 docker-compose up -d postgres
 ```
 
-### Scraper fails
+### Si el scraper falla
 ```bash
-# Check logs
+# Verificar logs
 docker-compose logs scraper
 cat logs/scraper_*.log | tail -50
-
-# Run in interactive mode for debugging
-docker-compose run --rm scraper /bin/bash
 ```
 
-### ETL fails
+### Si el ETL falla
 ```bash
-# Check if CSVs exist
+# Verificar si existen los CSVs
 ls -lh data/
 
-# Check ETL logs
+# Verificar logs del ETL
 docker-compose logs etl
 ```
 
-### Scheduler not running
-```bash
-# Check scheduler logs
-docker-compose logs scheduler
+## 🔒 Notas de Seguridad
 
-# Restart scheduler
-docker-compose restart scheduler
-```
+- **¡Cambiar las contraseñas por defecto** en producción!
+- Restringir el puerto de la base de datos (5433) en producción
 
-## 🔒 Security Notes
+## 🤝 Ejecución Completa
 
-- **Change default passwords** in production!
-- Don't commit `.env` files with credentials
-- Restrict database port (5432) in production
-- Consider using Docker secrets for sensitive data
+Para ejecutar este pipeline:
 
-## 🤝 For Other Users
+1. Instalar Docker y Docker Compose
+2. Clonar este repositorio
+3. Crear carpeta de logs: `mkdir -p logs`
+4. Ejecutar `docker-compose up -d`
+5. Ejecutar `./run_pipeline.sh` (usar Git Bash en Windows)
+6. El pipeline se ejecutará automáticamente cada Domingo
 
-To run this pipeline:
-
-1. Install Docker and Docker Compose
-2. Clone this repository
-3. Place `init.sql` in `initdb/` folder
-4. Run `docker-compose up -d`
-5. Run `./run_pipeline.sh` for first-time setup
-6. Pipeline will run automatically every Sunday
-
-That's it! No Python environment setup, no dependency issues.
+¡Eso es todo! Sin necesidad de configurar entorno de Python ni problemas de dependencias.
